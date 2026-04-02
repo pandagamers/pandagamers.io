@@ -9,6 +9,7 @@ import Charter from "./pages/Charter";
 import History from "./pages/History";
 import Leadership from "./pages/Leadership";
 import Apply from "./pages/Apply";
+import Privacy from "./pages/Privacy";
 
 
 function Router() {
@@ -19,6 +20,7 @@ function Router() {
       <Route path={"/history"} component={History} />
       <Route path={"/leadership"} component={Leadership} />
       <Route path={"/apply"} component={Apply} />
+      <Route path={"/privacy"} component={Privacy} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
