@@ -56,7 +56,7 @@ export default function Footer() {
                 <MessageCircle className="w-5 h-5 text-primary" />
               </a>
               <a
-                href="https://instagram.com/pandagamers"
+                href="https://instagram.com/pandagamers.io/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 bg-primary/10 hover:bg-primary/20 rounded transition-colors"
@@ -65,7 +65,7 @@ export default function Footer() {
                 <Instagram className="w-5 h-5 text-primary" />
               </a>
               <a
-                href="https://youtube.com/@pandagamers"
+                href="https://youtube.com/@pandagamersio"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 bg-primary/10 hover:bg-primary/20 rounded transition-colors"
