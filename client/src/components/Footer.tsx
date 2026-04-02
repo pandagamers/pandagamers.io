@@ -1,0 +1,93 @@
+import { Mail, MessageCircle, Instagram, Youtube } from "lucide-react";
+
+export default function Footer() {
+  const currentYear = new Date().getFullYear();
+
+  return (
+    <footer className="bg-card border-t border-primary/30 mt-20">
+      <div className="container py-12 md:py-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+          {/* About */}
+          <div>
+            <h3 className="text-lg font-bold text-primary mb-4 uppercase">About</h3>
+            <p className="text-foreground/80 text-sm leading-relaxed">
+              Pandamonium is a member-driven gaming community founded in 2004, dedicated to inclusivity, equity, and accountability.
+            </p>
+          </div>
+
+          {/* Quick Links */}
+          <div>
+            <h3 className="text-lg font-bold text-primary mb-4 uppercase">Quick Links</h3>
+            <ul className="space-y-2">
+              <li>
+                <a href="/charter" className="text-foreground/80 hover:text-primary transition-colors text-sm">
+                  Charter
+                </a>
+              </li>
+              <li>
+                <a href="/history" className="text-foreground/80 hover:text-primary transition-colors text-sm">
+                  History
+                </a>
+              </li>
+              <li>
+                <a href="/leadership" className="text-foreground/80 hover:text-primary transition-colors text-sm">
+                  Leadership
+                </a>
+              </li>
+              <li>
+                <a href="/apply" className="text-foreground/80 hover:text-primary transition-colors text-sm">
+                  Apply
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Social Links */}
+          <div>
+            <h3 className="text-lg font-bold text-primary mb-4 uppercase">Connect</h3>
+            <div className="flex gap-4">
+              <a
+                href="https://discord.gg/pandagamers"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 bg-primary/10 hover:bg-primary/20 rounded transition-colors"
+                aria-label="Discord"
+              >
+                <MessageCircle className="w-5 h-5 text-primary" />
+              </a>
+              <a
+                href="https://instagram.com/pandagamers"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 bg-primary/10 hover:bg-primary/20 rounded transition-colors"
+                aria-label="Instagram"
+              >
+                <Instagram className="w-5 h-5 text-primary" />
+              </a>
+              <a
+                href="https://youtube.com/@pandagamers"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 bg-primary/10 hover:bg-primary/20 rounded transition-colors"
+                aria-label="YouTube"
+              >
+                <Youtube className="w-5 h-5 text-primary" />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        {/* Divider */}
+        <div className="h-px bg-primary/20 mb-8"></div>
+
+        {/* Bottom */}
+        <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-foreground/60">
+          <p>&copy; {currentYear} Pandamonium. All Rights Reserved.</p>
+          <a href="/privacy" className="hover:text-primary transition-colors">
+            Privacy Statement
+          </a>
+        </div>
+      </div>
+    </footer>
+  );
+}
