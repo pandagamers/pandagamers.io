@@ -9,6 +9,7 @@ export default function Header() {
   const navItems = [
     { label: "Charter", href: "/charter" },
     { label: "History", href: "/history" },
+    { label: "Games", href: "/games" },
     { label: "Leadership", href: "/leadership" },
     { label: "Apply", href: "/apply" },
   ];
@@ -20,9 +21,9 @@ export default function Header() {
         <Link href="/">
           <a className="flex items-center gap-2 hover:opacity-80 transition-opacity">
             <img
-              src="https://raw.githubusercontent.com/pandagamers/pandagamers/main/images/panda_icon_original.png"
+              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663500670124/SXNGAT78vSNwpoRmkuGSKu/Clipboard_0_7E831671_68c346b0.png"
               alt="Pandamonium"
-              className="w-10 h-10 md:w-12 md:h-12"
+              className="w-10 h-10 md:w-12 md:h-12 rounded-full object-cover"
             />
             <span className="font-space-mono font-bold text-lg md:text-xl text-primary hidden sm:inline">
               PANDAMONIUM

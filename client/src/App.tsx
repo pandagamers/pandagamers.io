@@ -10,6 +10,7 @@ import History from "./pages/History";
 import Leadership from "./pages/Leadership";
 import Apply from "./pages/Apply";
 import Privacy from "./pages/Privacy";
+import Games from "./pages/Games";
 
 
 function Router() {
@@ -18,6 +19,7 @@ function Router() {
       <Route path={"/"} component={Home} />
       <Route path={"/charter"} component={Charter} />
       <Route path={"/history"} component={History} />
+      <Route path={"/games"} component={Games} />
       <Route path={"/leadership"} component={Leadership} />
       <Route path={"/apply"} component={Apply} />
       <Route path={"/privacy"} component={Privacy} />
