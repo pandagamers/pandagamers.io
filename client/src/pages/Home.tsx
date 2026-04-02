@@ -27,9 +27,9 @@ export default function Home() {
             <div className="max-w-3xl mx-auto text-center">
               <div className="mb-8 flex justify-center">
                 <img
-                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663500670124/SXNGAT78vSNwpoRmkuGSKu/panda_rainbow_cropped_cadaa047.png"
+                  src="https://d2xsxph8kpxj0f.cloudfront.net/310519663500670124/SXNGAT78vSNwpoRmkuGSKu/panda_rainbow_complete_af862439.png"
                   alt="Pandamonium"
-                  className="w-48 h-auto md:w-64 md:h-auto object-contain"
+                  className="w-56 h-auto md:w-72 md:h-auto object-contain"
                 />
               </div>
 
