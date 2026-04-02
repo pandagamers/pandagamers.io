@@ -63,11 +63,11 @@ export default function Events() {
                 
                 <div className="w-full overflow-x-auto">
                   <iframe
-                    src="https://calendar.google.com/calendar/embed?src=3957fdce8a65c3f7ab85583570c78ff29129366932b994917e6dec00acaa083e%40group.calendar.google.com&ctz=America%2FNew_York"
+                    src="https://calendar.google.com/calendar/embed?src=3957fdce8a65c3f7ab85583570c78ff29129366932b994917e6dec00acaa083e%40group.calendar.google.com&ctz=America%2FNew_York&mode=WEEK"
                     style={{
                       border: 0,
                       width: "100%",
-                      height: "600px",
+                      height: "500px",
                       minWidth: "320px",
                     }}
                     frameBorder="0"
