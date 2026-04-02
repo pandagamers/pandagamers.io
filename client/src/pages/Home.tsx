@@ -58,22 +58,6 @@ export default function Home() {
                     </a>
                   </Link>
                 </Button>
-
-                <Button
-                  asChild
-                  variant="outline"
-                  className="border-primary text-primary hover:bg-primary/10 font-bold uppercase text-lg px-8 py-6 h-auto"
-                >
-                  <a
-                    href="https://discord.gg/pandagamers"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-2"
-                  >
-                    Discord Server
-                    <ArrowRight className="w-5 h-5" />
-                  </a>
-                </Button>
               </div>
             </div>
           </div>

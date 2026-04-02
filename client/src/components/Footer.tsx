@@ -1,4 +1,5 @@
-import { Mail, MessageCircle, Instagram, Youtube } from "lucide-react";
+import { Mail, Instagram, Youtube } from "lucide-react";
+import { SiDiscord } from "react-icons/si";
 import { Link } from "wouter";
 
 export default function Footer() {
@@ -54,7 +55,7 @@ export default function Footer() {
                 className="p-2 bg-primary/10 hover:bg-primary/20 rounded transition-colors"
                 aria-label="Discord"
               >
-                <MessageCircle className="w-5 h-5 text-primary" />
+                <SiDiscord className="w-5 h-5 text-primary" />
               </a>
               <a
                 href="https://instagram.com/pandagamers.io/"

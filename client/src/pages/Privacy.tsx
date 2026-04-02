@@ -51,9 +51,9 @@ export default function Privacy() {
                   Access to Pandamonium's private chat functionality within Discord requires an approved community application. When applying, we request your character name and general location ("Member Data"). We use this Member Data to identify you on the Discord server and within our gaming chapters. We may use your character name and/or Discord username on a public team profile or leadership team page located on Pandamonium's website. We may also use your Discord username within in-game notes, if available. We will store this data for as long as you remain a community member. Please refer to the relevant publisher's privacy policy for details on how your data is stored and processed in-game:
                 </p>
                 <ul className="list-disc list-inside space-y-2 text-foreground/80 ml-4">
-                  <li><strong>Dune: Awakening:</strong> Funcom Player Privacy Notice</li>
-                  <li><strong>Final Fantasy XIV Online:</strong> Square Enix, Inc. Privacy Notice</li>
-                  <li><strong>Palia:</strong> Singularity 6 Corporation Privacy Notice</li>
+                  <li><strong>Dune: Awakening:</strong> <a href="https://www.funcom.com/privacy-policy-dune-awakening/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Funcom Player Privacy Notice</a></li>
+                  <li><strong>Final Fantasy XIV Online:</strong> <a href="https://www.square-enix-games.com/en_US/documents/privacy" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Square Enix, Inc. Privacy Notice</a></li>
+                  <li><strong>Palia:</strong> <a href="https://palia.com/privacy" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Singularity 6 Corporation Privacy Notice</a></li>
                 </ul>
               </div>
 

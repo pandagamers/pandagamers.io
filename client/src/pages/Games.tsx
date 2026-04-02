@@ -5,18 +5,18 @@ import { Gamepad2, Users, Globe } from "lucide-react";
 export default function Games() {
   const games = [
     {
-      title: "Final Fantasy XIV Online",
-      description: "A massively multiplayer online role-playing game set in the world of Eorzea. Join our Free Company and experience epic raids, dungeons, and community events.",
-      icon: "⚔️",
-      features: ["Free Company Community", "Raid Groups", "Dungeon Runs", "Social Events"],
-      link: "https://www.finalfantasyxiv.com/"
-    },
-    {
       title: "Dune: Awakening",
       description: "An open-world survival MMO set in the Dune universe. Build your settlement, form alliances, and explore the vast deserts of Arrakis with our community.",
       icon: "🏜️",
       features: ["Open-World Survival", "Settlement Building", "Alliances", "PvP & PvE"],
       link: "https://www.duneawakening.com/"
+    },
+    {
+      title: "Final Fantasy XIV Online",
+      description: "A massively multiplayer online role-playing game set in the world of Eorzea. Join our Free Company and experience epic raids, dungeons, and community events.",
+      icon: "⚔️",
+      features: ["Free Company Community", "Raid Groups", "Dungeon Runs", "Social Events"],
+      link: "https://www.finalfantasyxiv.com/"
     },
     {
       title: "Palia",
@@ -39,7 +39,7 @@ export default function Games() {
               GAMES WE PLAY
             </h1>
             <p className="text-lg text-foreground/80 text-center max-w-2xl mx-auto">
-              Pandamonium brings together gamers across multiple titles and genres. Whether you're into epic MMORPGs or cozy community games, there's a place for you here.
+              Pandamonium brings together gamers across multiple titles and genres. While we have organized chapters for our main games, our members also collaborate on a wide range of other games in a less formal fashion. Whether you're into epic MMORPGs or cozy community games, there's a place for you here.
             </p>
           </div>
         </section>
