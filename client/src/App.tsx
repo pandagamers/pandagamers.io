@@ -7,11 +7,11 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
 import Charter from "./pages/Charter";
 import History from "./pages/History";
+import Games from "./pages/Games";
 import Leadership from "./pages/Leadership";
 import Apply from "./pages/Apply";
 import Privacy from "./pages/Privacy";
-import Games from "./pages/Games";
-
+import Events from "./pages/Events";
 
 function Router() {
   return (
@@ -23,6 +23,7 @@ function Router() {
       <Route path={"/leadership"} component={Leadership} />
       <Route path={"/apply"} component={Apply} />
       <Route path={"/privacy"} component={Privacy} />
+      <Route path={"/events"} component={Events} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
@@ -30,10 +31,18 @@ function Router() {
   );
 }
 
+// NOTE: About Theme
+// - First choose a default theme according to your design style (dark or light bg), than change color palette in index.css
+//   to keep consistent foreground/background color across components
+// - If you want to make theme switchable, pass `switchable` ThemeProvider and use `useTheme` hook
+
 function App() {
   return (
     <ErrorBoundary>
-      <ThemeProvider defaultTheme="dark">
+      <ThemeProvider
+        defaultTheme="dark"
+        // switchable
+      >
         <TooltipProvider>
           <Toaster />
           <Router />

@@ -42,6 +42,11 @@ export default function Footer() {
                 </a>
               </li>
               <li>
+                <a href="/events" className="text-foreground/80 hover:text-primary transition-colors text-sm">
+                  Events
+                </a>
+              </li>
+              <li>
                 <a href="/apply" className="text-foreground/80 hover:text-primary transition-colors text-sm">
                   Apply
                 </a>

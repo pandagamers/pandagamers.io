@@ -10,6 +10,7 @@ export default function Header() {
     { label: "Charter", href: "/charter" },
     { label: "History", href: "/history" },
     { label: "Games", href: "/games" },
+    { label: "Events", href: "/events" },
     { label: "Leadership", href: "/leadership" },
     { label: "Apply", href: "/apply" },
   ];
