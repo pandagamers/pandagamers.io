@@ -97,9 +97,6 @@ export default function Leadership() {
 
             {/* Info Box */}
             <div className="mt-16 p-8 bg-card rounded-lg border border-primary/30 text-center">
-              <p className="text-foreground/80 mb-4">
-                The first name is their main character and the second is their Discord name.
-              </p>
               <p className="text-foreground/80">
                 Have questions for leadership? Use <span className="text-primary font-mono">#open-a-ticket</span> on Discord to reach the Community Managers.
               </p>

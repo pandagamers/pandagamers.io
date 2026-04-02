@@ -81,40 +81,6 @@ export default function Games() {
               ))}
             </div>
 
-            {/* Discord Widget Section */}
-            <div className="mt-20 pt-16 border-t border-primary/30">
-              <h2 className="text-4xl font-bold text-primary mb-4 text-center">Join Our Community</h2>
-              <p className="text-lg text-foreground/80 text-center max-w-2xl mx-auto mb-12">
-                Connect with Pandamonium members on Discord. Whether you're looking for a raid group, casual hangout, or just want to meet fellow gamers, we've got you covered.
-              </p>
-
-              <div className="flex justify-center">
-                <iframe
-                  src="https://discord.com/widget?id=DISCORD_SERVER_ID&theme=dark"
-                  width="350"
-                  height="500"
-                  allowTransparency={true}
-                  frameBorder="0"
-                  sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
-                  className="rounded-lg border border-primary/30"
-                ></iframe>
-              </div>
-
-              <div className="text-center mt-8">
-                <p className="text-foreground/70 mb-4">
-                  Don't have Discord? Download it free and join our server.
-                </p>
-                <a
-                  href="https://discord.gg/pandagamers"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-block px-6 py-3 bg-primary text-background font-bold rounded hover:bg-primary/90 transition-colors"
-                >
-                  Join Discord Server
-                </a>
-              </div>
-            </div>
-
             {/* Why Play With Us */}
             <div className="mt-20 pt-16 border-t border-primary/30">
               <h2 className="text-4xl font-bold text-primary mb-12 text-center">Why Play With Pandamonium?</h2>
