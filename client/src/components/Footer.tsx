@@ -37,6 +37,11 @@ export default function Footer() {
                 </a>
               </li>
               <li>
+                <a href="/games" className="text-foreground/80 hover:text-primary transition-colors text-sm">
+                  Games
+                </a>
+              </li>
+              <li>
                 <a href="/apply" className="text-foreground/80 hover:text-primary transition-colors text-sm">
                   Apply
                 </a>

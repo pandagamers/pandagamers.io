@@ -109,9 +109,9 @@ export default function Home() {
 
                 <div className="p-6 bg-background rounded-lg border border-primary/30 hover:border-primary/60 transition-colors">
                   <Zap className="w-12 h-12 text-accent mb-4" />
-                  <h3 className="text-xl font-bold text-primary mb-3">Community</h3>
+                  <h3 className="text-xl font-bold text-primary mb-3">Equity</h3>
                   <p className="text-foreground/80">
-                    We forge lasting connections and support each other in gaming and in life.
+                    We ensure fair treatment and equal opportunities for all members of our community.
                   </p>
                 </div>
               </div>

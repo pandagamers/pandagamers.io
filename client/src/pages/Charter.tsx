@@ -11,7 +11,7 @@ const charterSections = [
   {
     title: "Demographics",
     content:
-      "Community Members: 345 | Average Age: 30s - 50s | Age Span: 18 to 75 years old | Primary Location: North America | Year Established: 2004",
+      "Average Age: 30s - 50s | Age Span: 18 to 76 years old | Primary Location: North America | Year Established: 2004",
   },
   {
     title: "Membership Criteria",
