@@ -47,8 +47,18 @@ export default function Footer() {
                 </a>
               </li>
               <li>
+                <a href="/faq" className="text-foreground/80 hover:text-primary transition-colors text-sm">
+                  FAQ
+                </a>
+              </li>
+              <li>
                 <a href="/apply" className="text-foreground/80 hover:text-primary transition-colors text-sm">
                   Apply
+                </a>
+              </li>
+              <li>
+                <a href="https://pandamonium-shop.fourthwall.com/" target="_blank" rel="noopener noreferrer" className="text-foreground/80 hover:text-primary transition-colors text-sm font-bold">
+                  Store
                 </a>
               </li>
             </ul>

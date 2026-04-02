@@ -12,6 +12,7 @@ import Leadership from "./pages/Leadership";
 import Apply from "./pages/Apply";
 import Privacy from "./pages/Privacy";
 import Events from "./pages/Events";
+import FAQ from "./pages/FAQ";
 
 function Router() {
   return (
@@ -24,6 +25,7 @@ function Router() {
       <Route path={"/apply"} component={Apply} />
       <Route path={"/privacy"} component={Privacy} />
       <Route path={"/events"} component={Events} />
+      <Route path={"/faq"} component={FAQ} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />
