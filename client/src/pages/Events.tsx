@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Calendar, Clock, Users } from "lucide-react";
+import "./Events.css";
 
 export default function Events() {
   return (
@@ -61,15 +62,10 @@ export default function Events() {
               <div className="p-6 md:p-8">
                 <h2 className="text-2xl md:text-3xl font-bold text-primary mb-6">Pandamonium Community Calendar</h2>
                 
-                <div className="w-full overflow-hidden rounded-lg border border-primary/20 bg-background/50">
+                <div className="sesh-calendar-wrapper overflow-hidden rounded-lg border border-primary/20 bg-background/50">
                   <iframe
                     src="https://sesh.fyi/calendar/204984438596042752"
-                    style={{
-                      border: 0,
-                      width: "100%",
-                      height: "600px",
-                      minWidth: "320px",
-                    }}
+                    className="sesh-calendar-iframe"
                     frameBorder="0"
                     scrolling="auto"
                     allowTransparency
