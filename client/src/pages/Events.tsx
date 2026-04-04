@@ -61,17 +61,17 @@ export default function Events() {
               <div className="p-6 md:p-8">
                 <h2 className="text-2xl md:text-3xl font-bold text-primary mb-6">Pandamonium Community Calendar</h2>
                 
-                <div className="w-full overflow-x-auto">
+                <div className="w-full overflow-hidden rounded-lg border border-primary/20 bg-background/50">
                   <iframe
-                    src="https://calendar.google.com/calendar/embed?src=pandaguild%40pm.me&ctz=America%2FNew_York&mode=WEEK"
+                    src="https://sesh.fyi/calendar/204984438596042752"
                     style={{
                       border: 0,
                       width: "100%",
-                      height: "500px",
+                      height: "600px",
                       minWidth: "320px",
                     }}
                     frameBorder="0"
-                    scrolling="no"
+                    scrolling="auto"
                     allowTransparency
                   ></iframe>
                 </div>
