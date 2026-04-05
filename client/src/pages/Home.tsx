@@ -51,11 +51,9 @@ export default function Home() {
                   asChild
                   className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold uppercase text-lg px-8 py-6 h-auto"
                 >
-                  <Link href="/apply">
-                    <a className="flex items-center gap-2">
-                      Join Pandamonium
-                      <ArrowRight className="w-5 h-5" />
-                    </a>
+                  <Link href="/apply" className="flex items-center gap-2">
+                    Join Pandamonium
+                    <ArrowRight className="w-5 h-5" />
                   </Link>
                 </Button>
               </div>
@@ -127,7 +125,7 @@ export default function Home() {
                     className="bg-accent hover:bg-accent/90 text-accent-foreground font-bold uppercase"
                   >
                     <Link href="/charter">
-                      <a>View Charter</a>
+                      View Charter
                     </Link>
                   </Button>
                   <Button
@@ -135,7 +133,7 @@ export default function Home() {
                     className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold uppercase"
                   >
                     <Link href="/apply">
-                      <a>Apply Now</a>
+                      Apply Now
                     </Link>
                   </Button>
                 </div>
