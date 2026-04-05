@@ -13,6 +13,8 @@ import Apply from "./pages/Apply";
 import Privacy from "./pages/Privacy";
 import Events from "./pages/Events";
 import FAQ from "./pages/FAQ";
+import Application from "./pages/Application";
+import FFXIVInvite from "./pages/FFXIVInvite";
 
 function Router() {
   return (
@@ -26,6 +28,10 @@ function Router() {
       <Route path={"/privacy"} component={Privacy} />
       <Route path={"/events"} component={Events} />
       <Route path={"/faq"} component={FAQ} />
+      <Route path={"/application"} component={Application} />
+      <Route path={"/application.html"} component={Application} />
+      <Route path={"/ffxiv_invite"} component={FFXIVInvite} />
+      <Route path={"/ffxiv_invite.html"} component={FFXIVInvite} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />

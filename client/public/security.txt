@@ -1,0 +1,4 @@
+Contact: security@pandagamers.io
+Expires: 2027-04-05T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://pandagamers.io/.well-known/security.txt

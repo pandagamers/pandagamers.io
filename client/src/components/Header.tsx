@@ -39,22 +39,22 @@ export default function Header() {
             </Link>
           ))}
           <div className="flex items-center gap-3">
-            <Button
-              asChild
-              className="bg-primary/20 hover:bg-primary/30 text-primary font-bold uppercase border border-primary/50"
+            <a
+              href="https://pandamonium-shop.fourthwall.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all bg-primary/20 hover:bg-primary/30 text-primary font-bold uppercase border border-primary/50 h-9 px-4 py-2"
             >
-              <a href="https://pandamonium-shop.fourthwall.com/" target="_blank" rel="noopener noreferrer">
-                Store
-              </a>
-            </Button>
-            <Button
-              asChild
-              className="bg-accent hover:bg-accent/90 text-accent-foreground font-bold uppercase"
+              Store
+            </a>
+            <a
+              href="https://discord.gg/pandagamers"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all bg-accent hover:bg-accent/90 text-accent-foreground font-bold uppercase h-9 px-4 py-2"
             >
-              <a href="https://discord.gg/pandagamers" target="_blank" rel="noopener noreferrer">
-                Join Discord
-              </a>
-            </Button>
+              Join Discord
+            </a>
           </div>
         </nav>
 
@@ -86,22 +86,22 @@ export default function Header() {
                 {item.label}
               </Link>
             ))}
-            <Button
-              asChild
-              className="bg-primary/20 hover:bg-primary/30 text-primary font-bold uppercase border border-primary/50 w-full"
+            <a
+              href="https://pandamonium-shop.fourthwall.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all bg-primary/20 hover:bg-primary/30 text-primary font-bold uppercase border border-primary/50 h-9 px-4 py-2 w-full"
             >
-              <a href="https://pandamonium-shop.fourthwall.com/" target="_blank" rel="noopener noreferrer">
-                Store
-              </a>
-            </Button>
-            <Button
-              asChild
-              className="bg-accent hover:bg-accent/90 text-accent-foreground font-bold uppercase w-full"
+              Store
+            </a>
+            <a
+              href="https://discord.gg/pandagamers"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all bg-accent hover:bg-accent/90 text-accent-foreground font-bold uppercase h-9 px-4 py-2 w-full"
             >
-              <a href="https://discord.gg/pandagamers" target="_blank" rel="noopener noreferrer">
-                Join Discord
-              </a>
-            </Button>
+              Join Discord
+            </a>
           </div>
         </nav>
       )}
