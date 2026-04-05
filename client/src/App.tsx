@@ -29,9 +29,7 @@ function Router() {
       <Route path={"/events"} component={Events} />
       <Route path={"/faq"} component={FAQ} />
       <Route path={"/application"} component={Application} />
-      <Route path={"/application.html"} component={Application} />
       <Route path={"/ffxiv_invite"} component={FFXIVInvite} />
-      <Route path={"/ffxiv_invite.html"} component={FFXIVInvite} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />

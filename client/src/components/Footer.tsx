@@ -105,10 +105,8 @@ export default function Footer() {
         {/* Bottom */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-foreground/60">
           <p>&copy; {currentYear} Pandamonium. All Rights Reserved.</p>
-          <Link href="/privacy">
-            <a className="hover:text-primary transition-colors">
-              Privacy Statement
-            </a>
+          <Link href="/privacy" className="hover:text-primary transition-colors">
+            Privacy Statement
           </Link>
         </div>
       </div>
