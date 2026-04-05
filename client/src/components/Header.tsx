@@ -20,26 +20,22 @@ export default function Header() {
     <header className="sticky top-0 z-50 bg-background border-b border-primary/30 backdrop-blur-sm">
       <div className="container flex items-center justify-between h-16 md:h-20">
         {/* Logo */}
-        <Link href="/">
-          <a className="flex items-center gap-2 hover:opacity-80 transition-opacity">
-            <img
-              src="https://d2xsxph8kpxj0f.cloudfront.net/310519663500670124/SXNGAT78vSNwpoRmkuGSKu/Clipboard_0_7E831671_68c346b0.png"
-              alt="Pandamonium"
-              className="w-10 h-10 md:w-12 md:h-12 rounded-full object-cover"
-            />
-            <span className="font-space-mono font-bold text-lg md:text-xl text-primary hidden sm:inline">
-              PANDAMONIUM
-            </span>
-          </a>
+        <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
+          <img
+            src="https://d2xsxph8kpxj0f.cloudfront.net/310519663500670124/SXNGAT78vSNwpoRmkuGSKu/Clipboard_0_7E831671_68c346b0.png"
+            alt="Pandamonium"
+            className="w-10 h-10 md:w-12 md:h-12 rounded-full object-cover"
+          />
+          <span className="font-space-mono font-bold text-lg md:text-xl text-primary hidden sm:inline">
+            PANDAMONIUM
+          </span>
         </Link>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center gap-8">
           {navItems.map((item) => (
-            <Link key={item.href} href={item.href}>
-              <a className="font-poppins font-medium text-foreground hover:text-primary transition-colors duration-200 uppercase text-sm tracking-wide">
-                {item.label}
-              </a>
+            <Link key={item.href} href={item.href} className="font-poppins font-medium text-foreground hover:text-primary transition-colors duration-200 uppercase text-sm tracking-wide">
+              {item.label}
             </Link>
           ))}
           <div className="flex items-center gap-3">
@@ -81,13 +77,13 @@ export default function Header() {
         <nav className="md:hidden bg-card border-t border-primary/30 py-4">
           <div className="container flex flex-col gap-4">
             {navItems.map((item) => (
-              <Link key={item.href} href={item.href}>
-                <a
-                  className="font-poppins font-medium text-foreground hover:text-primary transition-colors uppercase text-sm tracking-wide block py-2"
-                  onClick={() => setIsOpen(false)}
-                >
-                  {item.label}
-                </a>
+              <Link
+                key={item.href}
+                href={item.href}
+                className="font-poppins font-medium text-foreground hover:text-primary transition-colors uppercase text-sm tracking-wide block py-2"
+                onClick={() => setIsOpen(false)}
+              >
+                {item.label}
               </Link>
             ))}
             <Button
