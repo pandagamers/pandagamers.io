@@ -1,7 +1,8 @@
+import { useEffect } from "react";
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
-import { Route, Switch } from "wouter";
+import { Route, Switch, useLocation } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
@@ -16,24 +17,37 @@ import FAQ from "./pages/FAQ";
 import Application from "./pages/Application";
 import FFXIVInvite from "./pages/FFXIVInvite";
 
+function ScrollToTop() {
+  const [location] = useLocation();
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+  
+  return null;
+}
+
 function Router() {
   return (
-    <Switch>
-      <Route path={"/"} component={Home} />
-      <Route path={"/charter"} component={Charter} />
-      <Route path={"/history"} component={History} />
-      <Route path={"/games"} component={Games} />
-      <Route path={"/leadership"} component={Leadership} />
-      <Route path={"/apply"} component={Apply} />
-      <Route path={"/privacy"} component={Privacy} />
-      <Route path={"/events"} component={Events} />
-      <Route path={"/faq"} component={FAQ} />
-      <Route path={"/application"} component={Application} />
-      <Route path={"/ffxiv_invite"} component={FFXIVInvite} />
-      <Route path={"/404"} component={NotFound} />
-      {/* Final fallback route */}
-      <Route component={NotFound} />
-    </Switch>
+    <>
+      <ScrollToTop />
+      <Switch>
+        <Route path={"/"} component={Home} />
+        <Route path={"/charter"} component={Charter} />
+        <Route path={"/history"} component={History} />
+        <Route path={"/games"} component={Games} />
+        <Route path={"/leadership"} component={Leadership} />
+        <Route path={"/apply"} component={Apply} />
+        <Route path={"/privacy"} component={Privacy} />
+        <Route path={"/events"} component={Events} />
+        <Route path={"/faq"} component={FAQ} />
+        <Route path={"/application"} component={Application} />
+        <Route path={"/ffxiv_invite"} component={FFXIVInvite} />
+        <Route path={"/404"} component={NotFound} />
+        {/* Final fallback route */}
+        <Route component={NotFound} />
+      </Switch>
+    </>
   );
 }
 

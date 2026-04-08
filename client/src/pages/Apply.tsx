@@ -36,14 +36,11 @@ export default function Apply() {
                   <p className="text-foreground/80 mb-4">
                     Start by reading our community charter. It outlines our core values, membership criteria, and the principles that guide our community. Make sure you align with our values of inclusivity, equity, and accountability.
                   </p>
-                  <Button
-                    asChild
-                    className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold uppercase"
-                  >
-                    <Link href="/charter">
-                      <a>Read Charter</a>
-                    </Link>
-                  </Button>
+                  <Link href="/charter">
+                    <a className="inline-block px-6 py-2 bg-primary hover:bg-primary/90 text-primary-foreground font-bold uppercase rounded transition-colors">
+                      Read Charter
+                    </a>
+                  </Link>
                 </div>
               </div>
             </div>

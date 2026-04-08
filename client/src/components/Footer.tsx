@@ -13,7 +13,7 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-bold text-primary mb-4 uppercase">About</h3>
             <p className="text-foreground/80 text-sm leading-relaxed">
-              Pandamonium is a member-driven gaming community founded in 2004, dedicated to inclusivity, equity, and accountability.
+              Pandamonium is member-driven gaming community guided by core values of inclusivity, equity, and accountability.
             </p>
           </div>
 
@@ -57,7 +57,7 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="https://pandamonium-shop.fourthwall.com/" target="_blank" rel="noopener noreferrer" className="text-foreground/80 hover:text-primary transition-colors text-sm font-bold">
+                <a href="https://pandamonium-shop.fourthwall.com/" target="_blank" rel="noopener noreferrer" className="text-foreground/80 hover:text-primary transition-colors text-sm">
                   Store
                 </a>
               </li>

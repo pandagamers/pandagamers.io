@@ -12,12 +12,12 @@ const faqItems: FAQItem[] = [
   {
     question: "Can I invite friends to the Pandamonium Discord server?",
     answer:
-      "Yes, you are welcome to share the server link with friends: https://discord.gg/pandagamers. We love welcoming new members who share our values of inclusivity, equity, and accountability.",
+      "Yes, you are welcome to share the server link with friends: <a href='https://discord.gg/pandagamers' target='_blank' rel='noopener noreferrer' className='text-primary hover:underline'>https://discord.gg/pandagamers</a>. We love welcoming new members who share our values of inclusivity, equity, and accountability.",
   },
   {
     question: "Does Pandamonium have a store?",
     answer:
-      "We do! We have Pandamonium-branded products available for purchase at https://pandamonium-shop.fourthwall.com/. Check out our merchandise to show your Pandamonium pride!",
+      "We do! We have Pandamonium-branded products available for purchase at <a href='https://pandamonium-shop.fourthwall.com/' target='_blank' rel='noopener noreferrer' className='text-primary hover:underline'>https://pandamonium-shop.fourthwall.com/</a>. Check out our merchandise to show your Pandamonium pride!"
   },
   {
     question: "How do I create events for the community to participate in?",

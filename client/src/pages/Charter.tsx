@@ -6,7 +6,7 @@ const charterSections = [
   {
     title: "Mission Statement",
     content:
-      "Pandamonium is a member-driven gaming community guided by core values of inclusivity, equity, and accountability. Our mission is to foster a safe and drama-free environment where gamers can forge lasting connections while treating each other with respect.",
+      "Pandamonium is a member-driven gaming community guided by core values of inclusivity, equity, and accountability. Our mission is to foster a safe and drama-free environment where gamers can forge lasting connections while treating each other with respect. We continue to foster an environment that encourages collaboration, inclusivity, and fun in gaming.",
   },
   {
     title: "Demographics",
@@ -106,14 +106,6 @@ export default function Charter() {
                 If you believe Pandamonium is a good fit for you, we encourage you to apply through our Discord server.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a
-                  href="https://discord.gg/pandagamers"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-8 py-3 bg-primary hover:bg-primary/90 text-primary-foreground font-bold uppercase rounded transition-colors"
-                >
-                  Join Discord
-                </a>
                 <Link href="/apply">
                   <a className="px-8 py-3 bg-accent hover:bg-accent/90 text-accent-foreground font-bold uppercase rounded transition-colors">
                     Learn About Applying

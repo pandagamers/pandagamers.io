@@ -27,7 +27,7 @@ export default function Privacy() {
               <div>
                 <h2 className="text-3xl font-bold text-primary mb-4">Who is Pandamonium</h2>
                 <p className="text-foreground/80 leading-relaxed">
-                  Pandamonium is an unincorporated gaming community that maintains this website for recruitment purposes. In order to operate this website, Pandamonium receives hosting and administration services from GitHub. Pandamonium also maintains a server on Discord, a social online and mobile chat platform. GitHub and Discord are data controllers, whereas Pandamonium is a data processor.
+                  Pandamonium is an unincorporated gaming community that maintains this website for recruitment purposes. In order to operate this website, Pandamonium receives hosting and administration services from GitHub (<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">GitHub General Privacy Statement</a>). Pandamonium also maintains a server on Discord, a social online and mobile chat platform (<a href="https://discord.com/privacy" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Discord Privacy Policy</a>). GitHub and Discord are data controllers, whereas Pandamonium is a data processor.
                 </p>
               </div>
 
@@ -59,7 +59,7 @@ export default function Privacy() {
 
               {/* GitHub Collects Data */}
               <div>
-                <h2 className="text-3xl font-bold text-primary mb-4">GitHub Collects Data About Website Visits</h2>
+                <h2 className="text-2xl font-bold text-accent mb-4">GitHub Collects Data About Website Visits</h2>
                 <p className="text-foreground/80 leading-relaxed">
                   When you visit the Pandamonium website, GitHub may collect technical information from your visit, including logs of visitor IP addresses, to maintain the security and integrity of the website and service. This data is processed under GitHub's legitimate interest to provide their services to Pandamonium in an efficient and secure manner.
                 </p>
@@ -67,9 +67,9 @@ export default function Privacy() {
 
               {/* Discord Collects Member Data */}
               <div>
-                <h2 className="text-3xl font-bold text-primary mb-4">Discord Collects Member Data</h2>
+                <h2 className="text-2xl font-bold text-accent mb-4">Discord Collects Member Data</h2>
                 <p className="text-foreground/80 leading-relaxed">
-                  Access to Pandamonium's Discord server requires an account. That account and the data you provide therein are subject to the Discord Privacy Policy.
+                  Access to Pandamonium's Discord server requires an account. That account and the data you provide therein are subject to the <a href="https://discord.com/privacy" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Discord Privacy Policy</a>.
                 </p>
               </div>
 
@@ -144,7 +144,7 @@ export default function Privacy() {
               <div>
                 <h2 className="text-3xl font-bold text-primary mb-4">Changes to This Document</h2>
                 <p className="text-foreground/80 leading-relaxed">
-                  This version of our privacy statement took effect December 30th, 2025. We will post any new versions of this statement at this URL. A full revision history for this page can be found on GitHub.
+                  This version of our privacy statement took effect December 30th, 2025. We will post any new versions of this statement at this URL. A full revision history for this page can be found on <a href="https://github.com/pandaMMO/panda/commits/master/privacy.html" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">GitHub</a>.
                 </p>
               </div>
             </div>
