@@ -4,8 +4,8 @@ import { Link } from "wouter";
 
 interface ChapterSection {
   title: string;
-  content: string;
-  subsections?: Array<{ subtitle: string; text: string }>;
+  content?: string | React.ReactNode;
+  subsections?: Array<{ subtitle: string; text: string | React.ReactNode }>;
 }
 
 const charterSections: ChapterSection[] = [
@@ -16,63 +16,140 @@ const charterSections: ChapterSection[] = [
   },
   {
     title: "Demographics",
-    content:
-      "**Community Members:** 300+\n**Average Age:** 30's - 50's\n**Age Span:** 18 to 76 years old\n**Year Established:** 2004\n\nOur player base is primarily located across North America (Eastern, Central, Mountain, and Pacific time zones), though players from all time zones are welcome.",
+    content: (
+      <>
+        <strong>Community Members:</strong> 300+<br />
+        <strong>Average Age:</strong> 30's - 50's<br />
+        <strong>Age Span:</strong> 18 to 76 years old<br />
+        <strong>Year Established:</strong> 2004<br />
+        <br />
+        Our player base is primarily located across North America (Eastern, Central, Mountain, and Pacific time zones), though players from all time zones are welcome.
+      </>
+    ),
   },
   {
     title: "Membership Criteria",
-    content:
-      "Applications are reviewed by the entire community and decisions are made through consensus. Applicants must be at least 18 years of age to join Pandamonium. By submitting an application, you confirm that you meet this age requirement. No exceptions will be made. We have a zero-tolerance policy for bigoted, racist, homophobic, transphobic, xenophobic, or misogynistic behavior. Such behavior is incompatible with the community's values.\n\n*\"There are no exceptions to the rule that everybody likes to be an exception to the rule.\" - Charles Osgood*",
+    content: (
+      <>
+        Applications are reviewed by the entire community and decisions are made through consensus. Applicants must be at least 18 years of age to join Pandamonium. By submitting an application, you confirm that you meet this age requirement. No exceptions will be made. We have a zero-tolerance policy for bigoted, racist, homophobic, transphobic, xenophobic, or misogynistic behavior. Such behavior is incompatible with the community's values.
+        <br />
+        <br />
+        <em>"There are no exceptions to the rule that everybody likes to be an exception to the rule." - Charles Osgood</em>
+      </>
+    ),
   },
   {
     title: "Diversity",
-    content:
-      "Within Pandamonium, our strength lies in our diversity. Our membership includes individuals from various backgrounds, including differences in race, age, gender, religion, neurodivergence, and sexual orientation. We welcome everyone except those inclined toward bigotry, racism, homophobia, transphobia, xenophobia, or misogyny. If you harbor such behavior, this isn't the community for you.\n\n*\"Strength lies in differences, not in similarities.\" - Stephen Covey*",
+    content: (
+      <>
+        Within Pandamonium, our strength lies in our diversity. Our membership includes individuals from various backgrounds, including differences in race, age, gender, religion, neurodivergence, and sexual orientation. We welcome everyone except those inclined toward bigotry, racism, homophobia, transphobia, xenophobia, or misogyny. If you harbor such behavior, this isn't the community for you.
+        <br />
+        <br />
+        <em>"Strength lies in differences, not in similarities." - Stephen Covey</em>
+      </>
+    ),
   },
   {
     title: "Conduct",
-    content:
-      "We hold ourselves to a high standard. Pandamonium members are expected to conduct themselves with honor and respect. Inflammatory or insulting comments, as well as rude or petty behavior, have no place in-game or on Discord. All members must adhere to the game's Terms of Service and Rules of Conduct at all times. Specifically, the use of third-party hacks or cheats is strictly prohibited, including unauthorized third-party tools. Violation of this rule will result in immediate removal from our community. Members are encouraged to report any observed violations to the Community Managers (#open-a-ticket), ensuring our community remains a safe and respectful space for all.\n\n*\"There can be no friendship without confidence, and no confidence without integrity.\" - Samuel Johnson*",
+    content: (
+      <>
+        We hold ourselves to a high standard. Pandamonium members are expected to conduct themselves with honor and respect. Inflammatory or insulting comments, as well as rude or petty behavior, have no place in-game or on Discord. All members must adhere to the game's Terms of Service and Rules of Conduct at all times. Specifically, the use of third-party hacks or cheats is strictly prohibited, including unauthorized third-party tools. Violation of this rule will result in immediate removal from our community. Members are encouraged to report any observed violations to the Community Managers (#open-a-ticket), ensuring our community remains a safe and respectful space for all.
+        <br />
+        <br />
+        <em>"There can be no friendship without confidence, and no confidence without integrity." - Samuel Johnson</em>
+      </>
+    ),
   },
   {
     title: "Commitment",
-    content:
-      "While gaming is our passion, real life takes precedence. We respect each other's situations and emergencies. However, we also value commitment. Before agreeing to attend an event, consider whether you can fulfill the commitment. Once committed, show up on time and prepared. If unforeseen circumstances arise, communicate promptly with the event leader.\n\n*\"Unless commitment is made, there are only promises and hopes; but no plans.\" - Peter F. Drucker*",
+    content: (
+      <>
+        While gaming is our passion, real life takes precedence. We respect each other's situations and emergencies. However, we also value commitment. Before agreeing to attend an event, consider whether you can fulfill the commitment. Once committed, show up on time and prepared. If unforeseen circumstances arise, communicate promptly with the event leader.
+        <br />
+        <br />
+        <em>"Unless commitment is made, there are only promises and hopes; but no plans." - Peter F. Drucker</em>
+      </>
+    ),
   },
   {
     title: "Loyalty",
-    content:
-      "In Pandamonium, loyalty binds us together. Every member is expected to abide by this Charter. We encourage you to invite other players whom you believe will enhance our community to submit an application via our Discord.\n\n*\"The greater the loyalty of a group toward the group, the greater is the motivation among the members to achieve the goals of the group, and the greater the probability that the group will achieve its goals.\" - Rensis Likert*",
+    content: (
+      <>
+        In Pandamonium, loyalty binds us together. Every member is expected to abide by this Charter. We encourage you to invite other players whom you believe will enhance our community to submit an application via our Discord.
+        <br />
+        <br />
+        <em>"The greater the loyalty of a group toward the group, the greater is the motivation among the members to achieve the goals of the group, and the greater the probability that the group will achieve its goals." - Rensis Likert</em>
+      </>
+    ),
   },
   {
     title: "Communication Channels",
-    content:
-      "Our website serves as a valuable recruitment tool, providing essential information about Pandamonium. Discord is where the magic happens! It is our central hub for announcements, discussions, upcoming events, and camaraderie. Stay informed by actively participating in voice and text chat, checking announcements, and joining conversations. Share your knowledge and experiences—it's what makes Pandamonium thrive.\n\n*\"Communication leads to community, that is, to understanding, intimacy and mutual valuing.\" - Rollo May*",
+    content: (
+      <>
+        Our website serves as a valuable recruitment tool, providing essential information about Pandamonium. Discord is where the magic happens! It is our central hub for announcements, discussions, upcoming events, and camaraderie. Stay informed by actively participating in voice and text chat, checking announcements, and joining conversations. Share your knowledge and experiences—it's what makes Pandamonium thrive.
+        <br />
+        <br />
+        <em>"Communication leads to community, that is, to understanding, intimacy and mutual valuing." - Rollo May</em>
+      </>
+    ),
   },
   {
     title: "Engagement",
-    content:
-      "Active engagement on Discord ensures you remain a member of our vibrant community. If you become inactive on Discord for an extended period, your Pandamonium membership may be subject to revocation. Leaving our Discord server indicates your departure from the community. To rejoin, you must submit a new application. Please be aware that repeated departures (whether due to inactivity or personal choice) may impact future re-entry. Remember, our collective strength thrives on shared experiences and connections. Let's keep the conversations alive on Discord!\n\n*\"There is no power for change greater than a community discovering what it cares about.\" - Margaret J. Wheatley*",
+    content: (
+      <>
+        Active engagement on Discord ensures you remain a member of our vibrant community. If you become inactive on Discord for an extended period, your Pandamonium membership may be subject to revocation. Leaving our Discord server indicates your departure from the community. To rejoin, you must submit a new application. Please be aware that repeated departures (whether due to inactivity or personal choice) may impact future re-entry. Remember, our collective strength thrives on shared experiences and connections. Let's keep the conversations alive on Discord!
+        <br />
+        <br />
+        <em>"There is no power for change greater than a community discovering what it cares about." - Margaret J. Wheatley</em>
+      </>
+    ),
   },
   {
     title: "Decision-Making and Leadership Development",
-    content:
-      "In Pandamonium, our leadership team plays a crucial role in shaping the community's direction. Comprising Officers and Community Managers, we work collaboratively to ensure community success through regular Discord communications, monthly leadership meetings, and ad-hoc town halls. We prioritize transparency, actively seek diverse perspectives, and focus on fostering a drama-free environment.\n\nBut we recognize that leadership isn't static—it's dynamic and ever-evolving. We actively encourage and support the growth of potential new leaders within our ranks. Whether you're a seasoned member or a fresh face, there's always room to step up and contribute. We are all volunteers, driven by passion and commitment. As circumstances change, we need individuals who are willing to move into leadership roles, filling gaps and ensuring continuity. Whether it's organizing events, moderating discussions, or spearheading initiatives, there's a place for you to make a difference. Speak to one of the Community Managers if you would like to learn more.\n\n*\"Leadership is not a person or a position. It is a complex moral relationship between people based on trust, obligation, commitment, emotion, and a shared vision of the good.\" - Piyushi Dhir*",
+    content: (
+      <>
+        In Pandamonium, our leadership team plays a crucial role in shaping the community's direction. Comprising Officers and Community Managers, we work collaboratively to ensure community success through regular Discord communications, monthly leadership meetings, and ad-hoc town halls. We prioritize transparency, actively seek diverse perspectives, and focus on fostering a drama-free environment.
+        <br />
+        <br />
+        But we recognize that leadership isn't static—it's dynamic and ever-evolving. We actively encourage and support the growth of potential new leaders within our ranks. Whether you're a seasoned member or a fresh face, there's always room to step up and contribute. We are all volunteers, driven by passion and commitment. As circumstances change, we need individuals who are willing to move into leadership roles, filling gaps and ensuring continuity. Whether it's organizing events, moderating discussions, or spearheading initiatives, there's a place for you to make a difference. Speak to one of the Community Managers if you would like to learn more.
+        <br />
+        <br />
+        <em>"Leadership is not a person or a position. It is a complex moral relationship between people based on trust, obligation, commitment, emotion, and a shared vision of the good." - Piyushi Dhir</em>
+      </>
+    ),
   },
   {
     title: "Events",
-    content:
-      "Within Pandamonium, we thrive on member-driven initiatives. Whether you're passionate about in-game adventures (e.g., raids, dungeons, quests, tournaments, loot crawls) or want to explore non-gaming activities (e.g., movie nights, art showcases, charity drives), you have the power to shape our events. If you're not sure how to get started, speak to any member of the leadership team for guidance. Collaborate with like-minded individuals on event planning, promotion, and execution.\n\n*\"They'll tell you you're too loud—that you need to wait your turn and ask the right people for permission. Do it anyway.\" - Alexandria Ocasio-Cortez*",
+    content: (
+      <>
+        Within Pandamonium, we thrive on member-driven initiatives. Whether you're passionate about in-game adventures (e.g., raids, dungeons, quests, tournaments, loot crawls) or want to explore non-gaming activities (e.g., movie nights, art showcases, charity drives), you have the power to shape our events. If you're not sure how to get started, speak to any member of the leadership team for guidance. Collaborate with like-minded individuals on event planning, promotion, and execution.
+        <br />
+        <br />
+        <em>"They'll tell you you're too loud—that you need to wait your turn and ask the right people for permission. Do it anyway." - Alexandria Ocasio-Cortez</em>
+      </>
+    ),
   },
   {
     title: "Feedback",
-    content:
-      "In Pandamonium, we value input. There are multiple channels where you can provide feedback, suggestions, and express any concerns. Within Discord there is the #open-a-ticket option to communicate privately with our Community Managers. We have a dedicated Suggestions post where you can share your ideas for improving our community, support the initiatives you believe in, and engage in constructive conversations with fellow members. In the Apprentice Review section, we evaluate individuals who are up for promotion to Member status. Bi-annual town halls occur, where all community members can engage live with the leadership team. Your insights matter—help us make informed decisions.\n\n*\"We all need people who will give us feedback. That's how we improve.\" - Bill Gates*",
+    content: (
+      <>
+        In Pandamonium, we value input. There are multiple channels where you can provide feedback, suggestions, and express any concerns. Within Discord there is the #open-a-ticket option to communicate privately with our Community Managers. We have a dedicated Suggestions post where you can share your ideas for improving our community, support the initiatives you believe in, and engage in constructive conversations with fellow members. In the Apprentice Review section, we evaluate individuals who are up for promotion to Member status. Bi-annual town halls occur, where all community members can engage live with the leadership team. Your insights matter—help us make informed decisions.
+        <br />
+        <br />
+        <em>"We all need people who will give us feedback. That's how we improve." - Bill Gates</em>
+      </>
+    ),
   },
   {
     title: "Live Streaming",
-    content:
-      "If you're interested in live streaming or recording in-game content with other community members, permission is essential. Obtain consent from those sharing voice channels or participating in the same in-game group. When planning community events for live streaming or recording, clearly indicate whether the content will be permanently saved on platforms like Twitch or YouTube. Transparency ensures a positive experience for all.\n\n*\"Privacy matters; privacy is what allows us to determine who we are and who we want to be.\" - Edward Snowden*",
+    content: (
+      <>
+        If you're interested in live streaming or recording in-game content with other community members, permission is essential. Obtain consent from those sharing voice channels or participating in the same in-game group. When planning community events for live streaming or recording, clearly indicate whether the content will be permanently saved on platforms like Twitch or YouTube. Transparency ensures a positive experience for all.
+        <br />
+        <br />
+        <em>"Privacy matters; privacy is what allows us to determine who we are and who we want to be." - Edward Snowden</em>
+      </>
+    ),
   },
   {
     title: "Ranks",
@@ -148,9 +225,13 @@ export default function Charter() {
                     {section.title}
                   </h2>
                   {section.content && (
-                    <p className="text-foreground/80 text-lg leading-relaxed whitespace-pre-wrap">
-                      {section.content}
-                    </p>
+                    <div className="text-foreground/80 text-lg leading-relaxed">
+                      {typeof section.content === 'string' ? (
+                        <p className="whitespace-pre-wrap">{section.content}</p>
+                      ) : (
+                        section.content
+                      )}
+                    </div>
                   )}
                   {section.subsections && (
                     <div className="space-y-6 mt-6">
@@ -159,9 +240,13 @@ export default function Charter() {
                           <h3 className="text-xl font-bold text-accent mb-2">
                             {subsection.subtitle}
                           </h3>
-                          <p className="text-foreground/80 leading-relaxed whitespace-pre-wrap">
-                            {subsection.text}
-                          </p>
+                          <div className="text-foreground/80 leading-relaxed">
+                            {typeof subsection.text === 'string' ? (
+                              <p className="whitespace-pre-wrap">{subsection.text}</p>
+                            ) : (
+                              subsection.text
+                            )}
+                          </div>
                         </div>
                       ))}
                     </div>
