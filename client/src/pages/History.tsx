@@ -6,24 +6,24 @@ const milestones = [
   { year: "October 2006", event: "First real-life gathering took place in Las Vegas, Nevada." },
   { year: "June 2007", event: "Phantom Knights dissolved and merged with Survivors on the Guk server in EverQuest II." },
   { year: "December 2011", event: "Core membership formed Pandamonium on the Darth Bandon server in Star Wars: The Old Republic." },
-  { year: "June 2012", event: "SWTOR Pandamonium moved to the Corellian Run server due to character transfers." },
-  { year: "September 2012", event: "SWTOR Pandamonium automatically moved to The Shadowlands server." },
+  { year: "June 2012", event: "SWTOR Pandamonium moved to the Corellian Run server." },
+  { year: "September 2012", event: "SWTOR Pandamonium moved to The Shadowlands server." },
   { year: "March 2014", event: "Pandamonium rebranded as an MMO Gaming Community and created a WildStar guild chapter, on the Thunderfoot realm." },
   { year: "September 2014", event: "WildStar Pandamonium moved to the Stormtalon realm." },
-  { year: "October 2014", event: "WildStar Pandamonium automatically moved to the Entity server." },
-  { year: "April 2015", event: "Created an Alliance guild chapter in World of Warcraft on the Proudmoore realm." },
-  { year: "May 2016", event: "Created a guild chapter in Final Fantasy XIV Online on the Leviathan world." },
+  { year: "October 2014", event: "WildStar Pandamonium moved to the Entity realm." },
+  { year: "April 2015", event: "Created an Alliance chapter in World of Warcraft on the Proudmoore realm." },
+  { year: "May 2016", event: "Created a chapter in Final Fantasy XIV Online on the Leviathan world." },
   { year: "August 2017", event: "Closed WildStar chapter due to inactivity." },
-  { year: "November 2017", event: "SWTOR Pandamonium automatically moved to the Star Forge server." },
-  { year: "February 2018", event: "Created a Horde guild chapter in World of Warcraft on the Zul'jin realm." },
+  { year: "November 2017", event: "SWTOR Pandamonium moved to the Star Forge server." },
+  { year: "February 2018", event: "Created a Horde chapter in World of Warcraft on the Zul'jin realm." },
   { year: "September 2019", event: "Transitioned to using Discord as primary community communication." },
-  { year: "May 2020", event: "Created a guild chapter in EverQuest II on the Halls of Fate server." },
-  { year: "May 2021", event: "Created pre-launch guild chapter in New World Pandamonium." },
+  { year: "May 2020", event: "Created a chapter in EverQuest II on the Halls of Fate server." },
+  { year: "May 2021", event: "Created pre-launch chapter in New World Pandamonium." },
   { year: "September 2021", event: "New World Pandamonium company formed on the Mictlan server." },
-  { year: "December 2021", event: "Amazon executed mandatory server consolidation; moved to Calnogor server." },
+  { year: "December 2021", event: "New World Pandamonium moved to Calnagor Server." },
   { year: "February 2022", event: "New World Pandamonium moved to the Orofena server." },
-  { year: "November 2022", event: "Created additional company on the Amarah fresh start server." },
-  { year: "April 2023", event: "Amazon executed mandatory server consolidations." },
+  { year: "November 2022", event: "Created additional New World Pandamonium company on the Amarah fresh start server." },
+  { year: "April 2023", event: "New World Pandamonium moved to the Lilith (from Amarah) and Maramma (from Orofena) servers." },
   { year: "August 2023", event: "Created pre-launch community chapter in Palia Pandamonium." },
   { year: "November 2023", event: "Palia converted from Pilot Chapter to Formal Chapter." },
   { year: "May 2024", event: "Pandamonium converted to a general gaming community. Closed inactive chapters." },
@@ -47,7 +47,7 @@ export default function History() {
               HISTORY
             </h1>
             <p className="text-lg text-foreground/80 text-center max-w-2xl mx-auto">
-              Over two decades of gaming, friendship, and community. From our roots in EverQuest to today, Pandamonium has grown into a thriving multi-game community.
+              The history of Pandamonium is not just about one guild, but of a group of wonderful friends who have been playing together in different games and under different names for many years. Our goal is to provide a welcoming community for all, regardless of play style.
             </p>
           </div>
         </section>

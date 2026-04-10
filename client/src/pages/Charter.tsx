@@ -6,7 +6,7 @@ const charterSections = [
   {
     title: "Mission Statement",
     content:
-      "Pandamonium is a member-driven gaming community guided by core values of inclusivity, equity, and accountability. Our mission is to foster a safe and drama-free environment where gamers can forge lasting connections while treating each other with respect. We continue to foster an environment that encourages collaboration, inclusivity, and fun in gaming.",
+      "Pandamonium is a member-driven gaming community guided by core values of inclusivity, equity, and accountability. Our mission is to foster a safe and drama-free environment where gamers can forge lasting connections while treating each other with respect.",
   },
   {
     title: "Demographics",
@@ -62,6 +62,11 @@ const charterSections = [
     title: "Feedback",
     content:
       "In Pandamonium, we value input. There are multiple channels where you can provide feedback, suggestions, and express any concerns. Your insights matter—help us make informed decisions.",
+  },
+  {
+    title: "Community Manager",
+    content:
+      "A Community Manager is instrumental in shaping the community's direction and growth. They are responsible for coordinating policy creation, enforcing these policies, setting community goals, and overseeing the selection of new chapters and leadership team members. Our Community Managers, many of whom have been steering the community since its inception in 2004, continue to foster an environment that encourages collaboration, inclusivity, and fun in gaming.",
   },
 ];
 

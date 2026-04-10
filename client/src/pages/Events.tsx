@@ -1,7 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Calendar, Clock, Users } from "lucide-react";
-import "./Events.css";
 
 export default function Events() {
   return (
