@@ -28,8 +28,8 @@ const milestones = [
   { year: "November 2023", event: "Palia converted from Pilot Chapter to Formal Chapter." },
   { year: "May 2024", event: "Pandamonium converted to a general gaming community. Closed inactive chapters." },
   { year: "October 2024", event: "Created additional company on the Cathaysia fresh start server." },
-  { year: "December 2024", event: "Amazon executed mandatory server consolidations." },
-  { year: "February 2025", event: "Amazon executed mandatory server consolidations." },
+  { year: "December 2024", event: "New World Pandamonium moved to the Morrow (from Lilith) and Rime (from Maramma) servers." },
+  { year: "February 2025", event: "New World Pandamonium moved to the Morrow (from Lilith) and Rime (from Maramma) servers." },
   { year: "April 2025", event: "Created pre-launch community chapter in Dune: Awakening Pandamonium." },
   { year: "October 2025", event: "Dune: Awakening converted from Pilot Chapter to Formal Chapter." },
 ];
