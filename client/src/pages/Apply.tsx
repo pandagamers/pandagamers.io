@@ -138,6 +138,21 @@ export default function Apply() {
               </div>
             </div>
 
+            {/* Clarification Note */}
+            <div className="p-6 bg-background border border-primary/20 rounded-lg mb-8">
+              <p className="text-sm text-foreground/70 text-center">
+                <span className="font-semibold text-primary">Note:</span> Pandamonium is a gaming community. If you're looking for Pandemonium Books & Games, please visit{" "}
+                <a href="https://pandemoniumbooks.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                  pandemoniumbooks.com
+                </a>
+                {" "}or join their{" "}
+                <a href="https://discord.gg/WN2vdCuYzB" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                  Discord
+                </a>
+                .
+              </p>
+            </div>
+
             {/* CTA */}
             <div className="text-center p-8 bg-card rounded-lg border border-primary/30">
               <h3 className="text-2xl font-bold text-primary mb-4">Ready to Apply?</h3>

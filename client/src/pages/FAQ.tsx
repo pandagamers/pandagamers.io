@@ -12,22 +12,22 @@ const faqItems: FAQItem[] = [
   {
     question: "Can I invite friends to the Pandamonium Discord server?",
     answer:
-      "Yes, you are welcome to share the server link with friends: <a href='https://discord.gg/pandagamers' target='_blank' rel='noopener noreferrer' className='text-primary hover:underline'>https://discord.gg/pandagamers</a>. We love welcoming new members who share our values of inclusivity, equity, and accountability.",
+      "Yes, you are welcome to share the server link with friends: https://discord.gg/pandagamers. We love welcoming new members who share our values of inclusivity, equity, and accountability.",
   },
   {
     question: "Does Pandamonium have a store?",
     answer:
-      "We do! We have Pandamonium-branded products available for purchase at <a href='https://pandamonium-shop.fourthwall.com/' target='_blank' rel='noopener noreferrer' className='text-primary hover:underline'>https://pandamonium-shop.fourthwall.com/</a>. Check out our merchandise to show your Pandamonium pride!"
+      "We do! We have Pandamonium-branded products available for purchase at https://pandamonium-shop.fourthwall.com. Check out our merchandise to show your Pandamonium pride!"
   },
   {
     question: "How do I create events for the community to participate in?",
     answer:
-      "Yes! You can create events in our Discord server. Type /create in one of the event channels and follow the Sesh bot instructions. Events are a great way to bring the community together for raids, dungeons, social hangouts, and more.",
+      "Once you have applied and been accepted as a member, you can create events in our Discord server. Type /create in one of the event channels and follow the Sesh bot instructions. Events are a great way to bring the community together for raids, dungeons, social hangouts, and more.",
   },
   {
     question: "What's the easiest way to contact the leadership team?",
     answer:
-      "You can open a ticket in the designated support channel in our Discord server. This will create a ticket accessible only to the Community Managers, who will then triage to determine who else should be involved in addressing your question or concern.",
+      "You can #open-a-ticket in our Discord server. This will create a ticket accessible only to the Community Managers, who will then triage to determine who else should be involved in addressing your question or concern.",
   },
 ];
 

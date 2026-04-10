@@ -2,7 +2,13 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Link } from "wouter";
 
-const charterSections = [
+interface ChapterSection {
+  title: string;
+  content: string;
+  subsections?: Array<{ subtitle: string; text: string }>;
+}
+
+const charterSections: ChapterSection[] = [
   {
     title: "Mission Statement",
     content:
@@ -64,24 +70,54 @@ const charterSections = [
       "In Pandamonium, we value input. There are multiple channels where you can provide feedback, suggestions, and express any concerns. Your insights matter—help us make informed decisions.",
   },
   {
-    title: "Community Manager",
-    content:
-      "A Community Manager is instrumental in shaping the community's direction and growth. They are responsible for coordinating policy creation, enforcing these policies, setting community goals, and overseeing the selection of new chapters and leadership team members. Our Community Managers, many of whom have been steering the community since its inception in 2004, continue to foster an environment that encourages collaboration, inclusivity, and fun in gaming.",
-  },
-  {
     title: "Live Streaming",
     content:
       "If you're interested in live streaming or recording in-game content with other community members, permission is essential. Obtain consent from those sharing voice channels or participating in the same in-game group. When planning community events for live streaming or recording, clearly indicate whether the content will be permanently saved on platforms like Twitch or YouTube. Transparency ensures a positive experience for all.\n\n\"Privacy matters; privacy is what allows us to determine who we are and who we want to be.\" - Edward Snowden",
   },
   {
-    title: "Chapters",
-    content:
-      "Formal Chapter\nA Formal Chapter is a game in which Pandamonium has an active presence. It has the full use of resources within our gaming community, including recruitment, leadership manpower, and more robust Discord channels to facilitate its growth and prosperity. A game becomes a Formal Chapter if there is sufficient community interest, suitable individuals willing to accept Officer roles, and the leadership team agrees with its transition.\n\nWe currently have three Formal Chapters: Dune: Awakening, Final Fantasy XIV Online, and Palia.\n\nPilot Chapter\nA Pilot Chapter is a game that Pandamonium is testing out to see if there is enough community interest to sustain a Formal Chapter. Typically, it is formed at game release. It does not have a standard leadership structure like a Formal Chapter. Rather, existing leadership team members and/or certain longstanding members take on the role of mentors to get things organized and vet potential future Officers. Applications through a Pilot Chapter are allowed and a Pilot Chapter can be converted to a Formal Chapter at any time once it has its own self-sustaining/non-transitional officer team and a reasonable number of active members. Alternatively, a Pilot Chapter can be closed if it is deemed to be a failed experiment.\n\nWe currently have no Pilot Chapters.\n\nNon-Chapters\nAny Senior Member may create an in-game community where there is not currently a Formal or Pilot Chapter. Only current community members can be invited to join. While these may not have the structured leadership or extensive resources of Formal Chapters, they are built on active engagement, dedication, and the shared values of our community (e.g., inclusivity, respect, drama-free environment).\n\nBe aware that by creating an in-game community, you're taking on a commitment. Starting one and then disappearing isn't acceptable. We expect active engagement and dedication. Life happens, circumstances change, and interests shift. If you can no longer manage it, you must first assign leadership to another active Senior Member and ensure a smooth transition. If no one else steps up or is available, you must disband the in-game community.",
+    title: "Ranks",
+    content: "",
+    subsections: [
+      {
+        subtitle: "Apprentice",
+        text: "An Apprentice is an individual who has applied for membership through the required channels, has agreed to abide by the published community charter, and has been welcomed into Pandamonium for a trial period during which time the Apprentice will be evaluated for compatibility and integrity. Apprentices may participate in all events for which they are eligible and may engage in conversation across all Discord channels to which they have access (note that while being active on Discord is encouraged for all community members, it is particularly important during the apprenticeship period because the community needs to determine whether the individual is a good fit). An Apprentice may be promoted to full membership upon recommendation by any Member or Senior Member and after a period of no less (though typically longer) than 30 days.",
+      },
+      {
+        subtitle: "Member",
+        text: "A Member is an individual who has completed the apprenticeship phase and has been approved for full membership by the leadership team. If a Member leaves the Pandamonium Discord server they must reapply for membership should they wish to return to the community.",
+      },
+      {
+        subtitle: "Senior Member",
+        text: "A Senior Member is an esteemed member who has demonstrated long-standing commitment and dedication to the community. Though the bestowing of this rank is sometimes subjective and dealt with on a case-by-case basis, the general guidelines include being a community member for 18+ months and generally active in voice and text chat on Pandamonium's Discord server. If a Senior Member leaves the Pandamonium Discord server, that is reflective of a decision to leave the community and they must reapply for membership should they wish to return.",
+      },
+      {
+        subtitle: "Officer",
+        text: "An Officer is an active participant within their Formal Chapter or the community generally. They are involved in community oversight and policy implementation. Though specific duties vary from person to person and chapter to chapter, they may include inviting and welcoming new apprentices, assisting members with general information, providing valuable and significant content to our Discord, and creating a positive environment in-game and on Discord. Officers are selected on an as-needed basis.",
+      },
+    ],
   },
   {
-    title: "Ranks",
+    title: "Community Manager",
     content:
-      "Apprentice\nAn Apprentice is an individual who has applied for membership through the required channels, has agreed to abide by the published community charter, and has been welcomed into Pandamonium for a trial period during which time the Apprentice will be evaluated for compatibility and integrity. Apprentices may participate in all events for which they are eligible and may engage in conversation across all Discord channels to which they have access (note that while being active on Discord is encouraged for all community members, it is particularly important during the apprenticeship period because the community needs to determine whether the individual is a good fit). An Apprentice may be promoted to full membership upon recommendation by any Member or Senior Member and after a period of no less (though typically longer) than 30 days.\n\nMember\nA Member is an individual who has completed the apprenticeship phase and has been approved for full membership by the leadership team. If a Member leaves the Pandamonium Discord server they must reapply for membership should they wish to return to the community.\n\nSenior Member\nA Senior Member is an esteemed member who has demonstrated long-standing commitment and dedication to the community. Though the bestowing of this rank is sometimes subjective and dealt with on a case-by-case basis, the general guidelines include being a community member for 18+ months and generally active in voice and text chat on Pandamonium's Discord server. If a Senior Member leaves the Pandamonium Discord server, that is reflective of a decision to leave the community and they must reapply for membership should they wish to return.\n\nOfficer\nAn Officer is an active participant within their Formal Chapter or the community generally. They are involved in community oversight and policy implementation. Though specific duties vary from person to person and chapter to chapter, they may include inviting and welcoming new apprentices, assisting members with general information, providing valuable and significant content to our Discord, and creating a positive environment in-game and on Discord. Officers are selected on an as-needed basis.",
+      "A Community Manager is instrumental in shaping the community's direction and growth. They are responsible for coordinating policy creation, enforcing these policies, setting community goals, and overseeing the selection of new chapters and leadership team members. Our Community Managers, many of whom have been steering the community since its inception in 2004, continue to foster an environment that encourages collaboration, inclusivity, and fun in gaming.",
+  },
+  {
+    title: "Chapters",
+    content: "",
+    subsections: [
+      {
+        subtitle: "Formal Chapter",
+        text: "A Formal Chapter is a game in which Pandamonium has an active presence. It has the full use of resources within our gaming community, including recruitment, leadership manpower, and more robust Discord channels to facilitate its growth and prosperity. A game becomes a Formal Chapter if there is sufficient community interest, suitable individuals willing to accept Officer roles, and the leadership team agrees with its transition.\n\nWe currently have three Formal Chapters: Dune: Awakening, Final Fantasy XIV Online, and Palia.",
+      },
+      {
+        subtitle: "Pilot Chapter",
+        text: "A Pilot Chapter is a game that Pandamonium is testing out to see if there is enough community interest to sustain a Formal Chapter. Typically, it is formed at game release. It does not have a standard leadership structure like a Formal Chapter. Rather, existing leadership team members and/or certain longstanding members take on the role of mentors to get things organized and vet potential future Officers. Applications through a Pilot Chapter are allowed and a Pilot Chapter can be converted to a Formal Chapter at any time once it has its own self-sustaining/non-transitional officer team and a reasonable number of active members. Alternatively, a Pilot Chapter can be closed if it is deemed to be a failed experiment.\n\nWe currently have no Pilot Chapters.",
+      },
+      {
+        subtitle: "Non-Chapters",
+        text: "Any Senior Member may create an in-game community where there is not currently a Formal or Pilot Chapter. Only current community members can be invited to join. While these may not have the structured leadership or extensive resources of Formal Chapters, they are built on active engagement, dedication, and the shared values of our community (e.g., inclusivity, respect, drama-free environment).\n\nBe aware that by creating an in-game community, you're taking on a commitment. Starting one and then disappearing isn't acceptable. We expect active engagement and dedication. Life happens, circumstances change, and interests shift. If you can no longer manage it, you must first assign leadership to another active Senior Member and ensure a smooth transition. If no one else steps up or is available, you must disband the in-game community.",
+      },
+    ],
   },
 ];
 
@@ -112,9 +148,25 @@ export default function Charter() {
                   <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
                     {section.title}
                   </h2>
-                  <p className="text-foreground/80 text-lg leading-relaxed whitespace-pre-wrap">
-                    {section.content}
-                  </p>
+                  {section.content && (
+                    <p className="text-foreground/80 text-lg leading-relaxed whitespace-pre-wrap">
+                      {section.content}
+                    </p>
+                  )}
+                  {section.subsections && (
+                    <div className="space-y-6 mt-6">
+                      {section.subsections.map((subsection, subIndex) => (
+                        <div key={subIndex}>
+                          <h3 className="text-xl font-bold text-accent mb-2">
+                            {subsection.subtitle}
+                          </h3>
+                          <p className="text-foreground/80 leading-relaxed whitespace-pre-wrap">
+                            {subsection.text}
+                          </p>
+                        </div>
+                      ))}
+                    </div>
+                  )}
                 </div>
               ))}
             </div>
