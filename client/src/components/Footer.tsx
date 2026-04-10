@@ -13,7 +13,7 @@ export default function Footer() {
           <div>
             <h3 className="text-lg font-bold text-primary mb-4 uppercase">About</h3>
             <p className="text-foreground/80 text-sm leading-relaxed">
-              Pandamonium is member-driven gaming community guided by core values of inclusivity, equity, and accountability.
+              Pandamonium is a member-driven gaming community guided by core values of inclusivity, equity, and accountability.
             </p>
           </div>
 
