@@ -98,6 +98,24 @@ function vitePluginManusDebugCollector(): Plugin {
     },
 
     configureServer(server: ViteDevServer) {
+      // Security headers middleware
+      server.middlewares.use((req, res, next) => {
+        // HTTPS redirect
+        const proto = req.headers["x-forwarded-proto"] || "http";
+        if (proto === "http" && req.url !== "/__manus__/debug-collector.js") {
+          const host = req.headers.host || "localhost";
+          return res.writeHead(301, { Location: `https://${host}${req.url}` }).end();
+        }
+
+        // Security headers
+        res.setHeader("Content-Security-Policy", "script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com");
+        res.setHeader("X-Frame-Options", "SAMEORIGIN");
+        res.setHeader("X-Content-Type-Options", "nosniff");
+        res.setHeader("Referrer-Policy", "no-referrer-when-downgrade");
+        res.setHeader("Permissions-Policy", "geolocation=(self \"https://pandagamers.io\"), microphone=()");
+        next();
+      });
+
       // POST /__manus__/logs: Browser sends logs (written directly to files)
       server.middlewares.use("/__manus__/logs", (req, res, next) => {
         if (req.method !== "POST") {

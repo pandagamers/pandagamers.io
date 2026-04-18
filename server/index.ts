@@ -10,6 +10,25 @@ async function startServer() {
   const app = express();
   const server = createServer(app);
 
+  // HTTPS redirect middleware
+  app.use((req, res, next) => {
+    const proto = req.headers["x-forwarded-proto"] || "http";
+    if (proto === "http") {
+      return res.redirect(301, `https://${req.headers.host}${req.url}`);
+    }
+    next();
+  });
+
+  // Security headers middleware
+  app.use((req, res, next) => {
+    res.setHeader("Content-Security-Policy", "script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com");
+    res.setHeader("X-Frame-Options", "SAMEORIGIN");
+    res.setHeader("X-Content-Type-Options", "nosniff");
+    res.setHeader("Referrer-Policy", "no-referrer-when-downgrade");
+    res.setHeader("Permissions-Policy", "geolocation=(self \"https://pandagamers.io\"), microphone=()");
+    next();
+  });
+
   // Serve static files from dist/public in production
   const staticPath =
     process.env.NODE_ENV === "production"
