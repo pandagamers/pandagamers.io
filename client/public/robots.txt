@@ -1,0 +1,13 @@
+User-agent: *
+Allow: /
+Allow: /charter
+Allow: /history
+Allow: /games
+Allow: /events
+Allow: /faq
+Allow: /leadership
+Allow: /apply
+Disallow: /admin
+Disallow: /private
+
+Sitemap: https://pandagamers.io/sitemap.xml
