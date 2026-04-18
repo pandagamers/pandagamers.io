@@ -153,27 +153,7 @@ export default function Apply() {
               </p>
             </div>
 
-            {/* CTA */}
-            <div className="text-center p-8 bg-card rounded-lg border border-primary/30">
-              <h3 className="text-2xl font-bold text-primary mb-4">Ready to Apply?</h3>
-              <p className="text-foreground/80 mb-6">
-                Join our Discord server and start the application process today. We look forward to meeting you!
-              </p>
-              <Button
-                asChild
-                className="bg-accent hover:bg-accent/90 text-accent-foreground font-bold uppercase text-lg px-8 py-6 h-auto"
-              >
-                <a
-                  href="https://discord.gg/pandagamers"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-2 justify-center"
-                >
-                  <MessageCircle className="w-5 h-5" />
-                  Join Discord Server
-                </a>
-              </Button>
-            </div>
+
           </div>
         </section>
       </main>

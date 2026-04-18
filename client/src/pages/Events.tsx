@@ -61,10 +61,10 @@ export default function Events() {
               <div className="p-6 md:p-8">
                 <h2 className="text-2xl md:text-3xl font-bold text-primary mb-6">Pandamonium Community Calendar</h2>
                 
-                <div className="sesh-calendar-wrapper overflow-hidden rounded-lg border border-primary/20 bg-background/50">
+                <div className="sesh-calendar-wrapper overflow-hidden rounded-lg border border-primary/20 bg-background/50 h-96 md:h-screen">
                   <iframe
                     src="https://sesh.fyi/calendar/204984438596042752"
-                    className="sesh-calendar-iframe"
+                    className="w-full h-full"
                     frameBorder="0"
                     scrolling="auto"
                     allowTransparency
