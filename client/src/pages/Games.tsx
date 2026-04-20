@@ -6,17 +6,17 @@ export default function Games() {
   const games = [
     {
       title: "Dune: Awakening",
-      description: "An open-world survival MMO set in the Dune universe. Build your settlement, form alliances, and explore the vast deserts of Arrakis with our community.",
+      description: "An open-world survival craft game with MMO elements set in the Dune universe. Join our in-game community for primarily PVE-focused group activity... and the occasional pitched battle for spice out on the sands.",
       icon: "🏜️",
-      features: ["Open-World Survival", "Settlement Building", "Alliances", "PvP & PvE"],
+      features: ["Cross-Faction Play", "DD Farming Operations", "Overland Testing Station Runs", "Fully Equipped Guild Bases"],
       link: "https://www.duneawakening.com/"
     },
     {
       title: "Final Fantasy XIV Online",
-      description: "A massively multiplayer online role-playing game set in the world of Eorzea. Join our Free Company and experience epic raids, dungeons, and community events.",
+      description: "A MMORPG set in the lands of Eorzea and beyond. As a part of our Free Company, you'll be able to join in for roulettes, learning groups, and regular events covering all areas of game content.",
       icon: "⚔️",
-      features: ["Free Company Community", "Raid Groups", "Dungeon Runs", "Social Events"],
-      link: "https://www.finalfantasyxiv.com/"
+      features: ["FC Community with Daily Buffs", "Roulettes", "Learning and Farming Groups", "PvE, PvP, and Social Events"],
+      link: "https://na.finalfantasyxiv.com/lodestone/community_finder/bfb15655521ef569d339c93e1b63947a97b84f9c/"
     },
     {
       title: "Palia",
