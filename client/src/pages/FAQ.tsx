@@ -31,6 +31,70 @@ const faqItems: FAQItem[] = [
   },
 ];
 
+function renderAnswerWithLinks(text: string) {
+  const parts: (string | React.ReactNode)[] = [];
+  let currentText = text;
+
+  // Handle Discord link
+  if (currentText.includes("https://discord.gg/pandagamers")) {
+    const [before, after] = currentText.split("https://discord.gg/pandagamers");
+    parts.push(before);
+    parts.push(
+      <a
+        key="discord-link"
+        href="https://discord.gg/pandagamers"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-primary hover:underline font-semibold"
+      >
+        https://discord.gg/pandagamers
+      </a>
+    );
+    parts.push(after);
+    return parts;
+  }
+
+  // Handle shop link
+  if (currentText.includes("https://pandamonium-shop.fourthwall.com")) {
+    const [before, after] = currentText.split("https://pandamonium-shop.fourthwall.com");
+    parts.push(before);
+    parts.push(
+      <a
+        key="shop-link"
+        href="https://pandamonium-shop.fourthwall.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-primary hover:underline font-semibold"
+      >
+        https://pandamonium-shop.fourthwall.com
+      </a>
+    );
+    parts.push(after);
+    return parts;
+  }
+
+  // Handle #open-a-ticket link
+  if (currentText.includes("#open-a-ticket")) {
+    const [before, after] = currentText.split("#open-a-ticket");
+    parts.push(before);
+    parts.push(
+      <a
+        key="ticket-link"
+        href="https://discord.com/channels/204984438596042752/985222513640497233"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-primary hover:underline font-semibold"
+      >
+        #open-a-ticket
+      </a>
+    );
+    parts.push(after);
+    return parts;
+  }
+
+  return text;
+}
+
 function FAQItem({ item, isOpen, onToggle }: { item: FAQItem; isOpen: boolean; onToggle: () => void }) {
   return (
     <div className="border border-primary/30 rounded-lg overflow-hidden">
@@ -47,7 +111,7 @@ function FAQItem({ item, isOpen, onToggle }: { item: FAQItem; isOpen: boolean; o
       </button>
       {isOpen && (
         <div className="px-6 py-4 bg-card/50 border-t border-primary/30">
-          <p className="text-foreground/80 leading-relaxed whitespace-pre-wrap">{item.answer}</p>
+          <p className="text-foreground/80 leading-relaxed">{renderAnswerWithLinks(item.answer)}</p>
         </div>
       )}
     </div>

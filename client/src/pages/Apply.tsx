@@ -149,7 +149,15 @@ export default function Apply() {
                 <a href="https://discord.gg/WN2vdCuYzB" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
                   Discord
                 </a>
-                . They are not affiliated with Pandamonium.
+                . They are not affiliated with Pandamonium. If you're looking for the Pandemonium Gaming Community within Conan Exiles, visit{" "}
+                <a href="https://pand.life" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                  pand.life
+                </a>
+                {" "}or join their{" "}
+                <a href="https://discord.gg/pandemonium" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                  Discord
+                </a>
+                . Neither are affiliated with Pandamonium.
               </p>
             </div>
 
