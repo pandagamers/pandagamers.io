@@ -141,7 +141,7 @@ export default function Apply() {
             {/* Clarification Note */}
             <div className="p-6 bg-background border border-primary/20 rounded-lg mb-8">
               <p className="text-sm text-foreground/70 text-center">
-                <span className="font-semibold text-primary">Note:</span> Pandamonium is an online gaming community. If you're looking for Pandemonium Books & Games, the store located in Cambridge, Massachusetts, visit{" "}
+                <span className="font-semibold text-primary">Note:</span> If you're looking for Pandemonium Books & Games, the store located in Cambridge, Massachusetts, visit{" "}
                 <a href="https://pandemoniumbooks.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
                   pandemoniumbooks.com
                 </a>
@@ -149,7 +149,7 @@ export default function Apply() {
                 <a href="https://discord.gg/WN2vdCuYzB" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
                   Discord
                 </a>
-                . They are not affiliated with Pandamonium. If you're looking for the Pandemonium Gaming Community within Conan Exiles, visit{" "}
+                . If you're looking for the Pandemonium Gaming Community within Conan Exiles, visit{" "}
                 <a href="https://pand.life" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
                   pand.life
                 </a>
@@ -157,7 +157,7 @@ export default function Apply() {
                 <a href="https://discord.gg/pandemonium" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
                   Discord
                 </a>
-                . Neither are affiliated with Pandamonium.
+                .
               </p>
             </div>
 

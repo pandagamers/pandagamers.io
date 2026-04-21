@@ -144,7 +144,7 @@ export default function Privacy() {
               <div>
                 <h2 className="text-3xl font-bold text-primary mb-4">Changes to This Document</h2>
                 <p className="text-foreground/80 leading-relaxed">
-                  This version of our privacy statement took effect December 30th, 2025. We will post any new versions of this statement at this URL.
+                  This version of our privacy statement took effect December 30th, 2025.
                 </p>
               </div>
             </div>
