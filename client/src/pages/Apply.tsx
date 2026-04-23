@@ -1,5 +1,7 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { Button } from "@/components/ui/button";
+import { CheckCircle, MessageCircle } from "lucide-react";
 import { Link } from "wouter";
 
 export default function Apply() {
@@ -12,181 +14,154 @@ export default function Apply() {
         <section className="py-16 md:py-24 bg-card border-b border-primary/30">
           <div className="container">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 text-primary text-center">
-              PANDAMONIUM APPRENTICESHIP PROCESS
+              APPLY
             </h1>
             <p className="text-lg text-foreground/80 text-center max-w-2xl mx-auto">
-              Guidance for reviewing applications and evaluating apprentice promotions
+              Interested in joining Pandamonium? We would love to have you! Here is how to apply.
             </p>
           </div>
         </section>
 
-        {/* Main Content */}
+        {/* Application Process */}
         <section className="py-16 md:py-24">
           <div className="container max-w-4xl">
-            {/* Introduction */}
-            <div className="mb-12 p-8 bg-card rounded-lg border border-primary/30">
-              <p className="text-foreground/80 leading-relaxed mb-4">
-                Pandamonium is a member-driven community and as such we need feedback from all our members. We cannot emphasize enough that we greatly appreciate and always take into consideration all feedback on potential new members.
+            {/* Step 1: Review Charter */}
+            <div className="mb-16 p-8 bg-card rounded-lg border border-primary/30">
+              <div className="flex items-start gap-4 mb-4">
+                <div className="flex-shrink-0 w-10 h-10 bg-accent rounded-full flex items-center justify-center">
+                  <span className="text-accent-foreground font-bold text-lg">1</span>
+                </div>
+                <div className="flex-1">
+                  <h2 className="text-2xl font-bold text-primary mb-3">Review Our Charter</h2>
+                  <p className="text-foreground/80 mb-4">
+                    Start by reading our community charter. It outlines our core values, membership criteria, and the principles that guide our community. Make sure you align with our values of inclusivity, equity, and accountability.
+                  </p>
+                  <Link href="/charter">
+                    <a className="inline-block px-6 py-2 bg-primary hover:bg-primary/90 text-primary-foreground font-bold uppercase rounded transition-colors">
+                      Read Charter
+                    </a>
+                  </Link>
+                </div>
+              </div>
+            </div>
+
+            {/* Step 2: Join Discord */}
+            <div className="mb-16 p-8 bg-card rounded-lg border border-primary/30">
+              <div className="flex items-start gap-4 mb-4">
+                <div className="flex-shrink-0 w-10 h-10 bg-accent rounded-full flex items-center justify-center">
+                  <span className="text-accent-foreground font-bold text-lg">2</span>
+                </div>
+                <div className="flex-1">
+                  <h2 className="text-2xl font-bold text-primary mb-3">Join Our Discord Server</h2>
+                  <p className="text-foreground/80 mb-4">
+                    Join our Discord server by clicking the link below. This is where our community lives and where you will submit your application.
+                  </p>
+                  <Button
+                    asChild
+                    className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold uppercase"
+                  >
+                    <a
+                      href="https://discord.gg/pandagamers"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center gap-2"
+                    >
+                      <MessageCircle className="w-5 h-5" />
+                      Join Discord
+                    </a>
+                  </Button>
+                </div>
+              </div>
+            </div>
+
+            {/* Step 3: Submit Application */}
+            <div className="mb-16 p-8 bg-card rounded-lg border border-primary/30">
+              <div className="flex items-start gap-4 mb-4">
+                <div className="flex-shrink-0 w-10 h-10 bg-accent rounded-full flex items-center justify-center">
+                  <span className="text-accent-foreground font-bold text-lg">3</span>
+                </div>
+                <div className="flex-1">
+                  <h2 className="text-2xl font-bold text-primary mb-3">Submit Your Application</h2>
+                  <p className="text-foreground/80 mb-4">
+                    Once you have joined the Discord server, navigate to the <span className="font-mono text-primary">#apply</span> channel. Type <span className="font-mono text-primary">apply</span> and follow the directions in the channel created under your name.
+                  </p>
+                  <p className="text-foreground/80">
+                    Your application will be reviewed by all community members and approved or denied once a consensus has been reached. This process takes at least 24 hours.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Step 4: Wait for Approval */}
+            <div className="mb-16 p-8 bg-card rounded-lg border border-primary/30">
+              <div className="flex items-start gap-4 mb-4">
+                <div className="flex-shrink-0 w-10 h-10 bg-accent rounded-full flex items-center justify-center">
+                  <span className="text-accent-foreground font-bold text-lg">4</span>
+                </div>
+                <div className="flex-1">
+                  <h2 className="text-2xl font-bold text-primary mb-3">Await Approval</h2>
+                  <p className="text-foreground/80 mb-4">
+                    Once your application has been reviewed, you will be notified via direct message on Discord. If you have any questions during the process, reach out to a Community Manager using the <span className="font-mono text-primary">#open-a-ticket</span> channel.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Requirements */}
+            <div className="p-8 bg-card rounded-lg border border-primary/30 mb-16">
+              <h2 className="text-2xl font-bold text-primary mb-6">Requirements</h2>
+              <div className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
+                  <p className="text-foreground/80">
+                    <span className="font-bold text-primary">Must be 18 years or older</span> - No exceptions.
+                  </p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
+                  <p className="text-foreground/80">
+                    <span className="font-bold text-primary">Agree with our values</span> - Inclusivity, equity, and accountability.
+                  </p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
+                  <p className="text-foreground/80">
+                    <span className="font-bold text-primary">Zero-tolerance policy</span> - We do not tolerate bigotry, racism, homophobia, transphobia, xenophobia, or misogyny.
+                  </p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <CheckCircle className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
+                  <p className="text-foreground/80">
+                    <span className="font-bold text-primary">Commitment to community</span> - We value active participation and engagement.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Clarification Note */}
+            <div className="p-6 bg-background border border-primary/20 rounded-lg mb-8">
+              <p className="text-sm text-foreground/70 text-left">
+                <span className="font-semibold text-primary">Note:</span> If you're looking for Pandemonium Books & Games, the store located in Cambridge, Massachusetts, visit{" "}
+                <a href="https://pandemoniumbooks.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                  pandemoniumbooks.com
+                </a>
+                {" "}or join their{" "}
+                <a href="https://discord.gg/WN2vdCuYzB" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                  Discord
+                </a>
+. If you're looking for the Pandemonium Gaming Community within Conan Exiles, visit{" "}
+                <a href="https://pand.life" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                  pand.life
+                </a>
+                {" "}or join their{" "}
+                <a href="https://discord.gg/pandemonium" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                  Discord
+                </a>
+                . Neither are affiliated with Pandamonium.
               </p>
             </div>
 
-            {/* Can't See Channels Section */}
-            <div className="mb-12">
-              <h2 className="text-2xl font-bold text-accent mb-6 uppercase tracking-wide">
-                Can't See the Open Applications Section or Apprentice Review Channels?
-              </h2>
-              <div className="bg-card rounded-lg border border-primary/30 p-8">
-                <p className="text-foreground/80 mb-6">
-                  Scroll to the top of the channel listing and click on <span className="font-mono text-primary">"Channels & Roles."</span> Then click on <span className="font-mono text-primary">"Browse Channels"</span> on desktop or <span className="font-mono text-primary">"All Channels"</span> on mobile.
-                </p>
-                <div className="space-y-4 text-foreground/80">
-                  <div>
-                    <p className="font-semibold text-primary mb-2">For Apprentice Reviews:</p>
-                    <p className="ml-4">Scroll down to the Information section and click on the checkbox next to <span className="font-mono text-primary">"apprentice_review."</span></p>
-                  </div>
-                  <div>
-                    <p className="font-semibold text-primary mb-2">For Applications:</p>
-                    <p className="ml-4">Scroll down to the <span className="font-mono text-primary">"Open Applications"</span> category (third category down). Click on <span className="font-mono text-primary">"Follow Category."</span></p>
-                  </div>
-                </div>
-              </div>
-            </div>
 
-            {/* Applications Section */}
-            <div className="mb-12">
-              <h2 className="text-2xl font-bold text-accent mb-6 uppercase tracking-wide">Applications</h2>
-              <div className="bg-card rounded-lg border border-primary/30 p-8">
-                <p className="text-foreground/80 leading-relaxed">
-                  Once a community application has been submitted, it is accessible by those ranked as <strong>Member</strong> and above in the <strong>Open Applications</strong> category. All community members are encouraged and welcome to submit their comments within those underlying channels. A simple Yes or No reaction will also suffice. Once an applicant has been accepted, future issues or concerns should be brought directly to the attention of{" "}
-                  <Link href="/leadership">
-                    <a className="text-primary hover:underline font-semibold">Leadership</a>
-                  </Link>
-                  .
-                </p>
-              </div>
-            </div>
-
-            {/* Criteria For Review Section */}
-            <div className="mb-12">
-              <h2 className="text-2xl font-bold text-accent mb-6 uppercase tracking-wide">Criteria For Review</h2>
-              <div className="bg-card rounded-lg border border-primary/30 p-8 space-y-6">
-                <div>
-                  <p className="font-semibold text-primary mb-3">1. Did they take the application process seriously?</p>
-                  <p className="text-foreground/80 ml-4">
-                    Did they provide enough information so that we were able to get a basic sense of them as a person?
-                  </p>
-                </div>
-                <div>
-                  <p className="font-semibold text-primary mb-3">2. Do they appear to be a well-rounded player?</p>
-                  <p className="text-foreground/80 ml-4">
-                    If they go on in great detail about their min-maxing experience and singular focus, giving no real detail about who they are as a person, they likely won't fit in here. Our community is a diverse group of people with a variety of playstyles and our base is built on social interaction. If someone is not interested in more than hardcore content, this is likely not the right place for them.
-                  </p>
-                </div>
-                <div>
-                  <p className="font-semibold text-primary mb-3">3. Did you get a good or bad vibe?</p>
-                  <p className="text-foreground/80 ml-4">
-                    We realize this is hard to quantify. Even if a specific issue doesn't jump out at you, getting a bad vibe from an app is usually reason enough to deny.
-                  </p>
-                </div>
-                <div>
-                  <p className="font-semibold text-primary mb-3">4. Does it align with our diversity statement?</p>
-                  <p className="text-foreground/80 ml-4">
-                    <em>"Our members represent differences in race, age, gender, politics, religion, and sexual orientation. Those inclined towards bigoted, racist, homophobic, transphobic, xenophobic, or misogynistic behavior need not apply. You wouldn't like it here, and we wouldn't like to have you."</em> This is a no brainer.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Keep In Mind Section */}
-            <div className="mb-12">
-              <h2 className="text-2xl font-bold text-accent mb-6 uppercase tracking-wide">Keep In Mind</h2>
-              <div className="bg-card rounded-lg border border-primary/30 p-8 space-y-6">
-                <div>
-                  <p className="font-semibold text-primary mb-3">1. For friends or family of current members</p>
-                  <p className="text-foreground/80 ml-4">
-                    Please encourage them to go through the process as if we were strangers (because most of us are). It's unlikely they would be denied entry due to a crappy application, but it's not the greatest of first impressions that should be given to our members.
-                  </p>
-                </div>
-                <div>
-                  <p className="font-semibold text-primary mb-3">2. Keep comments constructive</p>
-                  <p className="text-foreground/80 ml-4">
-                    The application comments section should not be used as a forum to convince other members that their point of view is wrong. Comedic banter is fine. Replying to say you agree is fine. Asking people to justify their position or calling them out in some negative way is not productive. People should not worry that they are going to be attacked (even if done respectfully) for their opinions. Simply share your thoughts on an app and let other folks do the same. Trust that the process will work.
-                  </p>
-                </div>
-                <div>
-                  <p className="font-semibold text-primary mb-3">3. Review each application on its own merit</p>
-                  <p className="text-foreground/80 ml-4">
-                    Do not use past applications as justification for approving or denying a new one. All apps should be reviewed on their own.
-                  </p>
-                </div>
-                <div>
-                  <p className="font-semibold text-primary mb-3">4. Be respectful of fellow community members</p>
-                  <p className="text-foreground/80 ml-4">
-                    Above all else, be respectful of your fellow community members. If you take significant issue with the comments someone is making and feel like your response will be harsher than is appropriate, please speak with a member of{" "}
-                    <Link href="/leadership">
-                      <a className="text-primary hover:underline font-semibold">Leadership</a>
-                    </Link>
-                    .
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* Apprentice Reviews Section */}
-            <div className="mb-12">
-              <h2 className="text-2xl font-bold text-accent mb-6 uppercase tracking-wide">Apprentice Reviews</h2>
-              <div className="bg-card rounded-lg border border-primary/30 p-8 space-y-6">
-                <div>
-                  <p className="text-foreground/80 leading-relaxed mb-4">
-                    After a minimum of 30 days, Apprentices are put up for an initial review with the community. We encourage members to be vocal about their experiences with Apprentices, whether the commentary is good or bad. We use this information to approve or deny an Apprentice for membership, so please be vocal in passing on these thoughts.
-                  </p>
-                </div>
-
-                <div className="bg-background/50 p-6 rounded border border-primary/20">
-                  <p className="font-semibold text-primary mb-4">Voting Guidelines:</p>
-                  <ul className="space-y-3 text-foreground/80 text-sm">
-                    <li>
-                      <strong className="text-primary">Yes:</strong> If you've had a positive interaction with an Apprentice, that's enough for a "Yes" vote.
-                    </li>
-                    <li>
-                      <strong className="text-primary">Needs More Time:</strong> Any yellow flags warrant a "Needs more time" vote.
-                    </li>
-                    <li>
-                      <strong className="text-primary">No:</strong> A "No" vote is for red flags.
-                    </li>
-                  </ul>
-                </div>
-
-                <div>
-                  <p className="text-foreground/80">
-                    Please share any related information for a "No" or "Needs more time" vote in the post or with a Community Manager. Before an Apprentice is promoted to Member, any comments on them will be deleted.
-                  </p>
-                </div>
-
-                <div>
-                  <p className="text-foreground/80 mb-3">
-                    An Apprenticeship can be extended for another two weeks due to inactivity or not enough "Yes" votes at which time they'll be up for a final review.
-                  </p>
-                </div>
-
-                <div className="bg-accent/10 border border-accent/30 p-6 rounded">
-                  <p className="font-semibold text-accent mb-3">Important:</p>
-                  <p className="text-foreground/80 text-sm">
-                    If there are issues with an Apprentice, don't wait for the review to be posted. Contact a member of the leadership team or{" "}
-                    <a href="https://discord.com/channels/204984438596042752/985222513640497233" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">
-                      #open-a-ticket
-                    </a>
-                    {" "}with the Community Managers so the issue can be addressed.
-                  </p>
-                </div>
-
-                <div className="border-t border-primary/20 pt-6">
-                  <p className="text-foreground/80 italic">
-                    The membership process was always intended to be collaborative so that everyone is comfortable with who is coming in the door. Thus far we think it's worked out very well. Keep it up!
-                  </p>
-                </div>
-              </div>
-            </div>
           </div>
         </section>
       </main>
