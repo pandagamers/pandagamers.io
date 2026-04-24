@@ -7,11 +7,16 @@
     <title>Pandamonium Gaming Community</title>
     <script>
       // GitHub Pages SPA routing workaround
-      // When a 404 occurs, redirect to index.html with the original path preserved
-      const redirect = sessionStorage.redirect;
-      delete sessionStorage.redirect;
-      if (redirect && redirect !== location.href) {
-        history.replaceState(null, null, redirect);
+      // Store the current path before redirecting to index.html
+      const path = window.location.pathname;
+      const base = '/pandagamers.io';
+      
+      // Only redirect if this is not the root path
+      if (path !== base + '/' && path !== base) {
+        // Store the path for the app to use
+        sessionStorage.redirect = path;
+        // Redirect to the base index.html
+        window.location.href = base + '/';
       }
     </script>
   </head>

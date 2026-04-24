@@ -29,6 +29,22 @@ function ScrollToTop() {
 }
 
 function Router() {
+  const [, setLocation] = useLocation();
+  
+  useEffect(() => {
+    // Handle GitHub Pages SPA routing redirect
+    const redirect = sessionStorage.redirect;
+    if (redirect) {
+      delete sessionStorage.redirect;
+      // Remove the base path to get the route
+      const basePath = '/pandagamers.io';
+      const route = redirect.startsWith(basePath) 
+        ? redirect.slice(basePath.length) 
+        : redirect;
+      setLocation(route || '/');
+    }
+  }, [setLocation]);
+  
   return (
     <>
       <ScrollToTop />
