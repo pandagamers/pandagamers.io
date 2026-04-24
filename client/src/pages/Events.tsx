@@ -12,7 +12,7 @@ export default function Events() {
         <section className="py-16 md:py-24 bg-card border-b border-primary/30">
           <div className="container">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 text-primary text-center">
-              EVENTS & CALENDAR
+              EVENTS
             </h1>
             <p className="text-lg text-foreground/80 text-center max-w-2xl mx-auto">
               Stay up to date with Pandamonium community events, raids, dungeons, and gatherings. Check our calendar for upcoming activities across all our games.

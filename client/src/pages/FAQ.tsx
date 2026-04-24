@@ -49,9 +49,29 @@ const faqItems: FAQItem[] = [
     ),
   },
   {
+    question: "What does \"member-driven\" mean?",
+    answer: (
+      <>
+        Pandamonium's leadership team provides support and tools to ensure our gaming community is safe and healthy, but all events are led by our members. We're all gamers and adults here, and we all enjoy different aspects of the games we play. If you're looking for a specific type of event or structured play, we encourage you to be the change you want to see in the community. Our leadership team is here to support your initiatives with Discord tools and guidance to help you succeed.
+      </>
+    ),
+  },
+  {
     question: "How do I create events for the community to participate in?",
-    answer:
-      "Once you have applied and been accepted as a member, you can create events in our Discord server. Type /create in one of the event channels and follow the Sesh bot instructions. Events are a great way to bring the community together for raids, dungeons, social hangouts, and more.",
+    answer: (
+      <>
+        Once you have applied and been accepted as a member, you can create events in our Discord server. Go to{" "}
+        <a
+          href="https://sesh.fyi/dashboard/204984438596042752"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-primary hover:underline font-semibold"
+        >
+          Sesh
+        </a>
+        , authorize your Discord, and click Create Event. Events are a great way to bring the community together for raids, dungeons, social hangouts, and more.
+      </>
+    ),
   },
   {
     question: "What's the easiest way to contact the leadership team?",
@@ -107,7 +127,7 @@ export default function FAQ() {
         <section className="py-16 md:py-24 bg-card border-b border-primary/30">
           <div className="container">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 text-primary text-center">
-              FREQUENTLY ASKED QUESTIONS
+              FAQ
             </h1>
             <p className="text-lg text-foreground/80 text-center max-w-2xl mx-auto">
               Have questions about Pandamonium? Find answers to common questions about joining, participating, and getting the most out of our community.
