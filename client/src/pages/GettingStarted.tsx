@@ -97,16 +97,35 @@ const chapterSections: ChapterSection[] = [
         title: "FC Invite",
         content: (
           <>
-            To get a toon invited to the FC, you can submit an application by clicking on the placard outside the FC house, or connecting with one of the FFXIV Chapter Officers. <strong>Note: Submitting an application via the placard will allow us to auto-accept you as soon as an officer is available. This is generally the most efficient option. Keep in mind that for any FC invitation your character must be located on Leviathan and it cannot be a trial account.</strong> The FC house is located at La Noscea, Mist, Ward 25, Plot 32.
+            <strong>To join the FC, you have two options:</strong>
             <br />
             <br />
-            If you prefer to connect with one of the officers directly, you can find them by using the Player Search option via your in-game Social menu to search for their characters by name. Right click their name in the player search results and select either "Send Tell" to message them directly or "View Company Profile" to open a new window with information about the FC and an option to submit an FC application. Submitting an application via this Company Profile will allow us to auto-accept you as soon as an officer is available. <strong>Note: You can only locate a player if they are currently on-line, so you might have to search for more than one officer. If no officers are available, please make use of the placard outside the FC house.</strong>
+            <strong>1. Apply at the FC house (fastest method)</strong>
+            <br />
+            Go to the placard outside the FC house and submit an application. This lets officers auto-accept you as soon as one is available.
+            <br />
+            Location: La Noscea → Mist → Ward 25 → Plot 32
             <br />
             <br />
-            Your FFXIV Officers are listed on the <Link href="/leadership"><a className="text-primary hover:underline font-semibold">Leadership</a></Link> page.
+            <strong>2. Contact an officer directly</strong>
+            <br />
+            Use the Social menu → Player Search to find an officer by name. Right-click their name to either:
+            <ul className="list-disc list-inside ml-4 my-2">
+              <li>Send Tell (message them), or</li>
+              <li>View Company Profile and submit an application</li>
+            </ul>
+            Applications submitted this way can also be auto-accepted when an officer is available.
             <br />
             <br />
-            Here is a <a href="#" className="text-primary hover:underline font-semibold">screenshot guide</a> on how to apply through the FC house or Player Search.
+            <strong>Notes:</strong>
+            <ul className="list-disc list-inside ml-4 my-2">
+              <li>Your character must be on Leviathan</li>
+              <li>Trial accounts cannot join FCs</li>
+              <li>Player Search only shows online players, so you may need to try multiple officers</li>
+              <li>If no officers are online, use the FC house placard</li>
+            </ul>
+            <br />
+            You can find a list of officers on the <Link href="/leadership"><a className="text-primary hover:underline font-semibold">Leadership</a></Link> page.
           </>
         ),
       },
@@ -114,7 +133,7 @@ const chapterSections: ChapterSection[] = [
         title: "Group Activities",
         content: (
           <>
-            If you're interested in group activities, keep an eye on the <strong>Pandamonium › 📅 Events</strong> channel.
+            If you're interested in group activities, keep an eye on the <a href="https://discord.com/channels/204984438596042752/1238160262700204072" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">Events</a> channel.
           </>
         ),
       },
@@ -128,6 +147,14 @@ const chapterSections: ChapterSection[] = [
         content: (
           <>
             Thank you for choosing us as your Palia community. You can get your toon invited in-game by posting a request in <strong>Pandamonium › 💬 Community Invites and Friend Re...</strong> Be sure you are not a member of another in-game community before posting or the invite will not go through.
+          </>
+        ),
+      },
+      {
+        title: "Membership Check-In",
+        content: (
+          <>
+            On a quarterly basis leadership will perform a check-in to confirm that your character should continue to be tagged in-game. This is because Palia limits in-game community membership to 25 characters, so we need to ensure those taking those spots are actively playing. This is performed in the <a href="https://discord.com/channels/204984438596042752/1365383789601099866" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">Membership Check-In</a> channel on Discord.
           </>
         ),
       },
@@ -146,7 +173,7 @@ const chapterSections: ChapterSection[] = [
 function GenericSection({ section }: { section: Section }) {
   return (
     <div className="mb-8">
-      <h3 className="text-xl font-bold text-primary mb-3">{section.title}</h3>
+      <h3 className="text-xl font-bold text-accent mb-3">{section.title}</h3>
       <p className="text-foreground/80 leading-relaxed">{section.content}</p>
     </div>
   );
@@ -172,7 +199,7 @@ function ChapterAccordion({ chapter }: { chapter: ChapterSection }) {
         <div className="px-6 py-6 bg-card/50 border-t border-primary/30 space-y-6">
           {chapter.sections.map((section, idx) => (
             <div key={idx}>
-              <h4 className="font-bold text-primary mb-2">{section.title}</h4>
+              <h4 className="font-bold text-accent mb-2">{section.title}</h4>
               <p className="text-foreground/80 leading-relaxed">{section.content}</p>
             </div>
           ))}
