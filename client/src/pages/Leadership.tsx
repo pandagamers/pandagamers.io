@@ -47,7 +47,9 @@ const leadershipTeam = [
 ];
 
 const getDiscordAvatarUrl = (userId: string) => {
-  return `https://cdn.discordapp.com/avatars/${userId}/${userId}.png?size=256`;
+  // Use default Discord avatar based on user ID modulo 5
+  const avatarIndex = parseInt(userId) % 5;
+  return `https://cdn.discordapp.com/embed/avatars/${avatarIndex}.png`;
 };
 
 export default function Leadership() {

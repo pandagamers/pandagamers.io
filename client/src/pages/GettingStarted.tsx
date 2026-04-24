@@ -26,7 +26,7 @@ const genericSections: Section[] = [
     title: "Discord Introduction",
     content: (
       <>
-        The Pandamonium Discord server is our central hub for announcements, discussions, upcoming events, and camaraderie. Stay informed by actively participating in voice and text chat, checking announcements, and joining conversations. Share your knowledge and experiences—it's what makes Pandamonium thrive. Active engagement on Discord ensures you remain a member of our vibrant community. We would encourage you to download the Discord application if you have a smartphone/device and send a message in the <strong>Pandamonium › 👋 Introductions</strong> post so your fellow community members can get to know you.
+        The Pandamonium Discord server is our central hub for announcements, discussions, upcoming events, and camaraderie. Stay informed by actively participating in voice and text chat, checking announcements, and joining conversations. Share your knowledge and experiences—it's what makes Pandamonium thrive. Active engagement on Discord ensures you remain a member of our vibrant community. We would encourage you to download the Discord application if you have a smartphone/device and send a message in the <strong>Introductions</strong> channel so your fellow community members can get to know you.
       </>
     ),
   },
@@ -45,7 +45,15 @@ const genericSections: Section[] = [
     title: "Creating Events",
     content: (
       <>
-        Once you have applied and been accepted as a member, you can create events in our Discord server. Go to <a href="https://sesh.fyi/dashboard/204984438596042752" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">Sesh</a>, authorize your Discord, and click Create Event. Events are a great way to bring the community together for raids, dungeons, social hangouts, and more. If you have an event idea, create it—people will come!
+        Once you have applied and been accepted as an apprentice, you can create events in our Discord server. Go to <a href="https://sesh.fyi/dashboard/204984438596042752" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">Sesh</a>, authorize your Discord, and click Create Event. Events are a great way to bring the community together for raids, dungeons, social hangouts, and more. If you have an event idea, create it—people will come!
+      </>
+    ),
+  },
+  {
+    title: "Questions?",
+    content: (
+      <>
+        If you ever have any questions, you can always <a href="https://discord.com/channels/204984438596042752/985222513640497233" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">#open-a-ticket</a>.
       </>
     ),
   },
@@ -53,13 +61,13 @@ const genericSections: Section[] = [
 
 const chapterSections: ChapterSection[] = [
   {
-    name: "No Chapter",
+    name: "Dune: Awakening",
     sections: [
       {
-        title: "Community Invite",
+        title: "Company Invite",
         content: (
           <>
-            Thank you for choosing us as your community! Below is some initial information to help you get settled.
+            Thank you for choosing us as your Dune: Awakening community on <em>The Spiral</em> world. You can get your toon invited in-game by posting a request in <strong>Pandamonium › 💬 Guild Invites</strong>. Be aware that we have two in-game guilds: Pandamonium (Atreides) and Pandaloons (Harkonnen). Be sure to specify which guild you are seeking an invite to when you post your request. If you would like to build your base on the same sietch as Panda, we're on <em>Abbir</em>. The primary Dune chat post can be found here: <strong>Pandamonium › 💬 Dune Chat</strong>.
           </>
         ),
       },
@@ -67,44 +75,7 @@ const chapterSections: ChapterSection[] = [
         title: "Group Activities",
         content: (
           <>
-            If you're interested in group activities, keep an eye on the <strong>Pandamonium › 📅 Events</strong> channel.
-          </>
-        ),
-      },
-      {
-        title: "Questions?",
-        content: (
-          <>
-            If you ever have any questions, you can always <a href="https://discord.com/channels/204984438596042752/985222513640497233" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">#open-a-ticket</a>.
-          </>
-        ),
-      },
-    ],
-  },
-  {
-    name: "Palia",
-    sections: [
-      {
-        title: "Community Invite",
-        content: (
-          <>
-            Thank you for choosing us as your Palia community. You can get your toon invited in-game by posting a request in <strong>Pandamonium › 💬 Community Invites and Friend Re...</strong> Be sure you are not a member of another in-game community before posting or the invite will not go through.
-          </>
-        ),
-      },
-      {
-        title: "Group Activities",
-        content: (
-          <>
-            If you're interested in group activities, keep an eye on the <strong>Pandamonium › 📅 Events</strong> channel.
-          </>
-        ),
-      },
-      {
-        title: "Questions?",
-        content: (
-          <>
-            If you ever have any questions that your chapter Officers can't assist you with, you can always <a href="https://discord.com/channels/204984438596042752/985222513640497233" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">#open-a-ticket</a>.
+            If you're interested in group activities once the game launches, keep an eye on the <strong>Pandamonium › 📅 Dune Events</strong> channel.
           </>
         ),
       },
@@ -135,24 +106,16 @@ const chapterSections: ChapterSection[] = [
           </>
         ),
       },
-      {
-        title: "Questions?",
-        content: (
-          <>
-            If you ever have any questions that your chapter Officers can't assist you with, you can always <a href="https://discord.com/channels/204984438596042752/985222513640497233" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">#open-a-ticket</a>.
-          </>
-        ),
-      },
     ],
   },
   {
-    name: "Dune: Awakening",
+    name: "Palia",
     sections: [
       {
-        title: "Company Invite",
+        title: "Community Invite",
         content: (
           <>
-            Thank you for choosing us as your Dune: Awakening community on <em>The Spiral</em> world. You can get your toon invited in-game by posting a request in <strong>Pandamonium › 💬 Guild Invites</strong>. Be aware that we have two in-game guilds: Pandamonium (Atreides) and Pandaloons (Harkonnen). Be sure to specify which guild you are seeking an invite to when you post your request. If you would like to build your base on the same sietch as Panda, we're on <em>Abbir</em>. The primary Dune chat post can be found here: <strong>Pandamonium › 💬 Dune Chat</strong>.
+            Thank you for choosing us as your Palia community. You can get your toon invited in-game by posting a request in <strong>Pandamonium › 💬 Community Invites and Friend Re...</strong> Be sure you are not a member of another in-game community before posting or the invite will not go through.
           </>
         ),
       },
@@ -160,15 +123,7 @@ const chapterSections: ChapterSection[] = [
         title: "Group Activities",
         content: (
           <>
-            If you're interested in group activities once the game launches, keep an eye on the <strong>Pandamonium › 📅 Dune Events</strong> channel.
-          </>
-        ),
-      },
-      {
-        title: "Questions?",
-        content: (
-          <>
-            If you ever have any questions that your chapter Officers can't assist you with, you can always <a href="https://discord.com/channels/204984438596042752/985222513640497233" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">#open-a-ticket</a>.
+            If you're interested in group activities, keep an eye on the <strong>Pandamonium › 📅 Events</strong> channel.
           </>
         ),
       },
@@ -228,7 +183,7 @@ export default function GettingStarted() {
               GETTING STARTED
             </h1>
             <p className="text-lg text-foreground/80 text-center max-w-2xl mx-auto">
-              Welcome to Pandamonium! Here's everything you need to know as a newly accepted member.
+              Welcome to Pandamonium! Here's everything you need to know as a newly accepted apprentice.
             </p>
           </div>
         </section>
@@ -238,7 +193,7 @@ export default function GettingStarted() {
           <div className="container max-w-4xl">
             {/* Generic Sections */}
             <div className="mb-16">
-              <h2 className="text-3xl font-bold text-primary mb-8">For All Members</h2>
+              <h2 className="text-3xl font-bold text-primary mb-8">For All Apprentices</h2>
               {genericSections.map((section, idx) => (
                 <GenericSection key={idx} section={section} />
               ))}

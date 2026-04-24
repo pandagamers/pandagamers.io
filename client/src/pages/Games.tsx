@@ -96,7 +96,7 @@ export default function Games() {
                 Beyond our formal chapters, Pandamonium members regularly collaborate on a wide variety of games in a more casual, flexible manner. Whether it's exploring new releases, revisiting classics, or trying out indie gems, our community thrives on shared gaming experiences. If you're interested in organizing or joining casual play sessions, reach out to your fellow members on Discord—there's always room for more!
               </p>
               <p className="text-foreground/80 leading-relaxed">
-                <strong>Currently active casual play:</strong> Marvel Rivals, Fortnite, Arc Raiders, Honkai: Star Rail, World of Warcraft, New World, Bitcraft
+                <strong>Examples of currently active casual play:</strong> ARC Raiders, Bitcraft, Fortnite, Honkai: Star Rail, Marvel Rivals, and World of Warcraft.
               </p>
             </div>
 
