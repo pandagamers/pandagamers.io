@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { Link } from "wouter";
 import { ChevronDown } from "lucide-react";
 import { useState } from "react";
 
@@ -18,7 +19,7 @@ const genericSections: Section[] = [
     title: "Channels & Roles",
     content: (
       <>
-        To ensure you don't get misgendered, if you haven't already please select your pronouns in the <em>Channels & Roles</em> section, right at the top of the Panda channels list. You should also select the games you play, the events you'd like to be notified of, and the channels you'd like to follow. You can make changes to these selections at any time.
+        To ensure you don't get misgendered, if you haven't already please select your pronouns in the <em>Channels & Roles</em> section, right at the top of the Pandamonium Discord channels list. You should also select the games you play, the events you'd like to be notified of, and the channels you'd like to follow (in the Browse Channels tab of the same section). You can make changes to these selections at any time.
       </>
     ),
   },
@@ -26,7 +27,7 @@ const genericSections: Section[] = [
     title: "Discord Introduction",
     content: (
       <>
-        The Pandamonium Discord server is our central hub for announcements, discussions, upcoming events, and camaraderie. Stay informed by actively participating in voice and text chat, checking announcements, and joining conversations. Share your knowledge and experiences—it's what makes Pandamonium thrive. Active engagement on Discord ensures you remain a member of our vibrant community. We would encourage you to download the Discord application if you have a smartphone/device and send a message in the <strong>Introductions</strong> channel so your fellow community members can get to know you.
+        The Pandamonium Discord server is our central hub for announcements, discussions, upcoming events, and camaraderie. Stay informed by actively participating in voice and text chat, checking announcements, and joining conversations. Share your knowledge and experiences—it's what makes Pandamonium thrive. Active engagement on Discord ensures you remain a member of our vibrant community. We would encourage you to download the Discord application if you have a smartphone/device and send a message in the <a href="https://discord.com/channels/204984438596042752/1192618883232833577" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">Introductions👋</a> channel so your fellow community members can get to know you.
       </>
     ),
   },
@@ -34,10 +35,10 @@ const genericSections: Section[] = [
     title: "Apprenticeship",
     content: (
       <>
-        A typical apprenticeship period lasts for a minimum of 30 days. During that time the Pandamonium community will be evaluating you for compatibility and integrity through Discord, in-game chat, and community events. Membership is decided by community vote—this is our opportunity to get to know each other, so it's important to interact with other members during this time. Because the quality of in-game communication can vary, we definitely recommend engaging on Discord to reach the most Pandas!
+        A typical apprenticeship period lasts for a minimum of 30 days. During that time the Pandamonium community will be evaluating you for compatibility and integrity through Discord, in-game chat, and community events. Membership is decided by community vote—this is our opportunity to get to know each other. Because the quality of in-game communication can vary, we definitely recommend engaging on Discord to reach the most Pandas!
         <br />
         <br />
-        <strong>Discord Engagement During Apprenticeship:</strong> Your level of engagement and participation during your first few weeks is important. We're all here to have fun and build connections—if you're deemed inactive or disengaged during your apprenticeship while we're trying to get to know you (and vice versa), you likely won't progress past this stage. But remember, this is meant to be fun and positive, not stressful. We're looking for people who are genuinely interested in being part of our community, not perfect participation.
+        <strong>Engagement During Apprenticeship:</strong> Your level of engagement and participation during your first few weeks is important. We're all here to have fun and build connections—if you're deemed inactive or disengaged during your apprenticeship while we're trying to get to know you (and vice versa), you likely won't progress past this stage. But remember, this is meant to be fun and positive, not stressful. We're looking for people who are genuinely interested in being part of our community, not perfect participation.
       </>
     ),
   },
@@ -45,7 +46,7 @@ const genericSections: Section[] = [
     title: "Creating Events",
     content: (
       <>
-        Once you have applied and been accepted as an apprentice, you can create events in our Discord server. Go to <a href="https://sesh.fyi/dashboard/204984438596042752" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">Sesh</a>, authorize your Discord, and click Create Event. Events are a great way to bring the community together for raids, dungeons, social hangouts, and more. If you have an event idea, create it—people will come!
+        Once you have applied and been accepted as an apprentice, you can create events in our Discord server. Go to <a href="https://sesh.fyi/dashboard/204984438596042752" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">Sesh</a>, authorize your Discord, and click Create Event. Be sure to add chapter role Notifications, and 'Mirror to Discord Native Event' under Interactions - this will guarantee those interested in what you are running will be looped in. Events are a great way to bring the community together for raids, dungeons, social hangouts, and more. If you have an event idea, create it—people will come!
       </>
     ),
   },
@@ -64,10 +65,18 @@ const chapterSections: ChapterSection[] = [
     name: "Dune: Awakening",
     sections: [
       {
-        title: "Company Invite",
+        title: "Guild Invite",
         content: (
           <>
-            Thank you for choosing us as your Dune: Awakening community on <em>The Spiral</em> world. You can get your toon invited in-game by posting a request in <strong>Pandamonium › 💬 Guild Invites</strong>. Be aware that we have two in-game guilds: Pandamonium (Atreides) and Pandaloons (Harkonnen). Be sure to specify which guild you are seeking an invite to when you post your request. If you would like to build your base on the same sietch as Panda, we're on <em>Abbir</em>. The primary Dune chat post can be found here: <strong>Pandamonium › 💬 Dune Chat</strong>.
+            Thank you for choosing us as your Dune: Awakening community on <em>The Spiral</em> world. You can get your toon invited in-game by posting a request in <a href="https://discord.com/channels/204984438596042752/1378434385350627416" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">Guild Invites</a>. Be aware that we have two in-game guilds: Pandamonium (Atreides) and Pandaloons (Harkonnen). Be sure to specify which guild you are seeking an invite to when you post your request. If you would like to build your base on the same sietch as Panda, we're on <em>Abbir</em>. The primary Dune chat post can be found here: <a href="https://discord.com/channels/204984438596042752/1365141361870766172" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">Dune Chat</a>.
+          </>
+        ),
+      },
+      {
+        title: "Deep Desert Farming",
+        content: (
+          <>
+            On a weekly basis our Dune members create a Deep Desert base stocked with everything needed to process spice. Anyone that participates in the weekly farming gets a cut of the profit. Involvement can be working with a group to farm the spice itself, gathering Titanium Ore or Stravidium Fiber, delivering corpses for the deathstills, or other needed items posted to help keep things running. Involvement is tracked in the <a href="https://discord.com/channels/204984438596042752/1409941434089607279" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">Quartermaster - Resource Tracking</a> channel.
           </>
         ),
       },
@@ -75,7 +84,7 @@ const chapterSections: ChapterSection[] = [
         title: "Group Activities",
         content: (
           <>
-            If you're interested in group activities once the game launches, keep an eye on the <strong>Pandamonium › 📅 Dune Events</strong> channel.
+            If you're interested in group activities, keep an eye on the <a href="https://discord.com/channels/204984438596042752/1365141049650974784" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">Dune Events</a> channel.
           </>
         ),
       },
@@ -91,7 +100,10 @@ const chapterSections: ChapterSection[] = [
             To get a toon invited to the FC, you can submit an application by clicking on the placard outside the FC house, or connecting with one of the FFXIV Chapter Officers. <strong>Note: Submitting an application via the placard will allow us to auto-accept you as soon as an officer is available. This is generally the most efficient option. Keep in mind that for any FC invitation your character must be located on Leviathan and it cannot be a trial account.</strong> The FC house is located at La Noscea, Mist, Ward 25, Plot 32.
             <br />
             <br />
-            If you prefer to connect with one of the officers directly, you can find them by using the Player Search option via your in-game Social menu to search for their characters by name. Your FFXIV Chapter Officers are: <strong>Adaire Thelmont</strong>, <strong>Kirne Emithelum</strong>, <strong>Rowan Ashe</strong>, <strong>Stellan Auturin</strong>, or <strong>Tempo Tantrum</strong>. You can locate an officer by using the Player Search option via your in-game Social Menu to search for their character by name. Right click their name in the player search results and select either "Send Tell" to message them directly or "View Company Profile" to open a new window with information about the FC and an option to submit an FC application. Submitting an application via this Company Profile will allow us to auto-accept you as soon as an officer is available. <strong>Note: You can only locate a player if they are currently on-line, so you might have to search for more than one officer. If no officers are available, please make use of the placard outside the FC house.</strong>
+            If you prefer to connect with one of the officers directly, you can find them by using the Player Search option via your in-game Social menu to search for their characters by name. Right click their name in the player search results and select either "Send Tell" to message them directly or "View Company Profile" to open a new window with information about the FC and an option to submit an FC application. Submitting an application via this Company Profile will allow us to auto-accept you as soon as an officer is available. <strong>Note: You can only locate a player if they are currently on-line, so you might have to search for more than one officer. If no officers are available, please make use of the placard outside the FC house.</strong>
+            <br />
+            <br />
+            Your FFXIV Officers are listed on the <Link href="/leadership"><a className="text-primary hover:underline font-semibold">Leadership</a></Link> page.
             <br />
             <br />
             Here is a <a href="#" className="text-primary hover:underline font-semibold">screenshot guide</a> on how to apply through the FC house or Player Search.

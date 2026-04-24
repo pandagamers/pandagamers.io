@@ -108,7 +108,7 @@ export default function Leadership() {
             {/* Info Box */}
             <div className="mt-16 p-8 bg-card rounded-lg border border-primary/30 text-center">
               <p className="text-foreground/80">
-                Have questions for leadership? Use <span className="text-primary font-mono">#open-a-ticket</span> on Discord to reach the Community Managers.
+                Have questions for leadership? Use <a href="https://discord.com/channels/204984438596042752/985222513640497233" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-mono">#open-a-ticket</a> on Discord to reach the Community Managers.
               </p>
             </div>
           </div>

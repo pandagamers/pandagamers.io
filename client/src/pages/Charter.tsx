@@ -206,7 +206,7 @@ export default function Charter() {
         {/* Hero Section */}
         <section className="bg-card border-b border-primary/30 py-12 md:py-16">
           <div className="container">
-            <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4 text-center">
+            <h1 className="text-5xl md:text-6xl font-bold text-primary mb-4 text-center">
               CHARTER
             </h1>
             <p className="text-lg text-foreground/80 text-center">
