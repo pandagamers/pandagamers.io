@@ -76,7 +76,7 @@ const chapterSections: ChapterSection[] = [
         title: "Deep Desert Farming",
         content: (
           <>
-            On a weekly basis our Dune members create a Deep Desert base stocked with everything needed to process spice. Anyone that participates in the weekly farming gets a cut of the profit. Involvement can be working with a group to farm the spice itself, gathering Titanium Ore or Stravidium Fiber, delivering corpses for the deathstills, or other needed items posted to help keep things running. Involvement is tracked in the <a href="https://discord.com/channels/204984438596042752/1409941434089607279" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">Quartermaster - Resource Tracking</a> channel.
+            On a weekly basis our Dune members create a Deep Desert base stocked with everything needed to process spice. Spice is divided amongst the crews risking their lives out on the sands - players get a cut of any processed melange they were involved in gathering. Plastanium produced at the guild base is split evenly between everyone who participates in mining or base maintenance. Participation in Deep Desert activities can take many forms, including but not limited to: gathering Titanium or Stravidium, delivering corpses or liquid water, and bringing other requested items to help keep things running. Involvement is tracked in the <a href="https://discord.com/channels/204984438596042752/1409941434089607279" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">Quartermaster - Resource Tracking</a> channel.
           </>
         ),
       },
@@ -84,7 +84,7 @@ const chapterSections: ChapterSection[] = [
         title: "Group Activities",
         content: (
           <>
-            If you're interested in group activities, keep an eye on the <a href="https://discord.com/channels/204984438596042752/1365141049650974784" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">Dune Events</a> channel.
+            If you're interested in group activities, keep an eye on the <a href="https://discord.com/channels/204984438596042752/1365141049650974784" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">Dune Events</a> channel, or host your own!
           </>
         ),
       },
@@ -154,7 +154,7 @@ const chapterSections: ChapterSection[] = [
         title: "Membership Check-In",
         content: (
           <>
-            On a quarterly basis leadership will perform a check-in to confirm that your character should continue to be tagged in-game. This is because Palia limits in-game community membership to 25 characters, so we need to ensure those taking those spots are actively playing. This is performed in the <a href="https://discord.com/channels/204984438596042752/1365383789601099866" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">Membership Check-In</a> channel on Discord.
+            On a quarterly basis, leadership will perform a check-in to confirm that your character should continue to be tagged in-game. This is because Palia limits in-game community membership to 25 characters, so we need to ensure those taking those spots are actively playing. This is performed in the <a href="https://discord.com/channels/204984438596042752/1365383789601099866" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">Membership Check-In</a> channel on Discord.
           </>
         ),
       },
@@ -173,7 +173,7 @@ const chapterSections: ChapterSection[] = [
         title: "Group Activities",
         content: (
           <>
-            If you're interested in group activities, keep an eye on the <a href="https://discord.com/channels/204984438596042752/1238207203110817962" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">Events</a> channel.
+            If you're interested in group activities, we encourage you to start one yourself in the <a href="https://discord.com/channels/204984438596042752/1238207203110817962" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">Events</a> channel! Remember, Panda is member-driven.
           </>
         ),
       },
