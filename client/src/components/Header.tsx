@@ -32,7 +32,7 @@ export default function Header() {
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden lg:flex items-center gap-8">
           {navItems.map((item) => (
             <Link key={item.href} href={item.href} className="font-poppins font-medium text-foreground hover:text-primary transition-colors duration-200 uppercase text-sm tracking-wide">
               {item.label}
@@ -60,7 +60,7 @@ export default function Header() {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden p-2 hover:bg-primary/10 rounded transition-colors"
+          className="lg:hidden p-2 hover:bg-primary/10 rounded transition-colors"
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle menu"
         >
@@ -74,7 +74,7 @@ export default function Header() {
 
       {/* Mobile Navigation */}
       {isOpen && (
-        <nav className="md:hidden bg-card border-t border-primary/30 py-4">
+        <nav className="lg:hidden bg-card border-t border-primary/30 py-4">
           <div className="container flex flex-col gap-4">
             {navItems.map((item) => (
               <Link
