@@ -104,13 +104,13 @@ export default function Application() {
                 <div>
                   <p className="font-semibold text-primary mb-3">1. For friends or family of current members</p>
                   <p className="text-foreground/80 ml-4">
-                    Please encourage them to go through the process as if we were strangers (because most of us are). It's unlikely they would be denied entry due to a crappy application, but it's not the greatest of first impressions that should be given to our members.
+                    Please encourage them to go through the process as if we were strangers (because most of us are). It's unlikely they would be denied entry due to a poor application, but it's not the greatest first impression to give to our members.
                   </p>
                 </div>
                 <div>
                   <p className="font-semibold text-primary mb-3">2. Keep comments constructive</p>
                   <p className="text-foreground/80 ml-4">
-                    The application comments section should not be used as a forum to convince other members that their point of view is wrong. Comedic banter is fine. Replying to say you agree is fine. Asking people to justify their position or calling them out in some negative way is not productive. People should not worry that they are going to be attacked (even if done respectfully) for their opinions. Simply share your thoughts on an app and let other folks do the same. Trust that the process will work.
+                    The application comments section should not be used as a forum to convince other members that their point of view is wrong. Comedic banter is fine. Replying to say you agree is fine. Asking people to justify their position or calling them out in some negative way is not productive. People should not worry about being attacked (even if done respectfully) for their opinions. Simply share your thoughts on an app and let other folks do the same. Trust that the process will work.
                   </p>
                 </div>
                 <div>
@@ -138,7 +138,7 @@ export default function Application() {
               <div className="bg-card rounded-lg border border-primary/30 p-8 space-y-6">
                 <div>
                   <p className="text-foreground/80 leading-relaxed mb-4">
-                    After a minimum of 30 days, Apprentices are put up for an initial review with the community. We encourage members to be vocal about their experiences with Apprentices, whether the commentary is good or bad. We use this information to approve or deny an Apprentice for membership, so please be vocal in passing on these thoughts.
+                    After a minimum of 30 days, Apprentices are put up for an initial review with the community. We encourage members to be vocal about their experiences with Apprentices, whether the commentary is positive or negative. We use this information to approve or deny an Apprentice for membership, so please be vocal in sharing your thoughts.
                   </p>
                 </div>
 
@@ -165,18 +165,14 @@ export default function Application() {
 
                 <div>
                   <p className="text-foreground/80 mb-3">
-                    An Apprenticeship can be extended for another two weeks due to inactivity or not enough "Yes" votes at which time they'll be up for a final review.
+                    An Apprenticeship can be extended for another two weeks due to inactivity or insufficient "Yes" votes, at which time they'll be up for a final review.
                   </p>
                 </div>
 
                 <div className="bg-accent/10 border border-accent/30 p-6 rounded">
                   <p className="font-semibold text-accent mb-3">Important:</p>
                   <p className="text-foreground/80 text-sm">
-                    If there are issues with an Apprentice, don't wait for the review to be posted. Contact a member of the leadership team or{" "}
-                    <a href="https://discord.com/channels/204984438596042752/985222513640497233" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">
-                      #open-a-ticket
-                    </a>
-                    {" "}with the Community Managers so the issue can be addressed.
+                    If there are issues with an Apprentice, don't wait for the review to be posted. Contact a member of the leadership team or open a ticket with the Community Managers so the issue can be addressed.
                   </p>
                 </div>
 

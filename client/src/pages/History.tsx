@@ -3,7 +3,7 @@ import Footer from "@/components/Footer";
 
 const milestones = [
   { year: "November 2004", event: "Phantom Knights was formed on the Mistmoore server in EverQuest II." },
-  { year: "October 2006", event: "First real-life gathering took place in Las Vegas, Nevada." },
+  { year: "October 2006", event: "First in-person gathering took place in Las Vegas, Nevada." },
   { year: "June 2007", event: "Phantom Knights dissolved on Mistmoore, and our core group continued raiding together on the Guk server in EverQuest II, laying the groundwork for what would become Pandamonium." },
   { year: "December 2011", event: "That long-standing core group formally founded Pandamonium on the Darth Bandon server in Star Wars: The Old Republic." },
   { year: "June 2012", event: "SWTOR Pandamonium moved to the Corellian Run server." },
@@ -20,7 +20,7 @@ const milestones = [
   { year: "May 2020", event: "Created a chapter in EverQuest II on the Halls of Fate server." },
   { year: "May 2021", event: "Created pre-launch chapter in New World." },
   { year: "September 2021", event: "New World Pandamonium company formed on the Mictlan server." },
-  { year: "December 2021", event: "New World Pandamonium moved to Calnagor Server." },
+  { year: "December 2021", event: "New World Pandamonium moved to the Calnagor server." },
   { year: "February 2022", event: "New World Pandamonium moved to the Orofena server." },
   { year: "November 2022", event: "Created additional New World Pandamonium company on the Amarah fresh start server." },
   { year: "April 2023", event: "New World Pandamonium moved to the Lilith (from Amarah) and Maramma (from Orofena) servers." },
@@ -30,7 +30,7 @@ const milestones = [
   { year: "October 2024", event: "Created additional New World Pandamonium company on the Cathaysia fresh start server." },
   { year: "December 2024", event: "New World Pandamonium moved to the Maramma (from Lilith) server." },
   { year: "February 2025", event: "New World Pandamonium moved to the Hudsonland (from Cathaysia) and Valhalla (from Maramma) servers." },
-  { year: "April 2025", event: "Created pre-launch community chapter in Dune: Awakening. Closed New World Pandamonium chapter due to inactivity." },
+  { year: "April 2025", event: "Created pre-launch chapter in Dune: Awakening on The Spiral server (Abbir sietch). Closed New World Pandamonium chapter due to inactivity." },
   { year: "October 2025", event: "Dune: Awakening converted from Pilot Chapter to Formal Chapter." },
 ];
 

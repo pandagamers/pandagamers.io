@@ -74,7 +74,7 @@ export default function Home() {
                 </p>
 
                 <p>
-                  While MMOs remain our roots, we welcome multiplayer games across genres. We invite you to join our vibrant community.
+                  While MMOs remain our roots, we welcome multiplayer games across genres. We invite you to considering joining our vibrant community.
                 </p>
               </div>
 
@@ -108,7 +108,7 @@ export default function Home() {
               {/* CTA */}
               <div className="text-center">
                 <p className="text-foreground/80 mb-6">
-                  Ready to join our community? Check out our charter and apply today.
+                  Check out our charter and apply today.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button

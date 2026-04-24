@@ -12,7 +12,7 @@ const charterSections: ChapterSection[] = [
   {
     title: "Mission Statement",
     content:
-      "Membership in our community is a commitment to adhere to these guiding principles.",
+      "Pandamonium is a member-driven gaming community guided by core values of inclusivity, equity, and accountability. Our mission is to foster a safe and drama-free environment where gamers can forge lasting connections while treating each other with respect.",
   },
   {
     title: "Demographics",
@@ -53,7 +53,7 @@ const charterSections: ChapterSection[] = [
     title: "Conduct",
     content: (
       <>
-        We hold ourselves to a high standard. Pandamonium members are expected to conduct themselves with honor and respect. Inflammatory or insulting comments, as well as rude or petty behavior, have no place in-game or on Discord. All members must adhere to the game's Terms of Service and Rules of Conduct at all times. Specifically, the use of third-party hacks or cheats is strictly prohibited, including unauthorized third-party tools. Violation of this rule will result in immediate removal from our community. Members are encouraged to report any observed violations to the Community Managers (#open-a-ticket), ensuring our community remains a safe and respectful space for all.
+        We hold ourselves to a high standard. Pandamonium members are expected to conduct themselves with honor and respect. Inflammatory or insulting comments, as well as rude or petty behavior, have no place in-game or on Discord. All members must adhere to the game's Terms of Service and Rules of Conduct at all times. Specifically, the use of third-party hacks or cheats is strictly prohibited, including unauthorized third-party tools. Violation of this rule will result in immediate removal from our community. Members are encouraged to report any observed violations to the Community Managers by opening a ticket, ensuring our community remains a safe and respectful space for all.
         <br />
         <br />
         <em>"There can be no friendship without confidence, and no confidence without integrity." - Samuel Johnson</em>
@@ -108,7 +108,7 @@ const charterSections: ChapterSection[] = [
     title: "Decision-Making and Leadership Development",
     content: (
       <>
-        In Pandamonium, our leadership team plays a crucial role in shaping the community's direction. Comprising Officers and Community Managers, we work collaboratively to ensure community success through regular Discord communications, monthly leadership meetings, and ad-hoc town halls. We prioritize transparency, actively seek diverse perspectives, and focus on fostering a drama-free environment.
+        In Pandamonium, our leadership team plays a crucial role in shaping the community's direction. Comprising Officers and Community Managers, we work collaboratively to ensure community success through regular Discord communications, periodic leadership meetings, and ad-hoc town halls. We prioritize transparency, actively seek diverse perspectives, and focus on fostering a drama-free environment.
         <br />
         <br />
         But we recognize that leadership isn't static—it's dynamic and ever-evolving. We actively encourage and support the growth of potential new leaders within our ranks. Whether you're a seasoned member or a fresh face, there's always room to step up and contribute. We are all volunteers, driven by passion and commitment. As circumstances change, we need individuals who are willing to move into leadership roles, filling gaps and ensuring continuity. Whether it's organizing events, moderating discussions, or spearheading initiatives, there's a place for you to make a difference. Speak to one of the Community Managers if you would like to learn more.
@@ -133,7 +133,7 @@ const charterSections: ChapterSection[] = [
     title: "Feedback",
     content: (
       <>
-        In Pandamonium, we value input. There are multiple channels where you can provide feedback, suggestions, and express any concerns. Within Discord there is the #open-a-ticket option to communicate privately with our Community Managers. We have a dedicated Suggestions post where you can share your ideas for improving our community, support the initiatives you believe in, and engage in constructive conversations with fellow members. In the Apprentice Review section, we evaluate individuals who are up for promotion to Member status. Bi-annual town halls occur, where all community members can engage live with the leadership team. Your insights matter—help us make informed decisions.
+        In Pandamonium, we value input. There are multiple channels where you can provide feedback, suggestions, and express any concerns. Within Discord there is the option to open a ticket to communicate privately with our Community Managers. Members are encouraged to share ideas for improving our community, support the initiatives they believe in, and engage in constructive conversations with fellow members. In the Apprentice Review section, we evaluate individuals who are up for promotion to Member status. Bi-annual town halls occur, where all community members can engage live with the leadership team. Your insights matter—help us make informed decisions.
         <br />
         <br />
         <em>"We all need people who will give us feedback. That's how we improve." - Bill Gates</em>
@@ -204,48 +204,42 @@ export default function Charter() {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="py-16 md:py-24 bg-card border-b border-primary/30">
+        <section className="bg-card border-b border-primary/30 py-12 md:py-16">
           <div className="container">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-primary text-center">
+            <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">
               CHARTER
             </h1>
-            <p className="text-lg text-foreground/80 text-center max-w-2xl mx-auto">
-              This charter outlines the principles that guide Pandamonium.
+            <p className="text-lg text-foreground/80">
+              Our community's guiding principles and structure
             </p>
           </div>
         </section>
 
-        {/* Charter Content */}
-        <section className="py-16 md:py-24">
-          <div className="container max-w-4xl">
+        {/* Content Section */}
+        <section className="py-12 md:py-16">
+          <div className="container max-w-3xl">
             <div className="space-y-12">
-              {charterSections.map((section, index) => (
-                <div key={index} className="pb-12 border-b border-primary/20 last:border-b-0">
-                  <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
+              {charterSections.map((section, idx) => (
+                <div key={idx} className="space-y-4">
+                  <h2 className="text-2xl md:text-3xl font-bold text-primary">
                     {section.title}
                   </h2>
+
                   {section.content && (
-                    <div className="text-foreground/80 text-lg leading-relaxed">
-                      {typeof section.content === 'string' ? (
-                        <p className="whitespace-pre-wrap">{section.content}</p>
-                      ) : (
-                        section.content
-                      )}
+                    <div className="text-foreground/80 leading-relaxed">
+                      {section.content}
                     </div>
                   )}
+
                   {section.subsections && (
                     <div className="space-y-6 mt-6">
-                      {section.subsections.map((subsection, subIndex) => (
-                        <div key={subIndex}>
-                          <h3 className="text-xl font-bold text-accent mb-2">
+                      {section.subsections.map((subsection, subIdx) => (
+                        <div key={subIdx} className="space-y-2">
+                          <h3 className="text-lg font-semibold text-primary">
                             {subsection.subtitle}
                           </h3>
                           <div className="text-foreground/80 leading-relaxed">
-                            {typeof subsection.text === 'string' ? (
-                              <p className="whitespace-pre-wrap">{subsection.text}</p>
-                            ) : (
-                              subsection.text
-                            )}
+                            {subsection.text}
                           </div>
                         </div>
                       ))}
@@ -253,21 +247,6 @@ export default function Charter() {
                   )}
                 </div>
               ))}
-            </div>
-
-            {/* CTA */}
-            <div className="mt-16 p-8 bg-card rounded-lg border border-primary/30 text-center">
-              <h3 className="text-2xl font-bold text-primary mb-4">Ready to Join?</h3>
-              <p className="text-foreground/80 mb-6">
-                If you believe Pandamonium is a good fit for you, we encourage you to apply through our Discord server.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link href="/apply">
-                  <a className="px-8 py-3 bg-accent hover:bg-accent/90 text-accent-foreground font-bold uppercase rounded transition-colors">
-                    Learn About Applying
-                  </a>
-                </Link>
-              </div>
             </div>
           </div>
         </section>

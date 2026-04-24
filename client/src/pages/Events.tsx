@@ -39,9 +39,9 @@ export default function Events() {
                 <div className="flex justify-center mb-4">
                   <Clock className="w-10 h-10 text-primary" />
                 </div>
-                <h3 className="text-lg font-bold text-primary mb-2">Real-Time Updates</h3>
+                <h3 className="text-lg font-bold text-primary mb-2">Create Events</h3>
                 <p className="text-foreground/70 text-sm">
-                  Calendar updates automatically as events are added and modified by leadership.
+                  Members can create and organize events directly through our event management system.
                 </p>
               </div>
 
@@ -51,7 +51,7 @@ export default function Events() {
                 </div>
                 <h3 className="text-lg font-bold text-primary mb-2">Join the Fun</h3>
                 <p className="text-foreground/70 text-sm">
-                  Visit our Discord to RSVP, ask questions, or coordinate with other members.
+                  RSVP to events, ask questions, or coordinate with other members on Discord.
                 </p>
               </div>
             </div>
@@ -80,7 +80,7 @@ export default function Events() {
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary font-bold mt-1">2.</span>
-                      <span>Join our Discord server to RSVP to events and coordinate with other members.</span>
+                      <span>Use Sesh to create events and manage RSVPs with your fellow community members.</span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary font-bold mt-1">3.</span>
@@ -88,7 +88,7 @@ export default function Events() {
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary font-bold mt-1">4.</span>
-                      <span>Have an event idea? Reach out to your chapter leaders or Community Managers.</span>
+                      <span>Have an event idea? Create it yourself or reach out to your chapter leaders for support.</span>
                     </li>
                   </ul>
                 </div>

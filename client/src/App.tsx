@@ -15,7 +15,7 @@ import Privacy from "./pages/Privacy";
 import Events from "./pages/Events";
 import FAQ from "./pages/FAQ";
 import Application from "./pages/Application";
-import FFXIVInvite from "./pages/FFXIVInvite";
+
 
 function ScrollToTop() {
   const [location] = useLocation();
@@ -42,7 +42,6 @@ function Router() {
         <Route path={"/events"} component={Events} />
         <Route path={"/faq"} component={FAQ} />
         <Route path={"/application"} component={Application} />
-        <Route path={"/ffxiv_invite"} component={FFXIVInvite} />
         <Route path={"/404"} component={NotFound} />
         {/* Final fallback route */}
         <Route component={NotFound} />

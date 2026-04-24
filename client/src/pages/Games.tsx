@@ -6,13 +6,15 @@ export default function Games() {
   const games = [
     {
       title: "Dune: Awakening",
+      server: "The Spiral",
       description: "An open-world survival craft game with MMO elements set in the Dune universe. Join our in-game community for primarily PVE-focused group activity... and the occasional pitched battle for spice out on the sands.",
       icon: "🏜️",
-      features: ["Cross-Faction Play", "DD Farming Operations", "Overland Testing Station Runs", "Fully Equipped Guild Bases"],
+      features: ["Cross-Faction Play", "DD Farming Operations", "Overland Testing Station Runs", "Fully Equipped Guild Bases", "Both Atreides and Harkonnen guilds"],
       link: "https://www.duneawakening.com/"
     },
     {
       title: "Final Fantasy XIV Online",
+      server: "Leviathan",
       description: "A MMORPG set in the lands of Eorzea and beyond. As a part of our Free Company, you'll be able to join in for roulettes, learning groups, and regular events covering all areas of game content.",
       icon: "⚔️",
       features: ["FC Community with Daily Buffs", "Roulettes", "Learning and Farming Groups", "PvE, PvP, and Social Events"],
@@ -20,6 +22,7 @@ export default function Games() {
     },
     {
       title: "Palia",
+      server: "Community",
       description: "A cozy community simulation game focused on relaxation and creativity. Fish, cook, decorate, and make friends in this welcoming multiplayer world.",
       icon: "🎣",
       features: ["Cozy Gameplay", "Fishing & Cooking", "Decorating", "Community Focus"],
@@ -53,7 +56,12 @@ export default function Games() {
                   key={index}
                   className="bg-card border border-primary/20 rounded-lg p-8 hover:border-primary/50 transition-all hover:shadow-lg hover:shadow-primary/20"
                 >
-                  <div className="text-5xl mb-4">{game.icon}</div>
+                  <div className="flex items-start justify-between mb-4">
+                    <div className="text-5xl">{game.icon}</div>
+                    <span className="inline-block px-3 py-1 bg-primary/20 text-primary text-xs font-semibold rounded-full">
+                      {game.server}
+                    </span>
+                  </div>
                   <h2 className="text-2xl font-bold text-primary mb-3">{game.title}</h2>
                   <p className="text-foreground/80 mb-6 leading-relaxed">{game.description}</p>
 
@@ -79,6 +87,14 @@ export default function Games() {
                   </a>
                 </div>
               ))}
+            </div>
+
+            {/* Casual Play Section */}
+            <div className="my-16 p-8 bg-card border border-primary/20 rounded-lg">
+              <h2 className="text-2xl font-bold text-primary mb-4">Casual Play & Other Games</h2>
+              <p className="text-foreground/80 leading-relaxed">
+                Beyond our formal chapters, Pandamonium members regularly collaborate on a wide variety of games in a more casual, flexible manner. Whether it's exploring new releases, revisiting classics, or trying out indie gems, our community thrives on shared gaming experiences. If you're interested in organizing or joining casual play sessions, reach out to your fellow members on Discord—there's always room for more!
+              </p>
             </div>
 
             {/* Why Play With Us */}

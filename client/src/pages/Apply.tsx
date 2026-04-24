@@ -83,7 +83,7 @@ export default function Apply() {
                 <div className="flex-1">
                   <h2 className="text-2xl font-bold text-primary mb-3">Submit Your Application</h2>
                   <p className="text-foreground/80 mb-4">
-                    Once you have joined the Discord server, navigate to the <span className="font-mono text-primary">#apply</span> channel. Type <span className="font-mono text-primary">apply</span> and follow the directions in the channel created under your name.
+                    Once you have joined the Discord server, navigate to the <span className="font-mono text-primary">#apply</span> channel and follow the directions to submit your application.
                   </p>
                   <p className="text-foreground/80">
                     Your application will be reviewed by all community members and approved or denied once a consensus has been reached. This process takes at least 24 hours.
@@ -101,7 +101,7 @@ export default function Apply() {
                 <div className="flex-1">
                   <h2 className="text-2xl font-bold text-primary mb-3">Await Approval</h2>
                   <p className="text-foreground/80 mb-4">
-                    Once your application has been reviewed, you will be notified via direct message on Discord. If you have any questions during the process, reach out to a Community Manager using the <span className="font-mono text-primary">#open-a-ticket</span> channel.
+                    Once your application has been reviewed, you will be notified via direct message on Discord. If you have any questions during the process, reach out to a Community Manager by opening a ticket.
                   </p>
                 </div>
               </div>
