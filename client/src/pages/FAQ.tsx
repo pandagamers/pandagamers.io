@@ -2,22 +2,51 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { ChevronDown } from "lucide-react";
 import { useState } from "react";
+import { Link } from "wouter";
 
 interface FAQItem {
   question: string;
-  answer: string;
+  answer: string | React.ReactNode;
 }
 
 const faqItems: FAQItem[] = [
   {
     question: "Can I invite friends to the Pandamonium Discord server?",
-    answer:
-      "Yes, you are welcome to share the server link with friends: https://discord.gg/pandagamers. We love welcoming new members who share our values of inclusivity, equity, and accountability.",
+    answer: (
+      <>
+        Yes, you are welcome to share the server link with friends:{" "}
+        <a
+          href="https://discord.gg/pandagamers"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-primary hover:underline font-semibold"
+        >
+          https://discord.gg/pandagamers
+        </a>
+        . We love welcoming new people who share our values of inclusivity, equity, and accountability. Knowing that some gaming experience may require coordination with outside folks, non-members are able to join designated public channels on our server. Keep in mind that adherence to the{" "}
+        <Link href="/charter">
+          <a className="text-primary hover:underline font-semibold">Charter</a>
+        </Link>
+        {" "}is a requirement for everyone using our space, including guests.
+      </>
+    ),
   },
   {
     question: "Does Pandamonium have a store?",
-    answer:
-      "We do! We have Pandamonium-branded products available for purchase at https://pandamonium-shop.fourthwall.com. Check out our merchandise to show your Pandamonium pride!"
+    answer: (
+      <>
+        We do! We have Pandamonium-branded products available for purchase at{" "}
+        <a
+          href="https://pandamonium-shop.fourthwall.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-primary hover:underline font-semibold"
+        >
+          https://pandamonium-shop.fourthwall.com
+        </a>
+        . Check out our merchandise to show your Pandamonium pride!
+      </>
+    ),
   },
   {
     question: "How do I create events for the community to participate in?",
@@ -26,74 +55,22 @@ const faqItems: FAQItem[] = [
   },
   {
     question: "What's the easiest way to contact the leadership team?",
-    answer:
-      "You can #open-a-ticket in our Discord server. This will create a ticket accessible only to the Community Managers, who will then triage to determine who else should be involved in addressing your question or concern.",
+    answer: (
+      <>
+        You can{" "}
+        <a
+          href="https://discord.com/channels/204984438596042752/985222513640497233"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-primary hover:underline font-semibold"
+        >
+          #open-a-ticket
+        </a>
+        {" "}in our Discord server. This will create a ticket accessible only to the Community Managers, who will then triage to determine who else should be involved in addressing your question or concern.
+      </>
+    ),
   },
 ];
-
-function renderAnswerWithLinks(text: string) {
-  const parts: (string | React.ReactNode)[] = [];
-  let currentText = text;
-
-  // Handle Discord link
-  if (currentText.includes("https://discord.gg/pandagamers")) {
-    const [before, after] = currentText.split("https://discord.gg/pandagamers");
-    parts.push(before);
-    parts.push(
-      <a
-        key="discord-link"
-        href="https://discord.gg/pandagamers"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-primary hover:underline font-semibold"
-      >
-        https://discord.gg/pandagamers
-      </a>
-    );
-    parts.push(after);
-    return parts;
-  }
-
-  // Handle shop link
-  if (currentText.includes("https://pandamonium-shop.fourthwall.com")) {
-    const [before, after] = currentText.split("https://pandamonium-shop.fourthwall.com");
-    parts.push(before);
-    parts.push(
-      <a
-        key="shop-link"
-        href="https://pandamonium-shop.fourthwall.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-primary hover:underline font-semibold"
-      >
-        https://pandamonium-shop.fourthwall.com
-      </a>
-    );
-    parts.push(after);
-    return parts;
-  }
-
-  // Handle #open-a-ticket link
-  if (currentText.includes("#open-a-ticket")) {
-    const [before, after] = currentText.split("#open-a-ticket");
-    parts.push(before);
-    parts.push(
-      <a
-        key="ticket-link"
-        href="https://discord.com/channels/204984438596042752/985222513640497233"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-primary hover:underline font-semibold"
-      >
-        #open-a-ticket
-      </a>
-    );
-    parts.push(after);
-    return parts;
-  }
-
-  return text;
-}
 
 function FAQItem({ item, isOpen, onToggle }: { item: FAQItem; isOpen: boolean; onToggle: () => void }) {
   return (
@@ -111,7 +88,7 @@ function FAQItem({ item, isOpen, onToggle }: { item: FAQItem; isOpen: boolean; o
       </button>
       {isOpen && (
         <div className="px-6 py-4 bg-card/50 border-t border-primary/30">
-          <p className="text-foreground/80 leading-relaxed">{renderAnswerWithLinks(item.answer)}</p>
+          <p className="text-foreground/80 leading-relaxed">{item.answer}</p>
         </div>
       )}
     </div>

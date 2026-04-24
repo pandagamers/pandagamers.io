@@ -12,14 +12,14 @@ const charterSections: ChapterSection[] = [
   {
     title: "Mission Statement",
     content:
-      "Pandamonium is a member-driven gaming community guided by core values of inclusivity, equity, and accountability. Our mission is to foster a safe and drama-free environment where gamers can forge lasting connections while treating each other with respect.",
+      "Membership in our community is a commitment to adhere to these guiding principles.",
   },
   {
     title: "Demographics",
     content: (
       <>
         <strong>Community Members:</strong> 300+<br />
-        <strong>Average Age:</strong> 30's - 50's<br />
+        <strong>Average Age:</strong> 30s - 50s<br />
         <strong>Age Span:</strong> 18 to 76 years old<br />
         <strong>Year Established:</strong> 2004<br />
         <br />
@@ -86,7 +86,7 @@ const charterSections: ChapterSection[] = [
     title: "Communication Channels",
     content: (
       <>
-        Our website serves as a valuable recruitment tool, providing essential information about Pandamonium. Discord is where the magic happens! It is our central hub for announcements, discussions, upcoming events, and camaraderie. Stay informed by actively participating in voice and text chat, checking announcements, and joining conversations. Share your knowledge and experiences—it's what makes Pandamonium thrive.
+        This website serves as a valuable recruitment tool and provides essential information about Pandamonium, but Discord is where the magic happens! It is our central hub for announcements, discussions, upcoming events, and camaraderie. Stay informed by actively participating in voice and text chat, checking announcements, and joining conversations. Share your knowledge and experiences—it's what makes Pandamonium thrive.
         <br />
         <br />
         <em>"Communication leads to community, that is, to understanding, intimacy and mutual valuing." - Rollo May</em>

@@ -43,7 +43,7 @@ export default function Home() {
               </p>
 
               <p className="text-lg text-foreground/80 mb-12 leading-relaxed max-w-2xl mx-auto">
-                Founded in 2004, we foster a safe and drama-free environment where gamers can forge lasting connections while treating each other with respect.
+                <strong>Founded in 2004, we foster a safe and drama-free environment where gamers can forge lasting connections while treating each other with respect.</strong>
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -66,7 +66,7 @@ export default function Home() {
                 </p>
 
                 <p>
-                  Our members bring a multitude of perspectives that enrich our community, including voices often marginalized elsewhere. Together we are real-life and online friends who are committed to playing games and having fun.
+                  Our over 300 members bring a multitude of perspectives that enrich our community, including voices often marginalized elsewhere. Together we are real-life and online friends who are committed to playing games and having fun.
                 </p>
 
                 <p>
