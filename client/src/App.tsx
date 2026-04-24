@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { Toaster } from "@/components/ui/sonner";
+// import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
 import { Route, Switch, useLocation } from "wouter";
@@ -65,7 +65,7 @@ function App() {
         // switchable
       >
         <TooltipProvider>
-          <Toaster />
+          {/* <Toaster /> */}
           <Router />
         </TooltipProvider>
       </ThemeProvider>

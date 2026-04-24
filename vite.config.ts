@@ -100,8 +100,9 @@ function vitePluginManusDebugCollector(): Plugin {
     configureServer(server: ViteDevServer) {
       // Security headers middleware (HTTPS redirect disabled for dev server)
       server.middlewares.use((req, res, next) => {
-        // Security headers (HTTPS redirect only in production)
-        res.setHeader("Content-Security-Policy", "script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com");
+        // Skip CSP in dev to allow Vite React plugin preamble injection
+        // CSP will be enforced in production via build output
+        // res.setHeader("Content-Security-Policy", "script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com");
         res.setHeader("X-Frame-Options", "SAMEORIGIN");
         res.setHeader("X-Content-Type-Options", "nosniff");
         res.setHeader("Referrer-Policy", "no-referrer-when-downgrade");
