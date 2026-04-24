@@ -14,7 +14,8 @@ import Apply from "./pages/Apply";
 import Privacy from "./pages/Privacy";
 import Events from "./pages/Events";
 import FAQ from "./pages/FAQ";
-import Application from "./pages/Application";
+import Apprentices from "./pages/Apprentices";
+import GettingStarted from "./pages/GettingStarted";
 
 
 function ScrollToTop() {
@@ -41,7 +42,8 @@ function Router() {
         <Route path={"/privacy"} component={Privacy} />
         <Route path={"/events"} component={Events} />
         <Route path={"/faq"} component={FAQ} />
-        <Route path={"/application"} component={Application} />
+        <Route path={"/getting-started"} component={GettingStarted} />
+        <Route path={"/apprentices"} component={Apprentices} />
         <Route path={"/404"} component={NotFound} />
         {/* Final fallback route */}
         <Route component={NotFound} />

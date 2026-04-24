@@ -206,11 +206,11 @@ export default function Charter() {
         {/* Hero Section */}
         <section className="bg-card border-b border-primary/30 py-12 md:py-16">
           <div className="container">
-            <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4">
+            <h1 className="text-4xl md:text-5xl font-bold text-primary mb-4 text-center">
               CHARTER
             </h1>
-            <p className="text-lg text-foreground/80">
-              Our community's guiding principles and structure
+            <p className="text-lg text-foreground/80 text-center">
+              Membership in our community is a commitment to adhere to these guiding principles.
             </p>
           </div>
         </section>
@@ -235,7 +235,7 @@ export default function Charter() {
                     <div className="space-y-6 mt-6">
                       {section.subsections.map((subsection, subIdx) => (
                         <div key={subIdx} className="space-y-2">
-                          <h3 className="text-lg font-semibold text-primary">
+                          <h3 className="text-lg font-semibold text-accent">
                             {subsection.subtitle}
                           </h3>
                           <div className="text-foreground/80 leading-relaxed">

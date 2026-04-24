@@ -74,7 +74,7 @@ export default function Home() {
                 </p>
 
                 <p>
-                  While MMOs remain our roots, we welcome multiplayer games across genres. We invite you to considering joining our vibrant community.
+                  While MMOs remain our roots, we welcome multiplayer games across genres. We invite you to consider joining our vibrant community.
                 </p>
               </div>
 

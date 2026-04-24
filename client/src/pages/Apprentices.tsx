@@ -12,10 +12,10 @@ export default function Application() {
         <section className="py-16 md:py-24 bg-card border-b border-primary/30">
           <div className="container">
             <h1 className="text-5xl md:text-6xl font-bold mb-6 text-primary text-center">
-              PANDAMONIUM APPRENTICESHIP PROCESS
+              APPRENTICESHIP PROCESS
             </h1>
             <p className="text-lg text-foreground/80 text-center max-w-2xl mx-auto">
-              Guidance for reviewing applications and evaluating apprentice promotions
+              Guidance for reviewing applications and evaluating apprentice promotions.
             </p>
           </div>
         </section>
@@ -33,7 +33,7 @@ export default function Application() {
             {/* Can't See Channels Section */}
             <div className="mb-12">
               <h2 className="text-2xl font-bold text-accent mb-6 uppercase tracking-wide">
-                Can't See the Open Applications Section or Apprentice Review Channels?
+                ACCESS APPLICATIONS AND APPRENTICE REVIEWS
               </h2>
               <div className="bg-card rounded-lg border border-primary/30 p-8">
                 <p className="text-foreground/80 mb-6">
@@ -42,11 +42,11 @@ export default function Application() {
                 <div className="space-y-4 text-foreground/80">
                   <div>
                     <p className="font-semibold text-primary mb-2">For Apprentice Reviews:</p>
-                    <p className="ml-4">Scroll down to the Information section and click on the checkbox next to <span className="font-mono text-primary">"apprentice_review."</span></p>
+                    <p className="ml-4">Scroll down to the Member Info section and click on the checkbox next to <span className="font-mono text-primary">"apprentice-review."</span></p>
                   </div>
                   <div>
                     <p className="font-semibold text-primary mb-2">For Applications:</p>
-                    <p className="ml-4">Scroll down to the <span className="font-mono text-primary">"Open Applications"</span> category (third category down). Click on <span className="font-mono text-primary">"Follow Category."</span></p>
+                    <p className="ml-4">Scroll down to the <span className="font-mono text-primary">"Open Applications"</span> category. Click on <span className="font-mono text-primary">"Follow Category."</span></p>
                   </div>
                 </div>
               </div>

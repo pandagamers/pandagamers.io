@@ -17,7 +17,7 @@ export default function Apply() {
               APPLY
             </h1>
             <p className="text-lg text-foreground/80 text-center max-w-2xl mx-auto">
-              Interested in joining Pandamonium? We would love to have you! Here is how to apply.
+              Interested in joining Pandamonium? Here is how to apply.
             </p>
           </div>
         </section>
@@ -83,7 +83,7 @@ export default function Apply() {
                 <div className="flex-1">
                   <h2 className="text-2xl font-bold text-primary mb-3">Submit Your Application</h2>
                   <p className="text-foreground/80 mb-4">
-                    Once you have joined the Discord server, navigate to the <span className="font-mono text-primary">#apply</span> channel and follow the directions to submit your application.
+                    Once you have joined the Discord server, navigate to the <a href="https://discord.com/channels/204984438596042752/838783816767373362" target="_blank" rel="noopener noreferrer" className="font-mono text-primary hover:underline">#apply</a> channel and follow the directions to submit your application.
                   </p>
                   <p className="text-foreground/80">
                     Your application will be reviewed by all community members and approved or denied once a consensus has been reached. This process takes at least 24 hours.

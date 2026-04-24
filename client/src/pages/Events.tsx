@@ -63,7 +63,7 @@ export default function Events() {
                 
                 <div className="sesh-calendar-wrapper overflow-hidden rounded-lg border border-primary/20 bg-background/50 h-96 md:h-screen">
                   <iframe
-                    src="https://sesh.fyi/calendar/204984438596042752"
+                    src="https://sesh.fyi/calendar/204984438596042752?hide_header=true&hide_nav=true"
                     className="w-full h-full"
                     frameBorder="0"
                     scrolling="auto"
@@ -88,7 +88,7 @@ export default function Events() {
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="text-primary font-bold mt-1">4.</span>
-                      <span>Have an event idea? Create it yourself or reach out to your chapter leaders for support.</span>
+                      <span>Have an event idea? Create it, and people will come.</span>
                     </li>
                   </ul>
                 </div>
