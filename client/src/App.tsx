@@ -29,8 +29,6 @@ function ScrollToTop() {
 }
 
 function Router() {
-  const [, setLocation] = useLocation();
-  
   useEffect(() => {
     // Handle GitHub Pages SPA routing redirect
     const redirect = sessionStorage.redirect;
@@ -41,9 +39,12 @@ function Router() {
       const route = redirect.startsWith(basePath) 
         ? redirect.slice(basePath.length) 
         : redirect;
-      setLocation(route || '/');
+      // Use window.history to navigate without full page reload
+      if (route && route !== '/') {
+        window.history.replaceState(null, '', route);
+      }
     }
-  }, [setLocation]);
+  }, []);
   
   return (
     <>
