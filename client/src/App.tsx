@@ -2,7 +2,8 @@ import { useEffect } from "react";
 // import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
-import { Route, Switch, useLocation } from "wouter";
+import { Route, Switch, useLocation, Router as WouterRouter } from "wouter";
+import { useHashLocation } from "wouter/use-hash-location";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
@@ -28,7 +29,7 @@ function ScrollToTop() {
   return null;
 }
 
-function Router() {
+function AppRouter() {
   useEffect(() => {
     // Handle GitHub Pages SPA routing redirect
     const redirect = sessionStorage.redirect;
@@ -83,7 +84,9 @@ function App() {
       >
         <TooltipProvider>
           {/* <Toaster /> */}
-          <Router />
+          <WouterRouter hook={useHashLocation}>
+            <AppRouter />
+          </WouterRouter>
         </TooltipProvider>
       </ThemeProvider>
     </ErrorBoundary>
