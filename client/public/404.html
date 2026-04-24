@@ -7,16 +7,15 @@
     <title>Pandamonium Gaming Community</title>
     <script>
       // GitHub Pages SPA routing workaround
-      // Store the current path before redirecting to index.html
+      // Convert pathname to hash-based routing
       const path = window.location.pathname;
-      const base = '/pandagamers.io';
+      const basePath = '/pandagamers.io';
       
-      // Only redirect if this is not the root path
-      if (path !== base + '/' && path !== base) {
-        // Store the path for the app to use
-        sessionStorage.redirect = path;
-        // Redirect to the base index.html
-        window.location.href = base + '/';
+      // Extract the route from the pathname
+      if (path !== basePath + '/' && path !== basePath && path.startsWith(basePath)) {
+        const route = path.slice(basePath.length);
+        // Redirect to the same path but with hash-based routing
+        window.location.replace(basePath + '/#' + route);
       }
     </script>
   </head>
