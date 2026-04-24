@@ -146,7 +146,7 @@ const chapterSections: ChapterSection[] = [
         title: "Community Invite",
         content: (
           <>
-            Thank you for choosing us as your Palia community. You can get your toon invited in-game by posting a request in <strong>Pandamonium › 💬 Community Invites and Friend Re...</strong> Be sure you are not a member of another in-game community before posting or the invite will not go through.
+            Thank you for choosing us as your Palia community. You can get your toon invited in-game by posting a request in <a href="https://discord.com/channels/204984438596042752/1238207534163296316" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">Community Invites and Friend Request</a>. Be sure you are not a member of another in-game community before posting or the invite will not go through. Also note that Palia requires you to be online at the same time as the inviter, and often requires you to accept their in-game friend request first, so it would be helpful if you could note when you'll be online as well.
           </>
         ),
       },
@@ -159,10 +159,21 @@ const chapterSections: ChapterSection[] = [
         ),
       },
       {
+        title: "Communication",
+        content: (
+          <>
+            Palia's in-game chat is limited, which can make it harder, especially for Apprentices, to connect with the community. Because of this, we encourage you to use Discord as your primary way to communicate.
+            <br />
+            <br />
+            For Palia-specific conversations, please use the <a href="https://discord.com/channels/204984438596042752/1238207595815370883" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">Palia Chat</a> channel in Discord. This is where most discussion, coordination, and Palia community interaction takes place.
+          </>
+        ),
+      },
+      {
         title: "Group Activities",
         content: (
           <>
-            If you're interested in group activities, keep an eye on the <strong>Pandamonium › 📅 Events</strong> channel.
+            If you're interested in group activities, keep an eye on the <a href="https://discord.com/channels/204984438596042752/1238207203110817962" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">Events</a> channel.
           </>
         ),
       },
