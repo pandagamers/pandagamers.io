@@ -98,16 +98,9 @@ function vitePluginManusDebugCollector(): Plugin {
     },
 
     configureServer(server: ViteDevServer) {
-      // Security headers middleware
+      // Security headers middleware (HTTPS redirect disabled for dev server)
       server.middlewares.use((req, res, next) => {
-        // HTTPS redirect
-        const proto = req.headers["x-forwarded-proto"] || "http";
-        if (proto === "http" && req.url !== "/__manus__/debug-collector.js") {
-          const host = req.headers.host || "localhost";
-          return res.writeHead(301, { Location: `https://${host}${req.url}` }).end();
-        }
-
-        // Security headers
+        // Security headers (HTTPS redirect only in production)
         res.setHeader("Content-Security-Policy", "script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com");
         res.setHeader("X-Frame-Options", "SAMEORIGIN");
         res.setHeader("X-Content-Type-Options", "nosniff");
@@ -170,8 +163,8 @@ function vitePluginManusDebugCollector(): Plugin {
 
 const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(), vitePluginManusDebugCollector()];
 
-export default defineConfig({
-  base: '/pandagamers.io/',
+export default defineConfig(({ command }) => ({
+  base: command === 'build' ? '/pandagamers.io/' : '/',
   plugins,
   resolve: {
     alias: {
@@ -204,4 +197,4 @@ export default defineConfig({
       deny: ["**/.*"],
     },
   },
-});
+}));
