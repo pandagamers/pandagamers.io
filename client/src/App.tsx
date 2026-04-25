@@ -30,25 +30,6 @@ function ScrollToTop() {
 }
 
 function AppRouter() {
-  useEffect(() => {
-    // Handle GitHub Pages SPA routing redirect from 404.html
-    const redirect = sessionStorage.redirect;
-    if (redirect) {
-      delete sessionStorage.redirect;
-      // Convert pathname to hash-based route
-      // e.g., /pandagamers.io/getting-started -> /#/getting-started
-      let route = redirect;
-      // Remove any base path prefixes
-      if (route.startsWith('/pandagamers.io')) {
-        route = route.slice('/pandagamers.io'.length);
-      }
-      // Navigate using hash
-      if (route && route !== '/') {
-        window.location.hash = route;
-      }
-    }
-  }, []);
-  
   return (
     <>
       <ScrollToTop />
