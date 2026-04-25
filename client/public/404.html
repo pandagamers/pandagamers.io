@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <title>Pandamonium</title>
+    <script>
+      // GitHub Pages SPA routing fix
+      // Store the path before redirect
+      (function() {
+        const path = window.location.pathname;
+        sessionStorage.redirect = path;
+      })();
+    </script>
+  </head>
+  <body>
+    <script>
+      // Redirect to index.html with the stored path
+      const redirect = sessionStorage.redirect;
+      if (redirect && redirect !== window.location.pathname) {
+        delete sessionStorage.redirect;
+        window.location.href = redirect;
+      } else {
+        // If no redirect stored, go to home
+        window.location.href = '/';
+      }
+    </script>
+  </body>
+</html>
