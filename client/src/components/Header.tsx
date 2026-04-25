@@ -1,10 +1,11 @@
 import { useState } from "react";
-import { Link } from "wouter";
+import { Link, useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
+  const [location] = useLocation();
 
   const navItems = [
     { label: "Charter", href: "/charter" },
@@ -17,7 +18,7 @@ export default function Header() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 bg-background border-b border-primary/30 backdrop-blur-sm">
+    <header className="sticky top-0 z-50 bg-background/80 border-b border-primary/20 backdrop-blur-xl shadow-lg shadow-black/10">
       <div className="container flex items-center justify-between h-16 md:h-20">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
@@ -34,7 +35,11 @@ export default function Header() {
         {/* Desktop Navigation */}
         <nav className="hidden xl:flex items-center gap-8">
           {navItems.map((item) => (
-            <Link key={item.href} href={item.href} className="font-poppins font-medium text-foreground hover:text-primary transition-colors duration-200 uppercase text-sm tracking-wide">
+            <Link key={item.href} href={item.href} className={`font-poppins font-medium transition-colors duration-200 uppercase text-sm tracking-wide ${
+              location === item.href
+                ? "text-accent"
+                : "text-foreground hover:text-primary"
+            }`}>
               {item.label}
             </Link>
           ))}
@@ -80,7 +85,11 @@ export default function Header() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="font-poppins font-medium text-foreground hover:text-primary transition-colors uppercase text-sm tracking-wide block py-2"
+                className={`font-poppins font-medium transition-colors uppercase text-sm tracking-wide block py-2 ${
+                  location === item.href
+                    ? "text-accent"
+                    : "text-foreground hover:text-primary"
+                }`}
                 onClick={() => setIsOpen(false)}
               >
                 {item.label}
