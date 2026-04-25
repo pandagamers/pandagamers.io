@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Users, Shield, Zap } from "lucide-react";
 import { Link } from "wouter";
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
@@ -32,10 +33,12 @@ export default function Home() {
                   src="https://d2xsxph8kpxj0f.cloudfront.net/310519663500670124/SXNGAT78vSNwpoRmkuGSKu/Clipboard_0_E213DA37_8f8aae30.png"
                   alt="Pandamonium"
                   className="relative w-48 h-48 md:w-64 md:h-64 object-contain drop-shadow-2xl"
+                  loading="eager"
+                  decoding="async"
                 />
               </div>
 
-              <h1 className="text-5xl md:text-7xl font-bold mb-6 text-primary">
+              <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
                 PANDAMONIUM
               </h1>
 
@@ -64,6 +67,11 @@ export default function Home() {
                   <Link href="/charter">Read Charter</Link>
                 </Button>
               </div>
+            </div>
+
+            {/* Scroll Down Cue */}
+            <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce text-primary/70 text-2xl">
+              ↓
             </div>
           </div>
         </section>
