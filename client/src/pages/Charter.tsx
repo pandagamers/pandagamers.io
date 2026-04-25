@@ -204,16 +204,19 @@ export default function Charter() {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="bg-card border-b border-primary/30 py-12 md:py-16">
-          <div className="container">
-            <h1 className="text-5xl md:text-6xl font-bold text-primary mb-4 text-center">
-              CHARTER
+        <section className="py-16 md:py-24 bg-gradient-to-b from-primary/10 to-transparent border-b border-primary/20">
+          <div className="container text-center">
+            <h1 className="text-4xl md:text-6xl font-bold text-primary uppercase tracking-wide mb-4">
+              Charter
             </h1>
-            <p className="text-lg text-foreground/80 text-center">
+            <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
               Membership in our community is a commitment to adhere to these guiding principles.
             </p>
           </div>
         </section>
+
+        {/* Gradient Divider */}
+        <div className="h-px w-full bg-gradient-to-r from-transparent via-primary/40 to-transparent" />
 
         {/* Content Section */}
         <section className="py-12 md:py-16">
