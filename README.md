@@ -71,13 +71,13 @@ This website is built with modern web technologies:
 
 Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International
 
-See LICENSE.txt for full details.
+See [LICENSE](LICENSE) for full details.
 
 ## 🔒 Security
 
 For security concerns, please contact: security@pandagamers.io
 
-See [security.txt](/.well-known/security.txt) for our security policy and responsible disclosure information.
+See [security.txt](https://pandagamers.io/.well-known/security.txt) for our security policy and responsible disclosure information.
 
 ## 📝 Development
 
