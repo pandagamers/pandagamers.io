@@ -164,8 +164,8 @@ function vitePluginManusDebugCollector(): Plugin {
 
 const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(), vitePluginManusDebugCollector()];
 
-export default defineConfig(({ command }) => ({
-  base: command === 'build' ? '/pandagamers.io/' : '/',
+export default defineConfig(({ command: _command }) => ({
+  base: './',
   plugins,
   resolve: {
     alias: {
