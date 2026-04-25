@@ -68,6 +68,8 @@ export default function Header() {
           className="xl:hidden p-2 hover:bg-primary/10 rounded transition-colors"
           onClick={() => setIsOpen(!isOpen)}
           aria-label="Toggle menu"
+          aria-expanded={isOpen}
+          aria-controls="mobile-navigation"
         >
           {isOpen ? (
             <X className="w-6 h-6 text-primary" />
@@ -79,7 +81,7 @@ export default function Header() {
 
       {/* Mobile Navigation */}
       {isOpen && (
-        <nav className="xl:hidden bg-card border-t border-primary/30 py-4">
+        <nav id="mobile-navigation" className="xl:hidden bg-card border-t border-primary/30 py-4">
           <div className="container flex flex-col gap-4">
             {navItems.map((item) => (
               <Link
