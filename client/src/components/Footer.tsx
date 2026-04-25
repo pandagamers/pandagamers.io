@@ -22,39 +22,39 @@ export default function Footer() {
             <h3 className="text-lg font-bold text-primary mb-4 uppercase">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <a href="/charter" className="text-foreground/80 hover:text-primary transition-colors text-sm">
+                <Link href="/charter" className="text-foreground/80 hover:text-primary transition-colors text-sm">
                   Charter
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/history" className="text-foreground/80 hover:text-primary transition-colors text-sm">
+                <Link href="/history" className="text-foreground/80 hover:text-primary transition-colors text-sm">
                   History
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/leadership" className="text-foreground/80 hover:text-primary transition-colors text-sm">
+                <Link href="/leadership" className="text-foreground/80 hover:text-primary transition-colors text-sm">
                   Leadership
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/games" className="text-foreground/80 hover:text-primary transition-colors text-sm">
+                <Link href="/games" className="text-foreground/80 hover:text-primary transition-colors text-sm">
                   Games
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/events" className="text-foreground/80 hover:text-primary transition-colors text-sm">
+                <Link href="/events" className="text-foreground/80 hover:text-primary transition-colors text-sm">
                   Events
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/faq" className="text-foreground/80 hover:text-primary transition-colors text-sm">
+                <Link href="/faq" className="text-foreground/80 hover:text-primary transition-colors text-sm">
                   FAQ
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/apply" className="text-foreground/80 hover:text-primary transition-colors text-sm">
+                <Link href="/apply" className="text-foreground/80 hover:text-primary transition-colors text-sm">
                   Apply
-                </a>
+                </Link>
               </li>
               <li>
                 <a href="https://pandamonium-shop.fourthwall.com/" target="_blank" rel="noopener noreferrer" className="text-foreground/80 hover:text-primary transition-colors text-sm">
