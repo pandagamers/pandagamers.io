@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { ArrowRight, Users, Shield, Zap } from "lucide-react";
+import { Users, Shield, Zap } from "lucide-react";
 import { Link } from "wouter";
 
 export default function Home() {
@@ -47,6 +47,12 @@ export default function Home() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link href="/apply" className="px-8 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:opacity-90 transition-opacity">
+                  Apply Now
+                </Link>
+                <Link href="/charter" className="px-8 py-3 border border-primary text-primary rounded-lg font-semibold hover:bg-primary/10 transition-colors">
+                  Read Charter
+                </Link>
               </div>
             </div>
           </div>
