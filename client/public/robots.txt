@@ -1,13 +1,15 @@
+# Pandamonium Gaming Community - Robots.txt
+# Allow search engines to crawl all public pages
+
 User-agent: *
 Allow: /
-Allow: /charter
-Allow: /history
-Allow: /games
-Allow: /events
-Allow: /faq
-Allow: /leadership
-Allow: /apply
+
+# Disallow internal and private directories
 Disallow: /admin
 Disallow: /private
+Disallow: /__manus__/
+
+# Note: This site uses hash-based routing (e.g., /#/charter)
+# All public pages are accessible from the root path and will be crawled
 
 Sitemap: https://pandagamers.io/sitemap.xml
