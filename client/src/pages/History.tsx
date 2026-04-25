@@ -41,16 +41,19 @@ export default function History() {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="py-16 md:py-24 bg-card border-b border-primary/30">
-          <div className="container">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-primary text-center">
-              HISTORY
+        <section className="py-16 md:py-24 bg-gradient-to-b from-primary/10 to-transparent border-b border-primary/20">
+          <div className="container text-center">
+            <h1 className="text-4xl md:text-6xl font-bold text-primary uppercase tracking-wide mb-4">
+              History
             </h1>
-            <p className="text-lg text-foreground/80 text-center max-w-2xl mx-auto">
+            <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
               The history of Pandamonium is not just about one guild, but of a group of wonderful friends who have been playing together in different games and under different names for many years. Our goal is to provide a welcoming community for all, regardless of play style.
             </p>
           </div>
         </section>
+
+        {/* Gradient Divider */}
+        <div className="h-px w-full bg-gradient-to-r from-transparent via-primary/40 to-transparent" />
 
         {/* Timeline */}
         <section className="py-16 md:py-24">
@@ -65,7 +68,7 @@ export default function History() {
                   <div key={index} className={`md:flex md:gap-8 ${index % 2 === 0 ? "md:flex-row-reverse" : ""}`}>
                     {/* Content */}
                     <div className="md:w-1/2">
-                      <div className="p-6 bg-card rounded-lg border border-primary/30 hover:border-primary/60 transition-colors">
+                      <div className="p-6 bg-card rounded-lg border border-primary/30 hover:border-primary/70 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/10">
                         <h3 className="text-xl font-bold text-accent mb-2">{milestone.year}</h3>
                         <p className="text-foreground/80">{milestone.event}</p>
                       </div>

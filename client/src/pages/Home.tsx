@@ -25,11 +25,13 @@ export default function Home() {
           {/* Content */}
           <div className="container relative z-10 py-20 md:py-32">
             <div className="max-w-3xl mx-auto text-center">
-              <div className="mb-8 flex justify-center">
+              {/* Logo with animated glow */}
+              <div className="relative mb-8 flex justify-center">
+                <div className="absolute inset-0 mx-auto w-56 h-56 md:w-72 md:h-72 rounded-full bg-primary/20 blur-3xl animate-pulse" />
                 <img
                   src="https://d2xsxph8kpxj0f.cloudfront.net/310519663500670124/SXNGAT78vSNwpoRmkuGSKu/Clipboard_0_E213DA37_8f8aae30.png"
                   alt="Pandamonium"
-                  className="w-48 h-48 md:w-64 md:h-64 object-contain"
+                  className="relative w-48 h-48 md:w-64 md:h-64 object-contain drop-shadow-2xl"
                 />
               </div>
 
@@ -47,16 +49,27 @@ export default function Home() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Link href="/apply" className="px-8 py-3 bg-primary text-primary-foreground rounded-lg font-semibold hover:opacity-90 transition-opacity">
-                  Apply Now
-                </Link>
-                <Link href="/charter" className="px-8 py-3 border border-primary text-primary rounded-lg font-semibold hover:bg-primary/10 transition-colors">
-                  Read Charter
-                </Link>
+                <Button
+                  asChild
+                  className="bg-accent hover:bg-accent/90 text-accent-foreground font-bold uppercase shadow-lg shadow-accent/20 hover:shadow-accent/30 transition-all hover:-translate-y-0.5"
+                >
+                  <Link href="/apply">Apply Now</Link>
+                </Button>
+
+                <Button
+                  asChild
+                  variant="outline"
+                  className="border-primary text-primary hover:bg-primary/10 font-bold uppercase tracking-wide shadow-lg shadow-primary/10 hover:shadow-primary/20 transition-all hover:-translate-y-0.5"
+                >
+                  <Link href="/charter">Read Charter</Link>
+                </Button>
               </div>
             </div>
           </div>
         </section>
+
+        {/* Gradient Divider */}
+        <div className="h-px w-full bg-gradient-to-r from-transparent via-primary/40 to-transparent" />
 
         {/* About Section */}
         <section className="py-20 md:py-32 bg-card">
@@ -86,7 +99,7 @@ export default function Home() {
 
               {/* Values Grid */}
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-                <div className="p-6 bg-background rounded-lg border border-primary/30 hover:border-primary/60 transition-colors">
+                <div className="p-6 bg-background rounded-lg border border-primary/30 hover:border-primary/70 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/10">
                   <Users className="w-12 h-12 text-accent mb-4" />
                   <h3 className="text-xl font-bold text-primary mb-3">Inclusivity</h3>
                   <p className="text-foreground/80">
@@ -94,7 +107,7 @@ export default function Home() {
                   </p>
                 </div>
 
-                <div className="p-6 bg-background rounded-lg border border-primary/30 hover:border-primary/60 transition-colors">
+                <div className="p-6 bg-background rounded-lg border border-primary/30 hover:border-primary/70 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/10">
                   <Zap className="w-12 h-12 text-accent mb-4" />
                   <h3 className="text-xl font-bold text-primary mb-3">Equity</h3>
                   <p className="text-foreground/80">
@@ -102,7 +115,7 @@ export default function Home() {
                   </p>
                 </div>
 
-                <div className="p-6 bg-background rounded-lg border border-primary/30 hover:border-primary/60 transition-colors">
+                <div className="p-6 bg-background rounded-lg border border-primary/30 hover:border-primary/70 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/10">
                   <Shield className="w-12 h-12 text-accent mb-4" />
                   <h3 className="text-xl font-bold text-primary mb-3">Accountability</h3>
                   <p className="text-foreground/80">
@@ -119,7 +132,7 @@ export default function Home() {
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Button
                     asChild
-                    className="bg-accent hover:bg-accent/90 text-accent-foreground font-bold uppercase"
+                    className="bg-accent hover:bg-accent/90 text-accent-foreground font-bold uppercase tracking-wide shadow-lg shadow-accent/20 hover:shadow-accent/30 transition-all hover:-translate-y-0.5"
                   >
                     <Link href="/charter">
                       View Charter
@@ -127,7 +140,7 @@ export default function Home() {
                   </Button>
                   <Button
                     asChild
-                    className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold uppercase"
+                    className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold uppercase tracking-wide shadow-lg shadow-primary/20 hover:shadow-primary/30 transition-all hover:-translate-y-0.5"
                   >
                     <Link href="/apply">
                       Apply Now

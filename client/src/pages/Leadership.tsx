@@ -53,16 +53,19 @@ export default function Leadership() {
 
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="py-16 md:py-24 bg-card border-b border-primary/30">
-          <div className="container">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 text-primary text-center">
-              LEADERSHIP
+        <section className="py-16 md:py-24 bg-gradient-to-b from-primary/10 to-transparent border-b border-primary/20">
+          <div className="container text-center">
+            <h1 className="text-4xl md:text-6xl font-bold text-primary uppercase tracking-wide mb-4">
+              Leadership
             </h1>
-            <p className="text-lg text-foreground/80 text-center max-w-2xl mx-auto">
+            <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
               Meet the dedicated members who help guide and support our community. Our leadership team is committed to fostering a safe, inclusive, and drama-free environment.
             </p>
           </div>
         </section>
+
+        {/* Gradient Divider */}
+        <div className="h-px w-full bg-gradient-to-r from-transparent via-primary/40 to-transparent" />
 
         {/* Leadership Teams */}
         <section className="py-16 md:py-24">
@@ -78,7 +81,7 @@ export default function Leadership() {
                     {team.members.map((member, memberIndex) => (
                       <div
                         key={memberIndex}
-                        className="p-6 bg-card rounded-lg border border-primary/30 hover:border-primary/60 transition-all hover:shadow-lg"
+                        className="p-6 bg-card rounded-lg border border-primary/30 hover:border-primary/70 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-primary/10"
                       >
                         <div className="flex items-center gap-4 mb-4">
                           <img
