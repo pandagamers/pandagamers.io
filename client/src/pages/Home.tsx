@@ -61,8 +61,7 @@ export default function Home() {
 
                 <Button
                   asChild
-                  variant="outline"
-                  className="border-primary text-primary hover:bg-primary/10 font-bold uppercase tracking-wide shadow-lg shadow-primary/10 hover:shadow-primary/20 transition-all hover:-translate-y-0.5"
+                  className="bg-primary/20 hover:bg-primary/30 text-primary font-bold uppercase border border-primary/50 shadow-lg shadow-primary/20 hover:shadow-primary/30 transition-all hover:-translate-y-0.5"
                 >
                   <Link href="/charter">Read Charter</Link>
                 </Button>
