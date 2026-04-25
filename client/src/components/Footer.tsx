@@ -1,4 +1,4 @@
-import { Mail, Instagram, Youtube } from "lucide-react";
+import { Instagram, Youtube } from "lucide-react";
 import { SiDiscord } from "react-icons/si";
 import { Link } from "wouter";
 
@@ -104,7 +104,7 @@ export default function Footer() {
 
         {/* Bottom */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-foreground/60">
-          <p>&copy; 2004-2026 Pandamonium. All Rights Reserved.</p>
+          <p>&copy; 2004-{currentYear} Pandamonium. All Rights Reserved.</p>
           <Link href="/privacy" className="hover:text-primary transition-colors">
             Privacy Statement
           </Link>
