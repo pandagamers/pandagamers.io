@@ -141,7 +141,7 @@ function FAQItem({ item, isOpen, onToggle }: { item: FAQItem; isOpen: boolean; o
 }
 
 export default function FAQ() {
-  const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
     <div className="min-h-screen flex flex-col bg-background">
