@@ -90,6 +90,31 @@ const faqItems: FAQItem[] = [
       </>
     ),
   },
+  {
+    question: "Do I have to join a game chapter to become a member?",
+    answer: (
+      <>
+        No, you don't have to join a game chapter to become a member of Pandamonium. However, chapter membership is the primary way most members engage with the community. If you're not interested in joining a specific chapter, you can still participate in Pandamonium by being very active in our Discord server. You'll need to demonstrate consistent engagement—attending community events, participating in discussions, and contributing to the community culture. Members who are active in Discord but not in a chapter are still valued members of Pandamonium, though chapter membership provides more structured opportunities for gameplay and community building.
+      </>
+    ),
+  },
+  {
+    question: "What if I want to play a game that doesn't have a Pandamonium chapter yet?",
+    answer: (
+      <>
+        If there's a game you're passionate about, we'd love to hear about it. We have a few ways to organize around games:
+        <br />
+        <br />
+        <strong>Non-Chapter Communities:</strong> Any Senior Member can create an in-game community for a game that doesn't have a Formal or Pilot Chapter. These are built on active engagement and our shared community values. If you're interested in starting one, speak to a Community Manager.
+        <br />
+        <br />
+        <strong>Discord Posts:</strong> Anyone in our community can create a new post in Discord to follow and organize around a specific game. This is a low-barrier way to find other members interested in the same game and coordinate gameplay sessions.
+        <br />
+        <br />
+        <strong>Pilot Chapters:</strong> If there's significant community interest in a new game (especially at release), we may establish a Pilot Chapter. Pilot Chapters are tested to see if there's enough sustained interest to eventually become a Formal Chapter. Existing leadership team members and longstanding community members mentor the process. If you think a game deserves this level of investment, bring it up with the leadership team!
+      </>
+    ),
+  },
 ];
 
 function FAQItem({ item, isOpen, onToggle }: { item: FAQItem; isOpen: boolean; onToggle: () => void }) {
