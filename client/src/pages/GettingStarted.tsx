@@ -73,6 +73,14 @@ const chapterSections: ChapterSection[] = [
         ),
       },
       {
+        title: "Guild Bases",
+        content: (
+          <>
+            We have two main guild bases, both on Abbir sietch: Pandaloons Guild Base (Harkonnen) in Hagga Rift, northeast of Riftwatch at 3 o'clock into Hagga Basin, and Pandamonium Guild Base (Atreides) on Abbir sietch in Mysa Tarill, south of The Beast's Claw at 9 o'clock into Hagga Basin. Both bases feature ample ground and air vehicle space, shared storage, all fabricators and refineries, and over 2M water. Members tagged with the respective guild name have full access; other Pandas can request Associate access. To maintain water supplies, please add dead bodies to deathstills when water is low, or to body storage when bodies are needed. Review the <a href="https://discord.com/channels/204984438596042752/1365141467638796299/1382110241478410240" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">Base Courtesy & Guidelines</a> post before use, and enjoy!
+          </>
+        ),
+      },
+      {
         title: "Deep Desert Farming",
         content: (
           <>
