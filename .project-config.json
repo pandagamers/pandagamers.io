@@ -1,0 +1,37 @@
+{
+  "build_command": "pnpm run build",
+  "capabilities": [],
+  "dev_command": "pnpm run dev",
+  "env_vars": {},
+  "experiments": [
+    "no_db_push"
+  ],
+  "git_remote": {
+    "repo_url": "s3://vida-prod-gitrepo/webdev-git/310519663500670124/SXNGAT78vSNwpoRmkuGSKu",
+    "access_key_id": "ASIAZV3A2ECZCKOXKJXF",
+    "secret_access_key": "j/bevmRGBnAGWcqCVd0MjaIV/8iSXo8g6xR0Zoik",
+    "session_token": "IQoJb3JpZ2luX2VjENH//////////wEaCXVzLWVhc3QtMSJGMEQCICjBShXdbg6mWtEFbf5FDUnSoMRg84vjHHm22TBT20mBAiBEa6TcXFutT82G0NwYQBVpF3Worb4BPDw5UCnT2nsOcir/Awia//////////8BEAQaDDY2NTM4NjA5ODg2NiIMU6skLJnoFoa41SCgKtMD28sHrfEdZzyVmW8OdjLA4ET7fB3fOyP0lypv8TuNAMfGYEyGEHVV+cLyLXlilbYvrXcOvlCW53SCsF35G0/tH2+m/7AROaeUgsMDBaVuKc+QgtEtr2DoM8NFE4zVRb2ncSX/Wop73sGahxfDdN2f4eYwxtWTTUfUJtUozIrEgzkU88PIFARsT1ZjPuOUXftdfIuAZoLd9/bagCrX0Zsxq2/BvSV0SBoo5cfYR64Ayi5WBHfgH18P7L5OvYifSx186BZtShXpPM25kyVcSckx/hwkXnv5SUMlodMJJlEPGvWjZvNTLYvZldHtNRYM3Vm95TWCTtpDxpaeL6qkvbOXQ9ZzOmfYFpBeGiTYs0J6W5IqI7FdASaNw/AW7IxKLAYpc+KwWEpJiy4nM/qh12O9+BbEY/U99BB06XffHbOtWEomU7DpyoTfqKiuy1IQbC2NYCWcxEwZlELwxzv94SPpRS2X40xR+sOKLSK7b8hAgd0xzJJfcrMH+EeqAqKCzXbXn5wUlSSkH6YPXGzzCg4gsBpVphTM4JAsM8W1t6Q4TsKJlC+NQKR7wx2AzVZZBgY2MQerue6IlcyjCF3mkJTRyVT0sV8rq2HuoOP48oo6PrTYNh8w58Xc0AY6ngEyTlUKar0KUgV/uy+uNdGZO+4R0eW88Pwaz3Cx1EP68dRXjonFzW5/xa9kreKZMkxspwAwohIozpZB46tQZzvh7QD7/8s+fx+69+LqTxqhCW1xeQgBo/UqbUDzecyRoVvIDW/4ErFIBcbRd6K7zRZ3QPr3CQPYaPykaxxeL3E865BmovHe9LMqQcD2zh4exBYtFSXcYvoEWltgSyyKuw==",
+    "expiration": "2026-05-28T04:59:19.000Z"
+  },
+  "name": "pandagamers-replacement",
+  "path": "/home/ubuntu/pandagamers-replacement",
+  "port": 3000,
+  "secrets": {
+    "BUILT_IN_FORGE_API_KEY": "MvSXoF9B7EVctBVky9rJPm",
+    "BUILT_IN_FORGE_API_URL": "https://forge.manus.ai",
+    "JWT_SECRET": "Zhj4c9FKt2SRymzzxz2NpW",
+    "OAUTH_SERVER_URL": "https://api.manus.im",
+    "OWNER_NAME": "kelly",
+    "OWNER_OPEN_ID": "YubhyFtoQNWq3mEK4CC7aD",
+    "VITE_ANALYTICS_ENDPOINT": "https://manus-analytics.com",
+    "VITE_ANALYTICS_WEBSITE_ID": "8f72f3d0-d2a0-47c5-bcde-6b2e2f2cd3c3",
+    "VITE_APP_ID": "SXNGAT78vSNwpoRmkuGSKu",
+    "VITE_APP_LOGO": "https://files.manuscdn.com/user_upload_by_module/web_dev_logo/310519663500670124/UzdYGCiVwwkgCoTU.png",
+    "VITE_APP_TITLE": "Pandamonium",
+    "VITE_FRONTEND_FORGE_API_KEY": "iRvUgQhacVCrh2G6jh7nZ4",
+    "VITE_FRONTEND_FORGE_API_URL": "https://forge.manus.ai",
+    "VITE_OAUTH_PORTAL_URL": "https://manus.im"
+  },
+  "template_id": "web-static",
+  "test_command": "pnpm test"
+}
