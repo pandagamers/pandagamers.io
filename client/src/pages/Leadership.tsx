@@ -18,7 +18,7 @@ const leadershipTeam = [
       { name: "Bramble Wise", discord: "thorn.hobbs", avatar: "https://cdn.discordapp.com/avatars/445025398649257994/98f672e114a15ef87b511050ee89202f.webp?size=2048" },
       { name: "phot", discord: "phot.", avatar: "https://cdn.discordapp.com/avatars/249970318511177728/4dce731f73a62159d97c10122340b7cf.webp?size=2048" },
       { name: "Saint", discord: "frznsaint14", avatar: "https://cdn.discordapp.com/avatars/270224107428249601/39deb721ac44b9c80c1cd5ccf2a9cea4.webp?size=2048" },
-      { name: "TXPatman", discord: "txpatman", avatar: "https://cdn.discordapp.com/avatars/480597469873569794/1c293e5d8ff7a6238ac04abb8adab3825.webp?size=2048" },
+      { name: "TXPatman", discord: "txpatman", avatar: "https://cdn.discordapp.com/avatars/480597469873569794/1c293e5d8ff7a6238ac04abb8adab3825.webp" },
     ],
   },
   {
@@ -27,8 +27,8 @@ const leadershipTeam = [
       { name: "Adaire Thelmont", discord: "soiyer", avatar: "https://cdn.discordapp.com/avatars/135518124630867968/f21b547424bd9adb18e9eab83f6ac528.webp?size=2048" },
       { name: "Izzy Lazuli", discord: "tempotantrums", avatar: "https://cdn.discordapp.com/avatars/169178280530804736/b93d2ad0e8a554b7ab0b966d4662a1ae.webp?size=2048" },
       { name: "Kirne Emithelum", discord: "bookslap", avatar: "https://cdn.discordapp.com/avatars/113608688031236104/3428a5f1a2fae61f1a7dc6c3e06f0800.webp?size=2048" },
-      { name: "Rowan Ashe", discord: "evcom", avatar: "https://cdn.discordapp.com/avatars/138788438252978176/00204a155a1d34ee872908ef5ab21c26.webp?size=2048" },
-      { name: "Stellan Auturin", discord: "jaffaran", avatar: "https://cdn.discordapp.com/avatars/300062167284187138/1308126718816419882.webp?size=2048" },
+      { name: "Rowan Ashe", discord: "evcom", avatar: "https://cdn.discordapp.com/avatars/374211434004873216/8879a77562d7fbe671e2a0010e8c8db7.webp" },
+      { name: "Stellan Auturin", discord: "jaffaran", avatar: "https://cdn.discordapp.com/avatars/300062167284187138/a86054769f4a3d1c788023ea5e4782da.webp" },
     ],
   },
   {
