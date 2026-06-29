@@ -107,6 +107,26 @@ export default function Apply() {
               </div>
             </div>
 
+            {/* Step 5: Getting Started */}
+            <div className="mb-16 p-8 bg-card rounded-lg border border-primary/30">
+              <div className="flex items-start gap-4 mb-4">
+                <div className="flex-shrink-0 w-10 h-10 bg-accent rounded-full flex items-center justify-center">
+                  <span className="text-accent-foreground font-bold text-lg">5</span>
+                </div>
+                <div className="flex-1">
+                  <h2 className="text-2xl font-bold text-primary mb-3">Getting Started as an Apprentice</h2>
+                  <p className="text-foreground/80 mb-4">
+                    Once you have been approved, head over to our Getting Started guide to learn about Discord setup, selecting your pronouns and game preferences, creating events, and game-specific onboarding information. Whether you are joining us in Dune: Awakening, Final Fantasy XIV, Palia, or any of our other communities, this guide will help you get up to speed quickly.
+                  </p>
+                  <Link href="#/getting-started">
+                    <a className="inline-block px-6 py-2 bg-primary hover:bg-primary/90 text-primary-foreground font-bold uppercase rounded transition-colors">
+                      View Getting Started Guide
+                    </a>
+                  </Link>
+                </div>
+              </div>
+            </div>
+
             {/* Requirements */}
             <div className="p-8 bg-card rounded-lg border border-primary/30 mb-16">
               <h2 className="text-2xl font-bold text-primary mb-6">Requirements</h2>

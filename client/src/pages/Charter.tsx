@@ -42,7 +42,7 @@ const charterSections: ChapterSection[] = [
     title: "Diversity",
     content: (
       <>
-        Within Pandamonium, our strength lies in our diversity. Our membership includes individuals from various backgrounds, including differences in race, age, gender, religion, neurodivergence, and sexual orientation. We welcome everyone except those inclined toward bigotry, racism, homophobia, transphobia, xenophobia, or misogyny. If you harbor such behavior, this isn't the community for you.
+        Within Pandamonium, our strength lies in our diversity. Our membership includes individuals from various backgrounds, including differences in race, age, gender, religion, neurodivergence, and sexual orientation. We welcome everyone except those inclined toward bigotry, racism, homophobia, transphobia, xenophobia, misogyny, or ableism, including the use of derogatory slurs targeting any of these identities. If you harbor such behavior, this isn't the community for you.
         <br />
         <br />
         <em>"Strength lies in differences, not in similarities." - Stephen Covey</em>

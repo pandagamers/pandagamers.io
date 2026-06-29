@@ -68,7 +68,15 @@ const chapterSections: ChapterSection[] = [
         title: "Guild Invite",
         content: (
           <>
-            Thank you for choosing us as your Dune: Awakening community on <em>The Spiral</em> world. You can get your toon invited in-game by posting a request in <a href="https://discord.com/channels/204984438596042752/1378434385350627416" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">Guild Invites</a>. Be aware that we have two in-game guilds: Pandamonium (Atreides) and Pandaloons (Harkonnen). Be sure to specify which guild you are seeking an invite to when you post your request. If you would like to build your base on the same sietch as Panda, we're on <em>Abbir</em>. The primary Dune chat post can be found here: <a href="https://discord.com/channels/204984438596042752/1365141361870766172" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">Dune Chat</a>.
+            Thank you for choosing us as your Dune: Awakening community on <em>The Spiral</em> world. You can get your toon invited in-game by posting a request in <a href="https://discord.com/channels/204984438596042752/1378434385350627416" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">Guild Invites</a>. Be aware that we have three in-game guilds: Pandamonium (Atreides), Pandaloons (Harkonnen), and Pandalysium (Atreides). Be sure to specify which guild you are seeking an invite to when you post your request. If you would like to build your base on the same sietch as Panda, we're on <em>Abbir</em>. The primary Dune chat post can be found here: <a href="https://discord.com/channels/204984438596042752/1365141361870766172" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">Dune Chat</a>.
+          </>
+        ),
+      },
+      {
+        title: "Guild Bases",
+        content: (
+          <>
+            We have three main guild bases, all on Abbir sietch: Pandamonium Guild Base (Atreides) in Mysa Tarill, south of The Beast's Claw at 9 o'clock into Hagga Basin, Pandaloons Guild Base (Harkonnen) in Hagga Rift, northeast of Riftwatch at 3 o'clock into Hagga Basin, and Pandalysium Guild Base (Atreides) in Jabal Eifrit Al-sharq, northeast of Kel's Fallback at 1 o'clock into Hagga Basin. All bases feature ample ground and air vehicle space, shared storage, all fabricators and refineries, and over 2M water. Members tagged with the respective guild name have full access; other Pandas can request Associate access. To maintain water supplies, please add dead bodies to deathstills when water is low, or to body storage when bodies are needed. Review the <a href="https://discord.com/channels/204984438596042752/1365141467638796299/1382110241478410240" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">Base Courtesy & Guidelines</a> post before use, and enjoy!
           </>
         ),
       },
