@@ -1,7 +1,31 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { useState } from "react";
 
 export default function Streaming() {
+  const [downloading, setDownloading] = useState<string | null>(null);
+
+  const handleDownload = async (url: string, filename: string) => {
+    setDownloading(filename);
+    try {
+      const response = await fetch(url);
+      if (!response.ok) throw new Error('Download failed');
+      const blob = await response.blob();
+      const blobUrl = window.URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = blobUrl;
+      link.download = filename;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      window.URL.revokeObjectURL(blobUrl);
+    } catch (error) {
+      console.error('Download error:', error);
+      alert('Failed to download file. Please try again.');
+    } finally {
+      setDownloading(null);
+    }
+  };
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Header />
@@ -76,10 +100,10 @@ export default function Streaming() {
                 Feel free to use any of these assets in your streams. Remember: they cannot be modified in any way. Click on any asset to download it.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <a
-                  href="/manus-storage/pandamonium_logo_9f7b6793.png"
-                  download="pandamonium_logo.png"
-                  className="flex flex-col items-center p-6 bg-card rounded-lg border border-primary/30 hover:border-primary/70 hover:bg-primary/5 transition-all duration-300 cursor-pointer"
+                <button
+                  onClick={() => handleDownload('/manus-storage/pandamonium_logo_9f7b6793.png', 'pandamonium_logo.png')}
+                  disabled={downloading !== null}
+                  className="flex flex-col items-center p-6 bg-card rounded-lg border border-primary/30 hover:border-primary/70 hover:bg-primary/5 transition-all duration-300 cursor-pointer disabled:opacity-50"
                 >
                   <img
                     src="/manus-storage/pandamonium_logo_9f7b6793.png"
@@ -87,12 +111,12 @@ export default function Streaming() {
                     className="w-40 h-40 object-contain mb-4"
                   />
                   <p className="text-center text-foreground/70 text-sm font-semibold">Logo</p>
-                  <p className="text-center text-primary text-xs mt-2">Click to download</p>
-                </a>
-                <a
-                  href="/manus-storage/pandamonium_icon_dc55b1a6.png"
-                  download="pandamonium_icon.png"
-                  className="flex flex-col items-center p-6 bg-card rounded-lg border border-primary/30 hover:border-primary/70 hover:bg-primary/5 transition-all duration-300 cursor-pointer"
+                  <p className="text-center text-primary text-xs mt-2">{downloading === 'pandamonium_logo.png' ? 'Downloading...' : 'Click to download'}</p>
+                </button>
+                <button
+                  onClick={() => handleDownload('/manus-storage/pandamonium_icon_dc55b1a6.png', 'pandamonium_icon.png')}
+                  disabled={downloading !== null}
+                  className="flex flex-col items-center p-6 bg-card rounded-lg border border-primary/30 hover:border-primary/70 hover:bg-primary/5 transition-all duration-300 cursor-pointer disabled:opacity-50"
                 >
                   <img
                     src="/manus-storage/pandamonium_icon_dc55b1a6.png"
@@ -100,12 +124,12 @@ export default function Streaming() {
                     className="w-40 h-40 object-contain mb-4"
                   />
                   <p className="text-center text-foreground/70 text-sm font-semibold">Icon</p>
-                  <p className="text-center text-primary text-xs mt-2">Click to download</p>
-                </a>
-                <a
-                  href="/manus-storage/pandamonium_text_03eeca61.png"
-                  download="pandamonium_text.png"
-                  className="flex flex-col items-center p-6 bg-card rounded-lg border border-primary/30 hover:border-primary/70 hover:bg-primary/5 transition-all duration-300 cursor-pointer"
+                  <p className="text-center text-primary text-xs mt-2">{downloading === 'pandamonium_icon.png' ? 'Downloading...' : 'Click to download'}</p>
+                </button>
+                <button
+                  onClick={() => handleDownload('/manus-storage/pandamonium_text_03eeca61.png', 'pandamonium_text.png')}
+                  disabled={downloading !== null}
+                  className="flex flex-col items-center p-6 bg-card rounded-lg border border-primary/30 hover:border-primary/70 hover:bg-primary/5 transition-all duration-300 cursor-pointer disabled:opacity-50"
                 >
                   <img
                     src="/manus-storage/pandamonium_text_03eeca61.png"
@@ -113,8 +137,8 @@ export default function Streaming() {
                     className="w-40 h-40 object-contain mb-4"
                   />
                   <p className="text-center text-foreground/70 text-sm font-semibold">Text</p>
-                  <p className="text-center text-primary text-xs mt-2">Click to download</p>
-                </a>
+                  <p className="text-center text-primary text-xs mt-2">{downloading === 'pandamonium_text.png' ? 'Downloading...' : 'Click to download'}</p>
+                </button>
               </div>
             </div>
 
