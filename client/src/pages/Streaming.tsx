@@ -106,7 +106,7 @@ export default function Streaming() {
                   className="flex flex-col items-center p-6 bg-card rounded-lg border border-primary/30 hover:border-primary/70 hover:bg-primary/5 transition-all duration-300 cursor-pointer disabled:opacity-50"
                 >
                   <img
-                    src="/manus-storage/pandamonium_logo_9f7b6793.png"
+                    src="https://d36hbw14aib5lz.cloudfront.net/310519663500670124/SXNGAT78vSNwpoRmkuGSKu/pandamonium_logo_9f7b6793.png"
                     alt="Pandamonium Logo"
                     className="w-40 h-40 object-contain mb-4"
                   />
@@ -119,7 +119,7 @@ export default function Streaming() {
                   className="flex flex-col items-center p-6 bg-card rounded-lg border border-primary/30 hover:border-primary/70 hover:bg-primary/5 transition-all duration-300 cursor-pointer disabled:opacity-50"
                 >
                   <img
-                    src="/manus-storage/pandamonium_icon_dc55b1a6.png"
+                    src="https://d36hbw14aib5lz.cloudfront.net/310519663500670124/SXNGAT78vSNwpoRmkuGSKu/pandamonium_icon_dc55b1a6.png"
                     alt="Pandamonium Icon"
                     className="w-40 h-40 object-contain mb-4"
                   />
@@ -132,7 +132,7 @@ export default function Streaming() {
                   className="flex flex-col items-center p-6 bg-card rounded-lg border border-primary/30 hover:border-primary/70 hover:bg-primary/5 transition-all duration-300 cursor-pointer disabled:opacity-50"
                 >
                   <img
-                    src="/manus-storage/pandamonium_text_03eeca61.png"
+                    src="https://d36hbw14aib5lz.cloudfront.net/310519663500670124/SXNGAT78vSNwpoRmkuGSKu/pandamonium_text_03eeca61.png"
                     alt="Pandamonium Text"
                     className="w-40 h-40 object-contain mb-4"
                   />
