@@ -18,6 +18,7 @@ const leadershipTeam = [
       { name: "Bramble Wise", discord: "thorn.hobbs", avatar: "https://cdn.discordapp.com/avatars/445025398649257994/98f672e114a15ef87b511050ee89202f.webp?size=2048" },
       { name: "phot", discord: "phot.", avatar: "https://cdn.discordapp.com/avatars/249970318511177728/4dce731f73a62159d97c10122340b7cf.webp?size=2048" },
       { name: "Saint", discord: "frznsaint14", avatar: "https://cdn.discordapp.com/avatars/270224107428249601/39deb721ac44b9c80c1cd5ccf2a9cea4.webp?size=2048" },
+      { name: "TXPatman", discord: "txpatman", avatar: "https://cdn.discordapp.com/avatars/480597469873569794/a_7e5f5f5f5f5f5f5f5f5f5f5f5f5f5f5f.webp?size=2048" },
     ],
   },
   {
