@@ -14,7 +14,7 @@ export default function Streaming() {
               Streaming Guidelines
             </h1>
             <p className="text-lg text-foreground/70 max-w-2xl mx-auto">
-              Share your gaming adventures with the Pandamonium community. These guidelines ensure a safe, respectful streaming environment for all members.
+              Share your gaming adventures with the public. These guidelines ensure a safe, respectful streaming environment for all members.
             </p>
           </div>
         </section>
@@ -28,7 +28,7 @@ export default function Streaming() {
             {/* Introduction */}
             <div className="mb-12 p-8 bg-card rounded-lg border border-primary/30">
               <p className="text-foreground/80 leading-relaxed">
-                Across our various chapters, we have members who regularly stream and we want to give them an opportunity to share their content with fellow Pandas. Our <span className="font-mono text-primary">@PandaBot</span> bot will keep an eye on our members to see when they start streaming and will let you know in our streaming channel. If your streams are not being announced, be sure to connect your stream account to Discord (User Settings &gt; Connections) and then enable streamer mode (User Settings &gt; Streamer Mode &gt; Enable Streamer Mode).
+                Across our various chapters, we have members who regularly stream and we want to give them an opportunity to share their content. Our <span className="font-mono text-primary">@PandaBot</span> bot will keep an eye on our members to see when they start streaming and will automatically let everyone know in our <span className="font-mono text-primary">#streaming</span> channel. If your streams are not being announced, be sure to connect your stream account to Discord (User Settings &gt; Connections) and then enable streamer mode (User Settings &gt; Experience &gt; Appearance &gt; Streamer Mode &gt; Enable Streamer Mode).
               </p>
             </div>
 
@@ -80,7 +80,11 @@ export default function Streaming() {
                   <img
                     src="/manus-storage/pandamonium_logo_9f7b6793.png"
                     alt="Pandamonium Logo"
-                    className="w-32 h-32 object-contain mb-4"
+                    className="w-40 h-40 object-contain mb-4"
+                    onError={(e) => {
+                      console.error("Failed to load logo image");
+                      e.currentTarget.style.display = 'none';
+                    }}
                   />
                   <p className="text-center text-foreground/70 text-sm">Logo</p>
                 </div>
@@ -88,7 +92,11 @@ export default function Streaming() {
                   <img
                     src="/manus-storage/pandamonium_icon_dc55b1a6.png"
                     alt="Pandamonium Icon"
-                    className="w-32 h-32 object-contain mb-4"
+                    className="w-40 h-40 object-contain mb-4"
+                    onError={(e) => {
+                      console.error("Failed to load icon image");
+                      e.currentTarget.style.display = 'none';
+                    }}
                   />
                   <p className="text-center text-foreground/70 text-sm">Icon</p>
                 </div>
@@ -96,7 +104,11 @@ export default function Streaming() {
                   <img
                     src="/manus-storage/pandamonium_text_03eeca61.png"
                     alt="Pandamonium Text"
-                    className="w-32 h-32 object-contain mb-4"
+                    className="w-40 h-40 object-contain mb-4"
+                    onError={(e) => {
+                      console.error("Failed to load text image");
+                      e.currentTarget.style.display = 'none';
+                    }}
                   />
                   <p className="text-center text-foreground/70 text-sm">Text</p>
                 </div>
@@ -146,7 +158,7 @@ export default function Streaming() {
             {/* Closing Message */}
             <div className="p-8 bg-gradient-to-r from-primary/10 to-accent/10 rounded-lg border border-primary/30 text-center">
               <p className="text-lg text-foreground/80 font-semibold">
-                We look forward to watching all of you stream with Pandamonium!
+                We look forward to watching your streams!
               </p>
             </div>
           </div>
