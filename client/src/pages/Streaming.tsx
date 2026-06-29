@@ -73,45 +73,48 @@ export default function Streaming() {
             <div className="mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-accent mb-8 uppercase">Pandamonium Branding</h2>
               <p className="text-foreground/70 mb-8">
-                Feel free to use any of these assets in your streams. Remember: they cannot be modified in any way.
+                Feel free to use any of these assets in your streams. Remember: they cannot be modified in any way. Click on any asset to download it.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div className="flex flex-col items-center p-6 bg-card rounded-lg border border-primary/30">
+                <a
+                  href="/manus-storage/pandamonium_logo_9f7b6793.png"
+                  download="pandamonium_logo.png"
+                  className="flex flex-col items-center p-6 bg-card rounded-lg border border-primary/30 hover:border-primary/70 hover:bg-primary/5 transition-all duration-300 cursor-pointer"
+                >
                   <img
                     src="/manus-storage/pandamonium_logo_9f7b6793.png"
                     alt="Pandamonium Logo"
                     className="w-40 h-40 object-contain mb-4"
-                    onError={(e) => {
-                      console.error("Failed to load logo image");
-                      e.currentTarget.style.display = 'none';
-                    }}
                   />
-                  <p className="text-center text-foreground/70 text-sm">Logo</p>
-                </div>
-                <div className="flex flex-col items-center p-6 bg-card rounded-lg border border-primary/30">
+                  <p className="text-center text-foreground/70 text-sm font-semibold">Logo</p>
+                  <p className="text-center text-primary text-xs mt-2">Click to download</p>
+                </a>
+                <a
+                  href="/manus-storage/pandamonium_icon_dc55b1a6.png"
+                  download="pandamonium_icon.png"
+                  className="flex flex-col items-center p-6 bg-card rounded-lg border border-primary/30 hover:border-primary/70 hover:bg-primary/5 transition-all duration-300 cursor-pointer"
+                >
                   <img
                     src="/manus-storage/pandamonium_icon_dc55b1a6.png"
                     alt="Pandamonium Icon"
                     className="w-40 h-40 object-contain mb-4"
-                    onError={(e) => {
-                      console.error("Failed to load icon image");
-                      e.currentTarget.style.display = 'none';
-                    }}
                   />
-                  <p className="text-center text-foreground/70 text-sm">Icon</p>
-                </div>
-                <div className="flex flex-col items-center p-6 bg-card rounded-lg border border-primary/30">
+                  <p className="text-center text-foreground/70 text-sm font-semibold">Icon</p>
+                  <p className="text-center text-primary text-xs mt-2">Click to download</p>
+                </a>
+                <a
+                  href="/manus-storage/pandamonium_text_03eeca61.png"
+                  download="pandamonium_text.png"
+                  className="flex flex-col items-center p-6 bg-card rounded-lg border border-primary/30 hover:border-primary/70 hover:bg-primary/5 transition-all duration-300 cursor-pointer"
+                >
                   <img
                     src="/manus-storage/pandamonium_text_03eeca61.png"
                     alt="Pandamonium Text"
                     className="w-40 h-40 object-contain mb-4"
-                    onError={(e) => {
-                      console.error("Failed to load text image");
-                      e.currentTarget.style.display = 'none';
-                    }}
                   />
-                  <p className="text-center text-foreground/70 text-sm">Text</p>
-                </div>
+                  <p className="text-center text-foreground/70 text-sm font-semibold">Text</p>
+                  <p className="text-center text-primary text-xs mt-2">Click to download</p>
+                </a>
               </div>
             </div>
 
