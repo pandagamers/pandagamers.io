@@ -115,6 +115,14 @@ const faqItems: FAQItem[] = [
       </>
     ),
   },
+  {
+    question: "I am a streamer and would like to stream while grouped with Pandamonium members. Do you have any guidelines I need to follow?",
+    answer: (
+      <>
+        Yes! We have comprehensive streaming guidelines to ensure a safe and respectful environment for all members. Please visit our <Link href="/streaming"><a className="text-primary hover:underline font-semibold">Streaming Guidelines</a></Link> page to learn about our rules, branding assets you can use, and important privacy considerations when streaming with our community.
+      </>
+    ),
+  },
 ];
 
 function FAQItem({ item, isOpen, onToggle }: { item: FAQItem; isOpen: boolean; onToggle: () => void }) {
