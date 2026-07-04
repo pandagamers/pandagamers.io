@@ -108,21 +108,20 @@ const chapterSections: ChapterSection[] = [
             <strong>To join the FC, you have two options:</strong>
             <br />
             <br />
-            <strong>1. Apply at the FC house (fastest method)</strong>
+            <strong>1. Apply at the FC house (strongly preferred; does not require officer to be online at same time as applicant)</strong>
             <br />
-            Go to the placard outside the FC house and submit an application. This lets officers auto-accept you as soon as one is available.
+            Click on the placard outside the FC house to submit an application. This lets an officer auto-accept you as soon as one is available. You will be added to the FC as soon as your application is accepted, even if you are offline when it happens.
             <br />
             Location: La Noscea → Mist → Ward 25 → Plot 32
             <br />
             <br />
-            <strong>2. Contact an officer directly</strong>
+            <strong>2. Contact an officer directly (only works when officer and applicant are online at the same time)</strong>
             <br />
             Use the Social menu → Player Search to find an officer by name. Right-click their name to either:
             <ul className="list-disc list-inside ml-4 my-2">
               <li>Send Tell (message them), or</li>
-              <li>View Company Profile and submit an application</li>
+              <li>View Company Profile and submit an application (similar to applying at the FC house, but officer must be online for you to use this method)</li>
             </ul>
-            Applications submitted this way can also be auto-accepted when an officer is available.
             <br />
             <br />
             <strong>Notes:</strong>

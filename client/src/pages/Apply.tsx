@@ -101,7 +101,7 @@ export default function Apply() {
                 <div className="flex-1">
                   <h2 className="text-2xl font-bold text-primary mb-3">Await Approval</h2>
                   <p className="text-foreground/80 mb-4">
-                    Once your application has been reviewed, you will be notified via direct message on Discord. If you have any questions during the process, use <a href="https://discord.com/channels/204984438596042752/985222513640497233" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-mono">#open-a-ticket</a>.
+                    Once your application has been reviewed, you will be notified either via an automated message from our PandaBot, or by a personal ping in our Introductions channel. If you have any questions during the process, use <a href="https://discord.com/channels/204984438596042752/985222513640497233" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-mono">#open-a-ticket</a>.
                   </p>
                 </div>
               </div>
