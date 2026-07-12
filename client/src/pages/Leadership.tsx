@@ -7,6 +7,7 @@ const leadershipTeam = [
     members: [
       { name: "Alianin Corvus", discord: "alianin", avatar: "https://cdn.discordapp.com/avatars/164765395390038016/6fc24dcfaf3282be2b981f59aaad97bf.webp?size=2048" },
       { name: "Amadeus Vrenn", discord: "amawyn1", avatar: "https://cdn.discordapp.com/avatars/205111723189862401/ee36727e2e073e822a2ce4fa9da9991d.webp?size=2048" },
+      { name: "phot", discord: "phot.", avatar: "https://cdn.discordapp.com/avatars/249970318511177728/4dce731f73a62159d97c10122340b7cf.webp?size=2048" },
       { name: "Kaisa Connor", discord: "kaisa", avatar: "https://cdn.discordapp.com/avatars/204970523518566400/bb3e445be843b289537edbd70a3c1ed7.webp?size=2048" },
       { name: "Wymsical", discord: "wymsical1", avatar: "https://cdn.discordapp.com/avatars/205107361533132810/3b9bfdb67b4f7932b003e953cc3c0330.webp?size=2048" },
     ],
