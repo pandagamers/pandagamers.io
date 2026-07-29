@@ -54,11 +54,11 @@ export default function Streaming() {
               <p className="text-foreground/80 leading-relaxed">
                 Across our various chapters, we have members who regularly stream and we want to give them an opportunity to share their content. Our <span className="font-mono text-primary">@PandaBot</span> bot will keep an eye on our members to see when they start streaming and will automatically let everyone know in our <span className="font-mono text-primary">#streaming</span> channel. If your streams are not being announced:
               </p>
-              <ol className="mt-3 space-y-1 list-none text-foreground/80">
-                <li>(1) Connect your stream account to Discord (User Settings &gt; Connections),</li>
-                <li>(2) enable streamer mode (User Settings &gt; Experience &gt; Appearance &gt; Streamer Mode &gt; Enable Streamer Mode),</li>
-                <li>(3) automatically share your activity with Friends &amp; All Servers (User Settings &gt; Content &amp; Social), and</li>
-                <li>(4) ensure you are not set to Invisible.</li>
+              <ol className="mt-3 space-y-2 list-none text-foreground/80">
+                <li className="flex gap-3"><span className="shrink-0 text-primary font-bold">(1)</span><span>Connect your stream account to Discord (User Settings &gt; Connections),</span></li>
+                <li className="flex gap-3"><span className="shrink-0 text-primary font-bold">(2)</span><span>enable streamer mode (User Settings &gt; Experience &gt; Appearance &gt; Streamer Mode &gt; Enable Streamer Mode),</span></li>
+                <li className="flex gap-3"><span className="shrink-0 text-primary font-bold">(3)</span><span>automatically share your activity with Friends &amp; All Servers (User Settings &gt; Content &amp; Social), and</span></li>
+                <li className="flex gap-3"><span className="shrink-0 text-primary font-bold">(4)</span><span>ensure you are not set to Invisible.</span></li>
               </ol>
             </div>
 
