@@ -56,9 +56,9 @@ export default function Streaming() {
               </p>
               <ol className="mt-3 space-y-2 list-none text-foreground/80">
                 <li className="flex gap-3"><span className="shrink-0 text-primary font-bold">(1)</span><span>Connect your stream account to Discord (User Settings &gt; Connections),</span></li>
-                <li className="flex gap-3"><span className="shrink-0 text-primary font-bold">(2)</span><span>enable streamer mode (User Settings &gt; Experience &gt; Appearance &gt; Streamer Mode &gt; Enable Streamer Mode),</span></li>
-                <li className="flex gap-3"><span className="shrink-0 text-primary font-bold">(3)</span><span>automatically share your activity with Friends &amp; All Servers (User Settings &gt; Content &amp; Social), and</span></li>
-                <li className="flex gap-3"><span className="shrink-0 text-primary font-bold">(4)</span><span>ensure you are not set to Invisible.</span></li>
+                <li className="flex gap-3"><span className="shrink-0 text-primary font-bold">(2)</span><span>Enable streamer mode (User Settings &gt; Experience &gt; Appearance &gt; Streamer Mode &gt; Enable Streamer Mode),</span></li>
+                <li className="flex gap-3"><span className="shrink-0 text-primary font-bold">(3)</span><span>Automatically share your activity with Friends &amp; All Servers (User Settings &gt; Content &amp; Social), and</span></li>
+                <li className="flex gap-3"><span className="shrink-0 text-primary font-bold">(4)</span><span>Ensure you are not set to Invisible.</span></li>
               </ol>
             </div>
 
