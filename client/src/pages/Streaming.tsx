@@ -55,10 +55,11 @@ export default function Streaming() {
                 Across our various chapters, we have members who regularly stream and we want to give them an opportunity to share their content. Our <span className="font-mono text-primary">@PandaBot</span> bot will keep an eye on our members to see when they start streaming and will automatically let everyone know in our <span className="font-mono text-primary">#streaming</span> channel. If your streams are not being announced:
               </p>
               <ol className="mt-3 space-y-2 list-none text-foreground/80">
-                <li className="flex gap-3"><span className="shrink-0 text-primary font-bold">(1)</span><span>Connect your stream account to Discord (User Settings &gt; Connections),</span></li>
-                <li className="flex gap-3"><span className="shrink-0 text-primary font-bold">(2)</span><span>Enable streamer mode (User Settings &gt; Experience &gt; Appearance &gt; Streamer Mode &gt; Enable Streamer Mode),</span></li>
-                <li className="flex gap-3"><span className="shrink-0 text-primary font-bold">(3)</span><span>Automatically share your activity with Friends &amp; All Servers (User Settings &gt; Content &amp; Social), and</span></li>
-                <li className="flex gap-3"><span className="shrink-0 text-primary font-bold">(4)</span><span>Ensure you are not set to Invisible.</span></li>
+                <li className="flex gap-3"><span className="shrink-0 text-primary font-bold">(1)</span><span>Connect your stream account to Discord (User Settings &gt; Connected Apps),</span></li>
+                <li className="flex gap-3"><span className="shrink-0 text-primary font-bold">(2)</span><span>Enable streamer mode (User Settings &gt; Appearance &gt; Streamer Mode &gt; Enable Streamer Mode),</span></li>
+                <li className="flex gap-3"><span className="shrink-0 text-primary font-bold">(3)</span><span>Share in all servers toggled on with Pandamonium toggled on below it (User Settings &gt; Activity Privacy),</span></li>
+                <li className="flex gap-3"><span className="shrink-0 text-primary font-bold">(4)</span><span>Share my activity toggled on (User Settings &gt; Activity Privacy), and</span></li>
+                <li className="flex gap-3"><span className="shrink-0 text-primary font-bold">(5)</span><span>Ensure you are not set to Invisible.</span></li>
               </ol>
             </div>
 
