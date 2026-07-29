@@ -52,8 +52,14 @@ export default function Streaming() {
             {/* Introduction */}
             <div className="mb-12 p-8 bg-card rounded-lg border border-primary/30">
               <p className="text-foreground/80 leading-relaxed">
-                Across our various chapters, we have members who regularly stream and we want to give them an opportunity to share their content. Our <span className="font-mono text-primary">@PandaBot</span> bot will keep an eye on our members to see when they start streaming and will automatically let everyone know in our <span className="font-mono text-primary">#streaming</span> channel. If your streams are not being announced, (1) connect your stream account to Discord (User Settings &gt; Connections), (2) enable streamer mode (User Settings &gt; Experience &gt; Appearance &gt; Streamer Mode &gt; Enable Streamer Mode), (3) automatically share your activity with Friends &amp; All Servers (User Settings &gt; Content &amp; Social), and (4) ensure you are not set to Invisible.
+                Across our various chapters, we have members who regularly stream and we want to give them an opportunity to share their content. Our <span className="font-mono text-primary">@PandaBot</span> bot will keep an eye on our members to see when they start streaming and will automatically let everyone know in our <span className="font-mono text-primary">#streaming</span> channel. If your streams are not being announced:
               </p>
+              <ol className="mt-3 space-y-1 list-none text-foreground/80">
+                <li>(1) Connect your stream account to Discord (User Settings &gt; Connections),</li>
+                <li>(2) enable streamer mode (User Settings &gt; Experience &gt; Appearance &gt; Streamer Mode &gt; Enable Streamer Mode),</li>
+                <li>(3) automatically share your activity with Friends &amp; All Servers (User Settings &gt; Content &amp; Social), and</li>
+                <li>(4) ensure you are not set to Invisible.</li>
+              </ol>
             </div>
 
             {/* Rules Section */}
