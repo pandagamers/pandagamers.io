@@ -18,6 +18,7 @@ import FAQ from "./pages/FAQ";
 import Apprentices from "./pages/Apprentices";
 import GettingStarted from "./pages/GettingStarted";
 import Streaming from "./pages/Streaming";
+import RedundancyRoom from "./pages/RedundancyRoom";
 
 
 function ScrollToTop() {
@@ -47,6 +48,7 @@ function AppRouter() {
         <Route path={"/getting-started"} component={GettingStarted} />
         <Route path={"/apprentices"} component={Apprentices} />
         <Route path={"/streaming"} component={Streaming} />
+        <Route path={"/redundancy-room"} component={RedundancyRoom} />
         <Route path={"/404"} component={NotFound} />
         {/* Final fallback route */}
         <Route component={NotFound} />
