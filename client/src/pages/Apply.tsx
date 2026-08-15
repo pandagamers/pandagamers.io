@@ -36,10 +36,11 @@ export default function Apply() {
                   <p className="text-foreground/80 mb-4">
                     Start by reading our community charter. It outlines our core values, membership criteria, and the principles that guide our community. Make sure you align with our values of inclusivity, equity, and accountability.
                   </p>
-                  <Link href="/charter">
-                    <a className="inline-block px-6 py-2 bg-primary hover:bg-primary/90 text-primary-foreground font-bold uppercase rounded transition-colors">
-                      Read Charter
-                    </a>
+                  <Link
+                    href="/charter"
+                    className="inline-block px-6 py-2 bg-primary hover:bg-primary/90 text-primary-foreground font-bold uppercase rounded transition-colors"
+                  >
+                    Read Charter
                   </Link>
                 </div>
               </div>
@@ -118,10 +119,11 @@ export default function Apply() {
                   <p className="text-foreground/80 mb-4">
                     Once you have been approved, head over to our Getting Started guide to learn about Discord setup, selecting your pronouns and game preferences, creating events, and game-specific onboarding information. Whether you are joining us in Dune: Awakening, Final Fantasy XIV, Palia, or any of our other communities, this guide will help you get up to speed quickly.
                   </p>
-                  <Link href="#/getting-started">
-                    <a className="inline-block px-6 py-2 bg-primary hover:bg-primary/90 text-primary-foreground font-bold uppercase rounded transition-colors">
-                      View Getting Started Guide
-                    </a>
+                  <Link
+                    href="/getting-started"
+                    className="inline-block px-6 py-2 bg-primary hover:bg-primary/90 text-primary-foreground font-bold uppercase rounded transition-colors"
+                  >
+                    View Getting Started Guide
                   </Link>
                 </div>
               </div>

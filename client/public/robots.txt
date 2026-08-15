@@ -1,10 +1,10 @@
 # Pandamonium Gaming Community - Robots.txt
-# Allow search engines and AI crawlers to access all public pages
+# Allow search engines to crawl all public content at clean, canonical URLs.
 
 User-agent: *
 Allow: /
 
-# Explicitly allow AI training crawlers
+# Explicitly allow AI training crawlers.
 User-agent: GPTBot
 Allow: /
 
@@ -17,12 +17,10 @@ Allow: /
 User-agent: Googlebot-Extended
 Allow: /
 
-# Disallow internal and private directories
+# Disallow internal and private directories.
 Disallow: /admin
 Disallow: /private
 Disallow: /__manus__/
 
-# Note: This site uses hash-based routing (e.g., /#/charter)
-# All public pages are accessible from the root path and will be crawled
-
+# The sitemap contains only public canonical URLs intended for search results.
 Sitemap: https://pandagamers.io/sitemap.xml

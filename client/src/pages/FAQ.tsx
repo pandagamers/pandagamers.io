@@ -24,8 +24,8 @@ const faqItems: FAQItem[] = [
           https://discord.gg/pandagamers
         </a>
         . We love welcoming new people who share our values of inclusivity, equity, and accountability. Knowing that some gaming experience may require coordination with outside folks, non-members are able to join designated public channels on our server. Keep in mind that adherence to the{" "}
-        <Link href="/charter">
-          <a className="text-primary hover:underline font-semibold">Charter</a>
+        <Link href="/charter" className="text-primary hover:underline font-semibold">
+          Charter
         </Link>
         {" "}is a requirement for everyone using our space, including guests.
       </>
@@ -119,7 +119,7 @@ const faqItems: FAQItem[] = [
     question: "I am a streamer and would like to stream while grouped with Pandamonium members. Do you have any guidelines I need to follow?",
     answer: (
       <>
-        Yes! We have comprehensive streaming guidelines to ensure a safe and respectful environment for all members. Please visit our <Link href="/streaming"><a className="text-primary hover:underline font-semibold">Streaming Guidelines</a></Link> page to learn about our rules, branding assets you can use, and important privacy considerations when streaming with our community.
+        Yes! We have comprehensive streaming guidelines to ensure a safe and respectful environment for all members. Please visit our <Link href="/streaming" className="text-primary hover:underline font-semibold">Streaming Guidelines</Link> page to learn about our rules, branding assets you can use, and important privacy considerations when streaming with our community.
       </>
     ),
   },
@@ -197,12 +197,12 @@ export default function FAQ() {
                 >
                   Join Our Discord
                 </a>
-                <a
+                <Link
                   href="/charter"
                   className="inline-block px-8 py-3 bg-accent text-accent-foreground font-bold rounded hover:bg-accent/90 transition-colors"
                 >
                   View Charter
-                </a>
+                </Link>
               </div>
             </div>
           </div>

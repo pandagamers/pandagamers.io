@@ -110,3 +110,18 @@ temp/
 
 # Manus version file (auto-generated, not part of source)
 client/public/__manus__/version.json
+
+# Generated static HTML entries for clean public routes
+client/charter/
+client/history/
+client/games/
+client/events/
+client/faq/
+client/leadership/
+client/apply/
+client/apprentices/
+client/getting-started/
+client/streaming/
+client/privacy/
+client/redundancy-room/
+client/404/

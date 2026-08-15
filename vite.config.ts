@@ -3,6 +3,29 @@ import react from "@vitejs/plugin-react";
 import path from "node:path";
 import { defineConfig, type Plugin, type ViteDevServer } from "vite";
 
+const routeEntries = [
+  "charter",
+  "history",
+  "games",
+  "events",
+  "faq",
+  "leadership",
+  "apply",
+  "apprentices",
+  "getting-started",
+  "streaming",
+  "privacy",
+  "redundancy-room",
+  "404",
+];
+
+const htmlEntries = Object.fromEntries(
+  routeEntries.map((route) => [
+    route,
+    path.resolve(import.meta.dirname, "client", route, "index.html"),
+  ]),
+);
+
 function vitePluginStorageProxy(): Plugin {
   return {
     name: "manus-storage-proxy",
@@ -66,6 +89,12 @@ export default defineConfig(({ command: _command }) => ({
   build: {
     outDir: path.resolve(import.meta.dirname, "dist/public"),
     emptyOutDir: true,
+    rollupOptions: {
+      input: {
+        home: path.resolve(import.meta.dirname, "client", "index.html"),
+        ...htmlEntries,
+      },
+    },
   },
   server: {
     port: 3000,

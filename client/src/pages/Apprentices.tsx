@@ -58,8 +58,8 @@ export default function Application() {
               <div className="bg-card rounded-lg border border-primary/30 p-8">
                 <p className="text-foreground/80 leading-relaxed">
                   Once a community application has been submitted, it is accessible by those ranked as <strong>Member</strong> and above in the <strong>Open Applications</strong> category. All community members are encouraged and welcome to submit their comments within those underlying channels. A simple Yes or No reaction will also suffice. Once an applicant has been accepted, future issues or concerns should be brought directly to the attention of{" "}
-                  <Link href="/leadership">
-                    <a className="text-primary hover:underline font-semibold">Leadership</a>
+                  <Link href="/leadership" className="text-primary hover:underline font-semibold">
+                    Leadership
                   </Link>
                   .
                 </p>
@@ -123,8 +123,8 @@ export default function Application() {
                   <p className="font-semibold text-primary mb-3">4. Be respectful of fellow community members</p>
                   <p className="text-foreground/80 ml-4">
                     Above all else, be respectful of your fellow community members. If you take significant issue with the comments someone is making and feel like your response will be harsher than is appropriate, please speak with a member of{" "}
-                    <Link href="/leadership">
-                      <a className="text-primary hover:underline font-semibold">Leadership</a>
+                    <Link href="/leadership" className="text-primary hover:underline font-semibold">
+                      Leadership
                     </Link>
                     .
                   </p>

@@ -132,7 +132,7 @@ const chapterSections: ChapterSection[] = [
               <li>If no officers are online, use the FC house placard</li>
             </ul>
             <br />
-            You can find a list of officers on the <Link href="/leadership"><a className="text-primary hover:underline font-semibold">Leadership</a></Link> page.
+            You can find a list of officers on the <Link href="/leadership" className="text-primary hover:underline font-semibold">Leadership</Link> page.
           </>
         ),
       },
