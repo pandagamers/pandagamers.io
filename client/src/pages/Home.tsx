@@ -134,11 +134,11 @@ export default function Home() {
               {/* Welcome Video */}
               <section className="mb-12 rounded-lg border border-primary/30 bg-background p-4 shadow-xl shadow-primary/5 sm:p-6 md:p-8">
                 <div className="mx-auto max-w-3xl text-center">
-                  <p className="mb-3 font-space-mono text-xs uppercase tracking-[0.25em] text-accent">
+                  <p className="mb-3 font-space-mono text-sm uppercase tracking-[0.25em] text-accent">
                     Welcome to Pandamonium
                   </p>
-                  <h2 className="mb-6 text-3xl font-bold text-primary md:text-4xl">
-                    A Community Built to Play Together
+                  <h2 className="mb-6 text-2xl font-bold text-primary md:text-3xl">
+                    Official Lyric Video
                   </h2>
                   <div className="overflow-hidden rounded-md border border-primary/30 bg-black shadow-2xl shadow-primary/10">
                     <div className="aspect-video">
@@ -153,8 +153,13 @@ export default function Home() {
                       />
                     </div>
                   </div>
+                  <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-foreground/80 sm:text-lg">
+                    From our early days in Mistmoore to the worlds we explore today, this song celebrates the people who have made Pandamonium what it is: friends who become family, online and beyond. From Mistmoore to tonight. Welcome home. Welcome to Pandamonium.
+                  </p>
                   <a
                     href="/welcome-to-pandamonium"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="mt-6 inline-flex items-center justify-center rounded-md border border-accent/60 bg-accent/10 px-6 py-3 font-bold uppercase tracking-wide text-accent transition-all duration-200 hover:-translate-y-0.5 hover:border-accent hover:bg-accent/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
                   >
                     Download the Welcome to Pandamonium MP3
