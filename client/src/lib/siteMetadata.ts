@@ -6,6 +6,8 @@ export type PageMetadata = {
 };
 
 export const SITE_ORIGIN = "https://pandagamers.io";
+export const WELCOME_TO_PANDAMONIUM_REDIRECT =
+  "https://drive.google.com/file/d/1UsPwGAWxWuKBRhK3Lmzpyive_fNoFbau/view";
 
 export const INDEXABLE_PAGES: PageMetadata[] = [
   {
@@ -100,6 +102,12 @@ export const DIRECT_ONLY_PAGES: PageMetadata[] = [
     title: "The Redundancy Room | Pandamonium",
     description:
       "A direct-link-only tribute to Pandamonium's retired Member Trackers.",
+    indexable: false,
+  },
+  {
+    path: "/welcome-to-pandamonium",
+    title: "Welcome to Pandamonium Download | Pandamonium",
+    description: "Redirecting to the Welcome to Pandamonium MP3 download.",
     indexable: false,
   },
 ];

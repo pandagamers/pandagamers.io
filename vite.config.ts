@@ -16,6 +16,7 @@ const routeEntries = [
   "streaming",
   "privacy",
   "redundancy-room",
+  "welcome-to-pandamonium",
   "404",
 ];
 

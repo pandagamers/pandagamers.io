@@ -98,6 +98,14 @@ const generatedRoutes = [
     indexable: false,
   },
   {
+    path: "/welcome-to-pandamonium",
+    title: "Welcome to Pandamonium Download | Pandamonium",
+    description: "Redirecting to the Welcome to Pandamonium MP3 download.",
+    indexable: false,
+    redirectTo:
+      "https://drive.google.com/file/d/1UsPwGAWxWuKBRhK3Lmzpyive_fNoFbau/view",
+  },
+  {
     path: "/404",
     title: "Page Not Found | Pandamonium",
     description: "The page you requested could not be found.",
@@ -119,6 +127,7 @@ function pageDocument(page) {
   const description = escapeHtml(page.description);
   const canonical = canonicalUrl(page.path);
   const robots = page.indexable ? "index,follow" : "noindex,nofollow";
+  const redirectTo = page.redirectTo ? escapeHtml(page.redirectTo) : null;
 
   return `<!doctype html>
 <html lang="en" class="dark">
@@ -129,6 +138,7 @@ function pageDocument(page) {
     <meta name="description" content="${description}" />
     <meta name="robots" content="${robots}" />
     <link rel="canonical" href="${canonical}" />
+    ${redirectTo ? `<meta http-equiv="refresh" content="0;url=${redirectTo}" />` : ""}
     <meta property="og:title" content="${title}" />
     <meta property="og:description" content="${description}" />
     <meta property="og:url" content="${canonical}" />
@@ -141,7 +151,7 @@ function pageDocument(page) {
     <meta http-equiv="X-Frame-Options" content="SAMEORIGIN" />
     <meta http-equiv="X-Content-Type-Options" content="nosniff" />
     <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin" />
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://forge.butterfly-effect.dev; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' https://d2xsxph8kpxj0f.cloudfront.net https://d36hbw14aib5lz.cloudfront.net https://cdn.discordapp.com; frame-src https://sesh.fyi; connect-src 'self' https://forge.butterfly-effect.dev; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'; upgrade-insecure-requests" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://forge.butterfly-effect.dev; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' https://d2xsxph8kpxj0f.cloudfront.net https://d36hbw14aib5lz.cloudfront.net https://cdn.discordapp.com; frame-src https://sesh.fyi https://www.youtube-nocookie.com; connect-src 'self' https://forge.butterfly-effect.dev; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'; upgrade-insecure-requests" />
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
