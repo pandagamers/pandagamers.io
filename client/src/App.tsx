@@ -18,7 +18,6 @@ import Apprentices from "./pages/Apprentices";
 import GettingStarted from "./pages/GettingStarted";
 import Streaming from "./pages/Streaming";
 import RedundancyRoom from "./pages/RedundancyRoom";
-import WelcomeToPandamoniumRedirect from "./pages/WelcomeToPandamoniumRedirect";
 
 function RouteEffects() {
   const [location] = useLocation();
@@ -49,7 +48,6 @@ function AppRouter() {
         <Route path="/apprentices" component={Apprentices} />
         <Route path="/streaming" component={Streaming} />
         <Route path="/redundancy-room" component={RedundancyRoom} />
-        <Route path="/welcome-to-pandamonium" component={WelcomeToPandamoniumRedirect} />
         <Route path="/404" component={NotFound} />
         <Route component={NotFound} />
       </Switch>

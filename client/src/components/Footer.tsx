@@ -1,4 +1,3 @@
-import { Instagram, Youtube } from "lucide-react";
 import { SiDiscord } from "react-icons/si";
 import { Link } from "wouter";
 
@@ -76,24 +75,6 @@ export default function Footer() {
                 aria-label="Discord"
               >
                 <SiDiscord className="w-5 h-5 text-primary" />
-              </a>
-              <a
-                href="https://instagram.com/pandagamers.io/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 bg-primary/10 hover:bg-primary/20 rounded transition-colors"
-                aria-label="Instagram"
-              >
-                <Instagram className="w-5 h-5 text-primary" />
-              </a>
-              <a
-                href="https://youtube.com/@pandagamersio"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 bg-primary/10 hover:bg-primary/20 rounded transition-colors"
-                aria-label="YouTube"
-              >
-                <Youtube className="w-5 h-5 text-primary" />
               </a>
             </div>
           </div>
