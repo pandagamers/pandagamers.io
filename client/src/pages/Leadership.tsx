@@ -40,12 +40,6 @@ const leadershipTeam = [
       { name: "Ravvy", discord: "ravvyplaysgames", avatar: "https://cdn.discordapp.com/avatars/186667891624640512/26dba4b6563bd833120ebe28e9988609.webp?size=2048" },
     ],
   },
-  {
-    role: "General Officers",
-    members: [
-      { name: "Detective Halflight", discord: ".halflight", avatar: "https://cdn.discordapp.com/avatars/189485183420989441/70ef8c223116ad811a6f6a8f5d80c0ef.webp?size=2048" },
-    ],
-  },
 ];
 
 export default function Leadership() {
