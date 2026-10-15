@@ -93,7 +93,7 @@ export default function Games() {
             <div className="my-16 p-8 bg-card border border-primary/20 rounded-lg">
               <h2 className="text-2xl font-bold text-primary mb-4">Casual Play & Other Games</h2>
               <p className="text-foreground/80 leading-relaxed mb-4">
-                Beyond our formal chapters, Pandamonium members regularly collaborate on a wide variety of games in a more casual, flexible manner. Whether it's exploring new releases, revisiting classics, or trying out indie gems, our community thrives on shared gaming experiences. If you're interested in organizing or joining casual play sessions, reach out to your fellow members on Discord—there's always room for more!
+                Beyond our formal chapters, Pandamonium members regularly collaborate on a wide variety of games in a more casual, flexible manner. Whether it's exploring new releases, revisiting classics, or trying out indie gems, our community thrives on shared gaming experiences. If you're interested in organizing or joining casual play sessions, reach out to your fellow members on Discord. There's always room for more!
               </p>
               <p className="text-foreground/80 leading-relaxed">
                 <strong>Examples of currently active casual play:</strong> ARC Raiders, Bitcraft, Fortnite, Honkai: Star Rail, Marvel Rivals, and World of Warcraft.

@@ -52,15 +52,16 @@ export default function Streaming() {
             {/* Introduction */}
             <div className="mb-12 p-8 bg-card rounded-lg border border-primary/30">
               <p className="text-foreground/80 leading-relaxed">
-                Across our various chapters, we have members who regularly stream and we want to give them an opportunity to share their content. Our <span className="font-mono text-primary">@PandaBot</span> bot will keep an eye on our members to see when they start streaming and will automatically let everyone know in our <span className="font-mono text-primary">#streaming</span> channel. If your streams are not being announced:
+                Across our various chapters, we have members who regularly stream and we want to give them an opportunity to share their content. Register your Twitch channel in the <span className="font-mono text-primary">#streaming</span> channel to let <span className="font-mono text-primary">@PandaBot</span> announce your live streams there.
               </p>
-              <ol className="mt-3 space-y-2 list-none text-foreground/80">
-                <li className="flex gap-3"><span className="shrink-0 text-primary font-bold">(1)</span><span>Connect your stream account to Discord (User Settings &gt; Connected Apps),</span></li>
-                <li className="flex gap-3"><span className="shrink-0 text-primary font-bold">(2)</span><span>Enable streamer mode (User Settings &gt; Appearance &gt; Streamer Mode &gt; Enable Streamer Mode),</span></li>
-                <li className="flex gap-3"><span className="shrink-0 text-primary font-bold">(3)</span><span>Share in all servers toggled on with Pandamonium toggled on below it (User Settings &gt; Activity Privacy),</span></li>
-                <li className="flex gap-3"><span className="shrink-0 text-primary font-bold">(4)</span><span>Share my activity toggled on (User Settings &gt; Activity Privacy), and</span></li>
-                <li className="flex gap-3"><span className="shrink-0 text-primary font-bold">(5)</span><span>Ensure you are not set to Invisible.</span></li>
-              </ol>
+              <div className="mt-5 space-y-4 text-foreground/80">
+                <p>
+                  Select <span className="font-mono text-primary">Add / Update Twitch</span> in <span className="font-mono text-primary">#streaming</span>, then sign in to Twitch once to verify that you control the channel. PandaBot does not retain your Twitch access token.
+                </p>
+                <p>
+                  To opt out, select <span className="font-mono text-primary">Remove My Twitch</span> at any time to stop monitoring. Use <span className="font-mono text-primary">My Twitch Status</span> to check your current registration.
+                </p>
+              </div>
             </div>
 
             {/* Rules Section */}

@@ -27,7 +27,7 @@ const genericSections: Section[] = [
     title: "Discord Introduction",
     content: (
       <>
-        The Pandamonium Discord server is our central hub for announcements, discussions, upcoming events, and camaraderie. Stay informed by actively participating in voice and text chat, checking announcements, and joining conversations. Share your knowledge and experiences—it's what makes Pandamonium thrive. Active engagement on Discord ensures you remain a member of our vibrant community. We would encourage you to download the Discord application if you have a smartphone/device and send a message in the <a href="https://discord.com/channels/204984438596042752/1192618883232833577" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">Introductions👋</a> channel so your fellow community members can get to know you.
+        The Pandamonium Discord server is our central hub for announcements, discussions, upcoming events, and camaraderie. Stay informed by actively participating in voice and text chat, checking announcements, and joining conversations. Share your knowledge and experiences. It's what makes Pandamonium thrive. Active engagement on Discord ensures you remain a member of our vibrant community. We would encourage you to download the Discord application if you have a smartphone/device and send a message in the <a href="https://discord.com/channels/204984438596042752/1192618883232833577" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">Introductions👋</a> channel so your fellow community members can get to know you.
       </>
     ),
   },
@@ -35,10 +35,10 @@ const genericSections: Section[] = [
     title: "Apprenticeship",
     content: (
       <>
-        A typical apprenticeship period lasts for a minimum of 30 days. During that time the Pandamonium community will be evaluating you for compatibility and integrity through Discord, in-game chat, and community events. Membership is decided by community vote—this is our opportunity to get to know each other. Because the quality of in-game communication can vary, we definitely recommend engaging on Discord to reach the most Pandas!
+        A typical apprenticeship period lasts for a minimum of 30 days. During that time the Pandamonium community will be evaluating you for compatibility and integrity through Discord, in-game chat, and community events. Membership is decided by community vote. This is our opportunity to get to know each other. Because the quality of in-game communication can vary, we definitely recommend engaging on Discord to reach the most Pandas!
         <br />
         <br />
-        <strong>Engagement During Apprenticeship:</strong> Your level of engagement and participation during your first few weeks is important. We're all here to have fun and build connections—if you're deemed inactive or disengaged during your apprenticeship while we're trying to get to know you (and vice versa), you likely won't progress past this stage. But remember, this is meant to be fun and positive, not stressful. We're looking for people who are genuinely interested in being part of our community, not perfect participation.
+        <strong>Engagement During Apprenticeship:</strong> Your level of engagement and participation during your first few weeks is important. We're all here to have fun and build connections. If you're deemed inactive or disengaged during your apprenticeship while we're trying to get to know you (and vice versa), you likely won't progress past this stage. But remember, this is meant to be fun and positive, not stressful. We're looking for people who are genuinely interested in being part of our community, not perfect participation.
       </>
     ),
   },
@@ -46,7 +46,7 @@ const genericSections: Section[] = [
     title: "Creating Events",
     content: (
       <>
-        Once you have applied and been accepted as an apprentice, you can create events in our Discord server. Go to <a href="https://sesh.fyi/dashboard/204984438596042752" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">Sesh</a>, authorize your Discord, and click Create Event. Be sure to add chapter role Notifications, and 'Mirror to Discord Native Event' under Interactions - this will guarantee those interested in what you are running will be looped in. Events are a great way to bring the community together for raids, dungeons, social hangouts, and more. If you have an event idea, create it—people will come!
+        Once you have applied and been accepted as an apprentice, you can create events in our Discord server. Go to <a href="https://sesh.fyi/dashboard/204984438596042752" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-semibold">Sesh</a>, authorize your Discord, and click Create Event. Be sure to add chapter role Notifications, and 'Mirror to Discord Native Event' under Interactions - this will guarantee those interested in what you are running will be looped in. Events are a great way to bring the community together for raids, dungeons, social hangouts, and more. If you have an event idea, create it. People will come!
       </>
     ),
   },

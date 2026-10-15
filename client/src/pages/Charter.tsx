@@ -86,7 +86,7 @@ const charterSections: ChapterSection[] = [
     title: "Communication Channels",
     content: (
       <>
-        This website serves as a valuable recruitment tool and provides essential information about Pandamonium, but Discord is where the magic happens! It is our central hub for announcements, discussions, upcoming events, and camaraderie. Stay informed by actively participating in voice and text chat, checking announcements, and joining conversations. Share your knowledge and experiences—it's what makes Pandamonium thrive.
+        This website serves as a valuable recruitment tool and provides essential information about Pandamonium, but Discord is where the magic happens! It is our central hub for announcements, discussions, upcoming events, and camaraderie. Stay informed by actively participating in voice and text chat, checking announcements, and joining conversations. Share your knowledge and experiences. It's what makes Pandamonium thrive.
         <br />
         <br />
         <em>"Communication leads to community, that is, to understanding, intimacy and mutual valuing." - Rollo May</em>
@@ -111,7 +111,7 @@ const charterSections: ChapterSection[] = [
         In Pandamonium, our leadership team plays a crucial role in shaping the community's direction. Comprising Officers and Community Managers, we work collaboratively to ensure community success through regular Discord communications, periodic leadership meetings, and ad-hoc town halls. We prioritize transparency, actively seek diverse perspectives, and focus on fostering a drama-free environment.
         <br />
         <br />
-        But we recognize that leadership isn't static—it's dynamic and ever-evolving. We actively encourage and support the growth of potential new leaders within our ranks. Whether you're a seasoned member or a fresh face, there's always room to step up and contribute. We are all volunteers, driven by passion and commitment. As circumstances change, we need individuals who are willing to move into leadership roles, filling gaps and ensuring continuity. Whether it's organizing events, moderating discussions, or spearheading initiatives, there's a place for you to make a difference. Speak to one of the Community Managers if you would like to learn more.
+        But we recognize that leadership isn't static. It is dynamic and ever-evolving. We actively encourage and support the growth of potential new leaders within our ranks. Whether you're a seasoned member or a fresh face, there's always room to step up and contribute. We are all volunteers, driven by passion and commitment. As circumstances change, we need individuals who are willing to move into leadership roles, filling gaps and ensuring continuity. Whether it's organizing events, moderating discussions, or spearheading initiatives, there's a place for you to make a difference. Speak to one of the Community Managers if you would like to learn more.
         <br />
         <br />
         <em>"Leadership is not a person or a position. It is a complex moral relationship between people based on trust, obligation, commitment, emotion, and a shared vision of the good." - Piyushi Dhir</em>
@@ -125,7 +125,7 @@ const charterSections: ChapterSection[] = [
         Within Pandamonium, we thrive on member-driven initiatives. Whether you're passionate about in-game adventures (e.g., raids, dungeons, quests, tournaments, loot crawls) or want to explore non-gaming activities (e.g., movie nights, art showcases, charity drives), you have the power to shape our events. If you're not sure how to get started, speak to any member of the leadership team for guidance. Collaborate with like-minded individuals on event planning, promotion, and execution.
         <br />
         <br />
-        <em>"They'll tell you you're too loud—that you need to wait your turn and ask the right people for permission. Do it anyway." - Alexandria Ocasio-Cortez</em>
+        <em>"They'll tell you you're too loud, that you need to wait your turn and ask the right people for permission. Do it anyway." - Alexandria Ocasio-Cortez</em>
       </>
     ),
   },
@@ -133,7 +133,7 @@ const charterSections: ChapterSection[] = [
     title: "Feedback",
     content: (
       <>
-        In Pandamonium, we value input. There are multiple channels where you can provide feedback, suggestions, and express any concerns. Within Discord there is the option to open a ticket to communicate privately with our Community Managers. Members are encouraged to share ideas for improving our community, support the initiatives they believe in, and engage in constructive conversations with fellow members. In the Apprentice Review section, we evaluate individuals who are up for promotion to Member status. Bi-annual town halls occur, where all community members can engage live with the leadership team. Your insights matter—help us make informed decisions.
+        In Pandamonium, we value input. There are multiple channels where you can provide feedback, suggestions, and express any concerns. Within Discord there is the option to open a ticket to communicate privately with our Community Managers. Members are encouraged to share ideas for improving our community, support the initiatives they believe in, and engage in constructive conversations with fellow members. In the Apprentice Review section, we evaluate individuals who are up for promotion to Member status. Bi-annual town halls occur, where all community members can engage live with the leadership team. Your insights matter. Help us make informed decisions.
         <br />
         <br />
         <em>"We all need people who will give us feedback. That's how we improve." - Bill Gates</em>

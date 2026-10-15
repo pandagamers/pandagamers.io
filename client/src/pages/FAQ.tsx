@@ -94,7 +94,7 @@ const faqItems: FAQItem[] = [
     question: "Do I have to join a game chapter to become a member?",
     answer: (
       <>
-        No, you don't have to join a game chapter to become a member of Pandamonium. However, chapter membership is the primary way most members engage with the community. If you're not interested in joining a specific chapter, you can still participate in Pandamonium by being very active in our Discord server. You'll need to demonstrate consistent engagement—attending community events, participating in discussions, and contributing to the community culture. Members who are active in Discord but not in a chapter are still valued members of Pandamonium, though chapter membership provides more structured opportunities for gameplay and community building.
+        No, you don't have to join a game chapter to become a member of Pandamonium. However, chapter membership is the primary way most members engage with the community. If you're not interested in joining a specific chapter, you can still participate in Pandamonium by being very active in our Discord server. You'll need to demonstrate consistent engagement by attending community events, participating in discussions, and contributing to the community culture. Members who are active in Discord but not in a chapter are still valued members of Pandamonium, though chapter membership provides more structured opportunities for gameplay and community building.
       </>
     ),
   },
