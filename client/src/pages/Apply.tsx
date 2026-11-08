@@ -161,9 +161,9 @@ export default function Apply() {
             </div>
 
             {/* Clarification Note */}
-            <div className="p-6 bg-background border border-primary/20 rounded-lg mb-8">
-              <p className="text-sm text-foreground/70 text-left">
-                <span className="font-semibold text-primary">Note:</span> If you're looking for Pandemonium Books & Games, the store located in Cambridge, Massachusetts, visit{" "}
+            <div className="p-6 bg-background border border-primary/20 rounded-lg mb-8 space-y-3 text-sm text-foreground/70 text-left">
+              <p>
+                <span className="font-semibold text-primary">Note:</span> If you're looking for <strong>Pandemonium Books & Games</strong>, the store located in Cambridge, Massachusetts, visit{" "}
                 <a href="https://pandemoniumbooks.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
                   pandemoniumbooks.com
                 </a>
@@ -171,7 +171,10 @@ export default function Apply() {
                 <a href="https://discord.gg/WN2vdCuYzB" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
                   Discord
                 </a>
-. If you're looking for the Pandemonium Gaming Community within Conan Exiles, visit{" "}
+                .
+              </p>
+              <p>
+                If you're looking for the <strong>Pandemonium Gaming Community within Conan Exiles</strong>, visit{" "}
                 <a href="https://pand.life" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
                   pand.life
                 </a>
@@ -179,7 +182,17 @@ export default function Apply() {
                 <a href="https://discord.gg/pandemonium" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
                   Discord
                 </a>
-                . Neither are affiliated with Pandamonium.
+                .
+              </p>
+              <p>
+                If you're looking for the <strong>Pandamonium community within Beasts of Bermuda</strong>, join their{" "}
+                <a href="https://discord.com/invite/pandamonium" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">
+                  Discord
+                </a>
+                .
+              </p>
+              <p className="font-semibold">
+                None of these are affiliated with our Pandamonium gaming community at pandagamers.io.
               </p>
             </div>
 
