@@ -25,7 +25,6 @@ const leadershipTeam = [
   {
     role: "Final Fantasy XIV Online",
     members: [
-      { name: "Adaire Thelmont", discord: "soiyer", avatar: "https://cdn.discordapp.com/avatars/135518124630867968/f21b547424bd9adb18e9eab83f6ac528.webp?size=2048" },
       { name: "Ruse Heartforge", discord: "_divade", avatar: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663500670124/WwqeJgzdMmaqGDHI.png" },
       { name: "Zozona Zona", discord: "midnightvulpine", avatar: "https://files.manuscdn.com/user_upload_by_module/session_file/310519663500670124/iCRghXVFSUpIbaix.png" },
     ],
